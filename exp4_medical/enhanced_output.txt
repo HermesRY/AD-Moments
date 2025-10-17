@@ -1,0 +1,89 @@
+================================================================================
+EXPERIMENT 4 ENHANCED: FEATURE ENGINEERING FOR MoCA
+================================================================================
+
+📂 Loading data...
+
+🔄 Computing enhanced features...
+  ✓ 2nx1: 9 seqs
+  ✓ 2nx11: 9 seqs
+  ✓ 2nx12: 93 seqs
+  ✓ 2nx14: 56 seqs
+  ✓ 2nx15: 89 seqs
+  ✓ 2nx18: 111 seqs
+  ✓ 2nx19: 285 seqs
+  ✓ 2nx3: 177 seqs
+  ✓ 2nx4: 24 seqs
+  ✓ 2nx5: 181 seqs
+  ✓ 2nx7: 28 seqs
+  ✓ 2nx9: 25 seqs
+  ✓ 3nx18: 12 seqs
+  ✓ 3nx19: 33 seqs
+  ✓ 3nx23: 31 seqs
+  ✓ 3nx26: 77 seqs
+  ✓ 3nx28: 24 seqs
+  ✓ 3nx29: 25 seqs
+  ✓ 3nx31: 27 seqs
+  ✓ 3nx32: 102 seqs
+  ✓ 3nx34: 112 seqs
+  ✓ 3nx35: 468 seqs
+  ✓ 3nx37: 71 seqs
+  ✓ 3nx43: 39 seqs
+  ✓ 3nx8: 90 seqs
+  ✓ 3nx9: 10 seqs
+  ✓ nx10: 54 seqs
+  ✓ nx11: 122 seqs
+  ✓ nx12: 75 seqs
+  ✓ nx13: 28 seqs
+  ✓ nx14: 111 seqs
+  ✓ nx3: 49 seqs
+  ✓ nx4: 171 seqs
+  ✓ nx5: 186 seqs
+  ✓ nx6: 27 seqs
+  ✓ nx7: 16 seqs
+  ✓ nx8: 38 seqs
+  ✓ v004: 14 seqs
+  ✓ v014: 35 seqs
+  ✓ v015: 156 seqs
+  ✓ v016: 8 seqs
+  ✓ v017: 1 seqs
+  ✓ v017: 1 seqs
+  ✓ v018: 14 seqs
+  ✓ v023: 150 seqs
+  ✓ v024: 218 seqs
+
+✅ Computed features for 46 subjects
+
+🔍 Finding optimal feature weights...
+  Ridge Regression: r = 0.701, p = 0.0000
+
+  Top 10 features:
+    1. social_min_norm: -5.7666
+    2. movement_mean: -5.3002
+    3. social_max_norm: -4.2202
+    4. circadian_max_norm: 4.0396
+    5. movement_std: -3.8168
+    6. movement_mean_norm: -3.5043
+    7. movement_std_norm: -3.4956
+    8. movement_trend: -3.4953
+    9. social_trend: -3.3319
+    10. movement_skew: 3.2008
+
+🔍 Testing weighted combinations...
+
+✅ Best weighted combination:
+   Weights: (0, 0, 0, 0.75)
+   r = 0.150
+
+📊 Four-Dimension Correlations (Optimized):
+   circadian    (w=0.00): r = -0.061, p = 0.6869 
+   task         (w=0.00): r = -0.095, p = 0.5280 
+   movement     (w=0.00): r = -0.102, p = 0.4985 
+   social       (w=0.75): r =  0.150, p = 0.3200 
+
+📊 Creating enhanced visualizations...
+  ✓ Saved: outputs/enhanced_analysis.png
+
+✅ Enhanced analysis completed!
+   Best correlation: r = 0.701
+================================================================================

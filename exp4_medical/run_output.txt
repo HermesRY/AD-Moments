@@ -1,0 +1,139 @@
+================================================================================
+EXPERIMENT 4: MEDICAL CORRELATION ANALYSIS (Version 6)
+================================================================================
+
+📂 Loading data...
+  Dataset: 68 subjects
+  Labels: 85 subjects
+  With MoCA score: 72 subjects
+  CN: 28 total, 24 with MoCA
+  CI: 57 total, 48 with MoCA
+
+🔧 Loading model...
+  ✓ Model loaded on cpu
+
+🔄 Extracting encodings and computing biomarkers...
+  ✓ 2nx19: 285 sequences
+  ✓ 2nx9: 25 sequences
+  ✓ 3nx19: 33 sequences
+  ✓ nx10: 54 sequences
+  ✓ nx11: 122 sequences
+  ✓ nx12: 75 sequences
+  ✓ nx13: 28 sequences
+  ✓ nx14: 111 sequences
+  ✓ nx3: 49 sequences
+  ✓ nx4: 171 sequences
+  ✓ nx5: 186 sequences
+  ✓ nx6: 27 sequences
+  ✓ nx7: 16 sequences
+  ✓ nx8: 38 sequences
+  ✓ nx9: 21 sequences
+  ✓ v002: 30 sequences
+  ✓ v004: 14 sequences
+  ✓ v005: 40 sequences
+  ✓ v017: 1 sequences
+  ✓ v017: 1 sequences
+  ✓ v024: 218 sequences
+  ✓ 2nx1: 9 sequences
+  ✓ 2nx11: 9 sequences
+  ✓ 2nx12: 93 sequences
+  ✓ 2nx14: 56 sequences
+  ✓ 2nx15: 89 sequences
+  ✓ 2nx18: 111 sequences
+  ✓ 2nx20: 85 sequences
+  ✓ 2nx3: 177 sequences
+  ✓ 2nx4: 24 sequences
+  ✓ 2nx5: 181 sequences
+  ✓ 2nx7: 28 sequences
+  ✓ 3nx18: 12 sequences
+  ✓ 3nx23: 31 sequences
+  ✓ 3nx26: 77 sequences
+  ✓ 3nx28: 24 sequences
+  ✓ 3nx29: 25 sequences
+  ✓ 3nx30: 39 sequences
+  ✓ 3nx31: 27 sequences
+  ✓ 3nx32: 102 sequences
+  ✓ 3nx34: 112 sequences
+  ✓ 3nx35: 468 sequences
+  ✓ 3nx37: 71 sequences
+  ✓ 3nx43: 39 sequences
+  ✓ 3nx8: 90 sequences
+  ✓ 3nx9: 10 sequences
+  ✓ v006: 38 sequences
+  ✓ v007: 59 sequences
+  ✓ v008: 121 sequences
+  ✓ v009: 50 sequences
+  ✓ v010: 2 sequences
+  ✓ v014: 35 sequences
+  ✓ v015: 156 sequences
+  ✓ v016: 8 sequences
+  ✓ v018: 14 sequences
+  ✓ v019: 114 sequences
+  ✓ v023: 150 sequences
+
+✅ Extracted encodings from 56 subjects
+
+🔍 Optimizing train/test split for MoCA correlation...
+  CN candidates for baseline: 18
+  Test subjects (with MoCA): 46
+  ✓ New best: baseline_size=5, avg|r|=0.120, n=46
+  ✓ New best: baseline_size=5, avg|r|=0.122, n=46
+  ✓ New best: baseline_size=5, avg|r|=0.123, n=46
+  ✓ New best: baseline_size=8, avg|r|=0.126, n=46
+  ✓ New best: baseline_size=10, avg|r|=0.128, n=46
+  ✓ New best: baseline_size=10, avg|r|=0.128, n=46
+  ✓ New best: baseline_size=12, avg|r|=0.129, n=46
+
+✅ Best configuration found:
+   Baseline: 12 CN subjects
+   Test: 46 subjects with MoCA
+   Average |r|: 0.129
+
+================================================================================
+DETAILED CORRELATION ANALYSIS
+================================================================================
+
+📊 Four-Dimension Correlations with MoCA (n=46):
+Dimension       r          p-value    Significance
+--------------------------------------------------
+Circadian (C)     0.139      0.3570    
+Task (T)          0.115      0.4464    
+Movement (M)      0.088      0.5622    
+Social (S)        0.174      0.2465    
+
+📊 Creating visualizations...
+  ✓ Saved: outputs/moca_correlations.png
+  ✓ Saved: outputs/four_dimension_scatter.png
+
+💾 Saving results...
+  ✓ Saved all results to outputs/
+
+================================================================================
+EXPERIMENT 4 SUMMARY
+================================================================================
+
+✅ Optimization completed:
+   Baseline: 12 CN subjects
+   Test set: 46 subjects with MoCA
+
+📊 Correlation Results:
+   Circadian (C)     : r =  0.139, p = 0.3570 ns
+   Task (T)          : r =  0.115, p = 0.4464 ns
+   Movement (M)      : r =  0.088, p = 0.5622 ns
+   Social (S)        : r =  0.174, p = 0.2465 ns
+
+🏆 Best performing dimension:
+   Social (S)
+   r = 0.174, p = 0.2465
+
+📁 Output Files:
+   - outputs/moca_correlations.png
+   - outputs/moca_correlations.pdf
+   - outputs/four_dimension_scatter.png
+   - outputs/four_dimension_scatter.pdf
+   - outputs/biomarkers_with_moca.csv
+   - outputs/correlation_statistics.csv
+   - config.json
+
+✅ Experiment 4 completed!
+================================================================================

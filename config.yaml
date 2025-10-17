@@ -1,0 +1,264 @@
+# CTMS Activity Pattern Analysis Configuration
+# Version 7.0.0
+
+# ============================================
+# Model Configuration
+# ============================================
+model:
+  checkpoint: "../../../ctms_model_medium.pth"  # Relative to experiment directories
+  d_model: 64
+  num_activities: 22  # Original 22 activity classes (no compression)
+  device: "cpu"  # Use "cuda" if GPU available
+
+# ============================================
+# Data Configuration
+# ============================================
+data:
+  dataset_path: "../../Data/processed_dataset.pkl"
+  labels_path: "../../Data/subject_label_mapping_with_scores.csv"
+  
+  # Data statistics
+  total_subjects: 68
+  subjects_with_encodings: 57
+  cn_subjects: 21
+  ci_subjects: 36
+
+# ============================================
+# Sequence Extraction Configuration
+# ============================================
+sequences:
+  seq_len: 30      # Length of each sequence (time steps)
+  stride: 10       # Sliding window stride
+  batch_size: 32   # Batch size for model inference
+  min_sequences: 10  # Minimum sequences required per subject
+
+# ============================================
+# Experiment 1: Violin Plot Analysis
+# ============================================
+exp1_violin:
+  output_dir: "outputs"
+  alpha: 0.05  # Significance level for statistical tests
+  test: "mannwhitneyu"  # Statistical test (mannwhitneyu or ttest)
+  
+  # Visualization
+  figsize: [16, 10]
+  dpi: 300
+  colors:
+    cn: "#4A90E2"
+    ci: "#E89DAC"
+
+# ============================================
+# Experiment 2: Daily Temporal Pattern
+# ============================================
+exp2_daily:
+  output_dir: "outputs"
+  
+  # Time configuration
+  start_hour: 6.5   # 6:30 AM
+  end_hour: 19.5    # 7:30 PM
+  num_bins: 27      # Number of time bins (30-min intervals)
+  
+  # Analysis parameters
+  min_sequences_per_bin: 5
+  smoothing: true
+  confidence_level: 0.95
+  
+  # Visualization
+  figsize: [14, 8]
+  dpi: 300
+  colors:
+    cn: "#4A90E2"
+    ci: "#E89DAC"
+
+# ============================================
+# Experiment 3: Classification Analysis
+# ============================================
+exp3_classification:
+  output_dir: "outputs"
+  
+  # Train-test split
+  test_size: 0.2
+  random_state: 42
+  stratify: true
+  
+  # Cross-validation
+  cv_folds: 5
+  cv_scoring: "roc_auc"
+  
+  # Models to evaluate
+  models:
+    - "logistic_regression"
+    - "svm"
+    - "random_forest"
+    - "xgboost"
+  
+  # Hyperparameter tuning
+  grid_search: true
+  n_jobs: -1  # Use all CPUs
+  
+  # Logistic Regression parameters
+  logistic_regression:
+    C: [0.001, 0.01, 0.1, 1, 10, 100]
+    penalty: ["l2"]
+    max_iter: 1000
+    class_weight: "balanced"
+  
+  # SVM parameters
+  svm:
+    C: [0.1, 1, 10, 100]
+    kernel: ["rbf", "linear"]
+    gamma: ["scale", "auto"]
+    class_weight: "balanced"
+  
+  # Random Forest parameters
+  random_forest:
+    n_estimators: [50, 100, 200]
+    max_depth: [None, 10, 20, 30]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+    class_weight: "balanced"
+  
+  # XGBoost parameters
+  xgboost:
+    n_estimators: [50, 100, 200]
+    max_depth: [3, 5, 7, 10]
+    learning_rate: [0.01, 0.1, 0.3]
+    subsample: [0.8, 1.0]
+    scale_pos_weight: 1.7  # CI/CN ratio for imbalance
+  
+  # Visualization
+  figsize: [16, 12]
+  dpi: 300
+
+# ============================================
+# Experiment 4: Clinical Correlation Analysis
+# ============================================
+exp4_medical:
+  output_dir: "outputs"
+  
+  # Clinical scores to analyze
+  target_scores:
+    - "MoCA Score"
+    - "ZBI Score"
+    - "DSS Score"
+    - "FAS Score"
+  
+  # Primary analysis target
+  primary_target: "MoCA Score"
+  
+  # Feature engineering
+  feature_engineering:
+    enabled: true
+    
+    # Feature types to extract (per dimension)
+    norm_features:
+      - "mean_norm"
+      - "std_norm"
+      - "max_norm"
+      - "min_norm"
+    
+    statistical_features:
+      - "mean"
+      - "std"
+      - "skew"
+      - "kurtosis"
+    
+    temporal_features:
+      - "variability"
+      - "trend"
+  
+  # Ridge Regression parameters
+  ridge_regression:
+    alpha: 1.0  # L2 regularization strength
+    fit_intercept: true
+    normalize: false  # Data will be pre-scaled
+  
+  # Data preprocessing
+  preprocessing:
+    imputer_strategy: "median"  # For handling NaN values
+    scaler: "standard"  # StandardScaler
+  
+  # Baseline optimization (for simple biomarker method)
+  baseline_optimization:
+    enabled: true
+    baseline_sizes: [5, 8, 10, 12, 15, "all"]
+    trials_per_size: 20
+    metric: "avg_abs_r"  # Average absolute correlation
+  
+  # Visualization
+  figsize: [20, 12]
+  dpi: 300
+  table_dpi: 300
+
+# ============================================
+# Shared Utilities Configuration
+# ============================================
+utils:
+  # Random seed for reproducibility
+  random_seed: 42
+  
+  # Logging
+  log_level: "INFO"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # Progress bars
+  use_tqdm: true
+  tqdm_disable: false
+
+# ============================================
+# Output Configuration
+# ============================================
+output:
+  # File formats
+  image_formats:
+    - "png"
+    - "pdf"
+  
+  # Image quality
+  dpi: 300
+  bbox_inches: "tight"
+  
+  # Data formats
+  csv_index: false
+  json_indent: 2
+  
+  # Compression
+  compress_large_files: false
+
+# ============================================
+# Computational Resources
+# ============================================
+compute:
+  # Device selection
+  use_gpu: false  # Set to true if CUDA available
+  gpu_id: 0
+  
+  # Multiprocessing
+  num_workers: 4
+  use_multiprocessing: false  # For data loading
+  
+  # Memory management
+  max_memory_gb: 8
+  clear_cache: true
+
+# ============================================
+# Validation & Quality Control
+# ============================================
+quality_control:
+  # Minimum data requirements
+  min_subjects: 20
+  min_sequences_per_subject: 10
+  min_sequence_length: 30
+  
+  # Data quality checks
+  check_missing_values: true
+  check_outliers: true
+  outlier_threshold: 3  # Standard deviations
+  
+  # Result validation
+  check_significance: true
+  min_sample_size: 10  # For statistical tests
+  
+  # Reproducibility
+  set_all_seeds: true
+  deterministic: true

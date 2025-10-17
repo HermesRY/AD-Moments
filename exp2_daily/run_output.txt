@@ -1,0 +1,2 @@
+/Users/hermes/Desktop/AD-Moments/New_Code/Version5/exp2_weekly/run_weekly_anomalies.py:125: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:256.)
+  hours = torch.tensor([seq['hour'].values for seq in batch],
