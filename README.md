@@ -66,15 +66,6 @@ This repository contains the implementation of a multi-dimensional activity patt
 
 ## 💻 System Requirements
 
-### Hardware
-- **Minimum**: 4 GB RAM, 2 GB disk space
-- **Recommended**: 8+ GB RAM, 5 GB disk space
-
-### Software
-- **Python**: 3.8 or higher
-- **Operating System**: macOS, Linux, or Windows with WSL
-- **CUDA** (optional): For GPU acceleration
-
 ### Dependencies
 ```
 torch >= 1.9.0
