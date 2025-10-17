@@ -1,7 +1,3 @@
-"""
-创建专业的临床相关性表格 - 类似 Table 4 的格式
-"""
-
 import sys
 sys.path.append('/Users/hermes/Desktop/AD-Moments/New_Code/Code')
 
@@ -16,31 +12,33 @@ print("=" * 80)
 print("Creating Professional Correlation Table")
 print("=" * 80)
 
-# 加载数据
+# 📂 Load data
 print("\n📂 Loading data...")
 
-# 从之前的 all_features.csv 加载
+# Load from the previous all_features.csv
 df = pd.read_csv('outputs/all_features.csv')
 
-# 加载完整的标签数据获取其他临床评分
+# Load full label data to obtain other clinical scores
 label_df = pd.read_csv('/Users/hermes/Desktop/AD-Moments/New_Code/Data/subject_label_mapping_with_scores.csv')
 
 def normalize_id(sid):
     return str(sid).strip().lower().replace('-', '').replace('_', '')
 
-# 合并数据
+# Merge data
 label_df['normalized_id'] = label_df['subject_id'].apply(normalize_id)
 df['normalized_id'] = df['subject_id'].apply(normalize_id)
 
-# 合并获取所有评分
-merged = df.merge(label_df[['normalized_id', 'MoCA Score', 'ZBI Score', 'DSS Score', 'FAS Score']], 
-                  on='normalized_id', how='left')
+# Merge to get all scores
+merged = df.merge(
+    label_df[['normalized_id', 'MoCA Score', 'ZBI Score', 'DSS Score', 'FAS Score']],
+    on='normalized_id', how='left'
+)
 
-# 使用四个简单的生物标志物（与之前版本一致）
+# Use the four simple biomarkers (consistent with earlier versions)
 merged['TIR'] = merged['task_mean_norm']
 merged['CDI'] = merged['circadian_mean_norm']
 merged['SWS'] = merged['social_mean_norm']
-merged['ME'] = merged['movement_mean_norm']
+merged['ME']  = merged['movement_mean_norm']
 
 print(f"  Total subjects: {len(merged)}")
 print(f"  Subjects with MoCA: {merged['MoCA Score'].notna().sum()}")
@@ -49,11 +47,11 @@ print(f"  Subjects with DSS: {merged['DSS Score'].notna().sum()}")
 print(f"  Subjects with FAS: {merged['FAS Score'].notna().sum()}")
 
 # ============================================================================
-# 计算相关性
+# Compute correlations
 # ============================================================================
 print("\n🔍 Computing correlations...")
 
-# 临床评估指标
+# Clinical assessment metrics
 clinical_measures = [
     ('MoCA Score', 'MoCA Score [26] (Cognitive Function)'),
     ('ZBI Score', 'ZBI Score [46] (Caregiver Burden)'),
@@ -61,18 +59,18 @@ clinical_measures = [
     ('FAS Score', 'FAS Score [40] (Functional Assessment)')
 ]
 
-# 生物标志物
+# Biomarkers
 biomarkers = [
     ('TIR', 'Task Incompletion Rate (TIR)'),
     ('CDI', 'Circadian Disruption Index (CDI)'),
     ('SWS', 'Social Withdrawal Score (SWS)'),
-    ('ME', 'Movement Entropy (ME)')
+    ('ME',  'Movement Entropy (ME)')
 ]
 
-# 存储结果
+# Store results
 results = []
 
-# 1. 先计算临床指标之间的相关性（可选，用于展示一致性）
+# 1) Inter-correlations among clinical measures (optional; for consistency check)
 print("\n📊 Clinical measure intercorrelations:")
 for col, name in clinical_measures:
     for other_col, other_name in clinical_measures:
@@ -83,15 +81,15 @@ for col, name in clinical_measures:
             r, p = stats.pearsonr(valid[col], valid[other_col])
             print(f"  {col} vs {other_col}: r={r:.3f}, p={p:.4f}, n={len(valid)}")
 
-# 2. 计算生物标志物与临床指标的相关性
+# 2) Correlations between biomarkers and clinical measures
 print("\n📊 Biomarker correlations with clinical measures:")
 for clin_col, clin_name in clinical_measures:
     for bio_col, bio_name in biomarkers:
         valid = merged[[clin_col, bio_col]].dropna()
         if len(valid) > 2:
             r, p = stats.pearsonr(valid[clin_col], valid[bio_col])
-            
-            # 确定显著性
+
+            # Significance stars
             if p < 0.001:
                 sig = '***'
             elif p < 0.01:
@@ -116,32 +114,30 @@ for clin_col, clin_name in clinical_measures:
 results_df = pd.DataFrame(results)
 
 # ============================================================================
-# 创建专业表格图
+# Create professional table figure (basic)
 # ============================================================================
 print("\n📊 Creating professional table visualization...")
 
 fig, ax = plt.subplots(figsize=(14, 10))
 ax.axis('off')
 
-# 表格数据
+# Table data
 table_data = []
 
-# 标题行
+# Header row
 header = ['Clinical Measure', 'Pearson r', 'p-value']
 table_data.append(header)
 
-# 添加每个临床指标的数据
+# Add each clinical measure’s aggregated data
 for clin_col, clin_name in clinical_measures:
-    # 找到对应的结果
     subset = results_df[results_df['clinical_measure'] == clin_name]
-    
     if len(subset) > 0:
-        # 计算该临床指标的平均相关性
+        # Average absolute r across biomarkers for this clinical measure
         avg_r = subset['r'].abs().mean()
         avg_p = subset['p'].mean()
         n_samples = subset['n'].iloc[0]
         
-        # 显著性
+        # Significance for the averaged p
         if avg_p < 0.001:
             sig = '***'
         elif avg_p < 0.01:
@@ -153,11 +149,11 @@ for clin_col, clin_name in clinical_measures:
         
         table_data.append([clin_name, f'{avg_r:.3f} {sig}', f'{avg_p:.4f}'])
 
-# 添加分隔行
+# Separator rows
 table_data.append(['', '', ''])
 table_data.append(['Individual biomarker correlations with MoCA:', '', ''])
 
-# 添加单个生物标志物与 MoCA 的相关性
+# Add single biomarker vs MoCA rows
 moca_results = results_df[results_df['clinical_measure'] == 'MoCA Score [26] (Cognitive Function)']
 for _, row in moca_results.iterrows():
     table_data.append([
@@ -166,55 +162,59 @@ for _, row in moca_results.iterrows():
         f"{row['p']:.4f}"
     ])
 
-# 创建表格
-table = ax.table(cellText=table_data, 
-                cellLoc='left',
-                loc='center',
-                bbox=[0, 0, 1, 1])
+# Build table
+table = ax.table(
+    cellText=table_data,
+    cellLoc='left',
+    loc='center',
+    bbox=[0, 0, 1, 1]
+)
 
 table.auto_set_font_size(False)
 table.set_fontsize(11)
 
-# 样式设置
+# Styling
 for i, row in enumerate(table_data):
     for j in range(len(row)):
         cell = table[(i, j)]
-        
-        # 标题行
+        # Header
         if i == 0:
             cell.set_facecolor('#2C3E50')
+            cell.set_textProps = cell.set_text_props  # compatibility alias
             cell.set_text_props(weight='bold', color='white', fontsize=13)
             cell.set_height(0.08)
-        # 子标题行
+        # Blank spacer line just after clinical rows
         elif i == len(clinical_measures) + 1:
             cell.set_facecolor('white')
             cell.set_height(0.05)
+        # Subsection title
         elif i == len(clinical_measures) + 2:
             cell.set_facecolor('#ECF0F1')
             cell.set_text_props(weight='bold', fontsize=12, style='italic')
             cell.set_height(0.08)
-        # 临床指标行（突出显示）
+        # Clinical measure rows (highlight)
         elif i <= len(clinical_measures):
             cell.set_facecolor('#E8F4F8')
             cell.set_text_props(weight='bold')
             cell.set_height(0.07)
-        # 生物标志物行
+        # Biomarker rows
         else:
             if i % 2 == 0:
                 cell.set_facecolor('white')
             else:
                 cell.set_facecolor('#F9F9F9')
             cell.set_height(0.06)
-        
-        # 边框
+        # Borders
         cell.set_edgecolor('#BDC3C7')
         cell.set_linewidth(1.5)
 
-# 添加标题
-plt.title('Table 4: Correlation with Clinical Assessments', 
-         fontsize=18, fontweight='bold', pad=20, loc='left')
+# Title
+plt.title(
+    'Table 4: Correlation with Clinical Assessments',
+    fontsize=18, fontweight='bold', pad=20, loc='left'
+)
 
-# 添加注释
+# Notes
 note_text = (
     "*** p < 0.001, ** p < 0.01, * p < 0.05\n"
     f"Sample sizes: MoCA n={moca_results['n'].iloc[0]}, "
@@ -224,24 +224,24 @@ note_text = (
     "Biomarkers computed from CTMS model encodings using Ridge Regression feature engineering"
 )
 
-plt.figtext(0.1, 0.02, note_text, fontsize=9, style='italic', 
-           wrap=True, ha='left', color='#555555')
+plt.figtext(0.1, 0.02, note_text, fontsize=9, style='italic',
+            wrap=True, ha='left', color='#555555')
 
 plt.tight_layout()
-plt.savefig('outputs/table4_correlations.png', dpi=300, bbox_inches='tight', 
-           facecolor='white', edgecolor='none')
+plt.savefig('outputs/table4_correlations.png', dpi=300, bbox_inches='tight',
+            facecolor='white', edgecolor='none')
 plt.savefig('outputs/table4_correlations.pdf', bbox_inches='tight',
-           facecolor='white', edgecolor='none')
+            facecolor='white', edgecolor='none')
 print("  ✓ Saved: outputs/table4_correlations.png")
 print("  ✓ Saved: outputs/table4_correlations.pdf")
 plt.close()
 
 # ============================================================================
-# 创建增强版：包含 Ridge Regression 结果
+# Enhanced version: includes Ridge Regression results
 # ============================================================================
 print("\n📊 Creating enhanced table with Ridge results...")
 
-# 加载 Ridge 结果
+# Load Ridge results
 import json
 with open('outputs/enhanced_results.json', 'r') as f:
     ridge_results = json.load(f)
@@ -249,27 +249,26 @@ with open('outputs/enhanced_results.json', 'r') as f:
 fig, ax = plt.subplots(figsize=(14, 12))
 ax.axis('off')
 
-# 增强表格数据
+# Enhanced table data
 table_data_enhanced = []
 
-# 标题行
+# Header row
 header = ['Clinical Measure / Biomarker', 'Pearson r', 'p-value', 'Method']
 table_data_enhanced.append(header)
 
-# === Part 1: 临床评估与综合生物标志物 ===
+# === Part 1: Clinical assessments vs composite biomarker ===
 table_data_enhanced.append(['CLINICAL ASSESSMENTS vs COMPOSITE BIOMARKER', '', '', ''])
 
 for clin_col, clin_name in clinical_measures:
     subset = results_df[results_df['clinical_measure'] == clin_name]
-    
     if len(subset) > 0:
-        # 对于 MoCA，使用 Ridge 的结果
+        # For MoCA, use Ridge results
         if 'MoCA' in clin_name:
             r_val = ridge_results['ridge_regression']['r']
             p_val = ridge_results['ridge_regression']['p']
             method = 'Ridge Regression'
         else:
-            # 对于其他指标，使用平均值
+            # For others, use the mean across biomarkers
             r_val = subset['r'].mean()
             p_val = subset['p'].mean()
             method = 'Mean of biomarkers'
@@ -290,10 +289,10 @@ for clin_col, clin_name in clinical_measures:
             method
         ])
 
-# 分隔
+# Separator
 table_data_enhanced.append(['', '', '', ''])
 
-# === Part 2: MoCA 与单个生物标志物 ===
+# === Part 2: MoCA vs individual biomarkers ===
 table_data_enhanced.append(['INDIVIDUAL BIOMARKERS vs MoCA', '', '', ''])
 
 for bio_col, bio_name in biomarkers:
@@ -301,12 +300,10 @@ for bio_col, bio_name in biomarkers:
         (results_df['clinical_measure'] == 'MoCA Score [26] (Cognitive Function)') &
         (results_df['biomarker'] == bio_name)
     ]
-    
     if len(row_data) > 0:
         r_val = row_data['r'].iloc[0]
         p_val = row_data['p'].iloc[0]
         sig = row_data['sig'].iloc[0]
-        
         table_data_enhanced.append([
             f"  {bio_name}",
             f'{r_val:.3f} {sig}',
@@ -326,60 +323,62 @@ table_data_enhanced.append([
     'Ridge Regression'
 ])
 
-# 创建表格
-table = ax.table(cellText=table_data_enhanced, 
-                cellLoc='left',
-                loc='center',
-                bbox=[0, 0, 1, 1])
+# Build enhanced table
+table = ax.table(
+    cellText=table_data_enhanced,
+    cellLoc='left',
+    loc='center',
+    bbox=[0, 0, 1, 1]
+)
 
 table.auto_set_font_size(False)
 table.set_fontsize(10)
 
-# 样式设置
+# Styling
 section_rows = [0, 1, len(clinical_measures) + 3, len(clinical_measures) + len(biomarkers) + 5]
 
 for i, row in enumerate(table_data_enhanced):
     for j in range(len(row)):
         cell = table[(i, j)]
-        
-        # 标题行
+        # Header
         if i == 0:
             cell.set_facecolor('#1A5490')
             cell.set_text_props(weight='bold', color='white', fontsize=12)
             cell.set_height(0.06)
-        # 章节标题
+        # Section titles
         elif i in section_rows:
             cell.set_facecolor('#34495E')
             cell.set_text_props(weight='bold', color='white', fontsize=11)
             cell.set_height(0.06)
-        # 空行
+        # Blank spacer lines
         elif all(c == '' for c in row):
             cell.set_facecolor('white')
             cell.set_height(0.03)
             cell.set_edgecolor('white')
-        # MoCA with Ridge (高亮)
+        # Highlight MoCA with Ridge
         elif 'MoCA' in row[0] and 'Ridge' in row[3]:
-            cell.set_facecolor('#D5F4E6')  # 浅绿色
+            cell.set_facecolor('#D5F4E6')  # light green
             cell.set_text_props(weight='bold')
             cell.set_height(0.06)
-        # 其他数据行
+        # Other data rows
         else:
             if i % 2 == 0:
                 cell.set_facecolor('#F8F9FA')
             else:
                 cell.set_facecolor('white')
             cell.set_height(0.05)
-        
-        # 边框
+        # Borders
         if not all(c == '' for c in row):
             cell.set_edgecolor('#BDC3C7')
             cell.set_linewidth(1)
 
-# 添加标题
-plt.title('Table 4: Comprehensive Clinical Correlation Analysis', 
-         fontsize=20, fontweight='bold', pad=20, loc='left')
+# Title
+plt.title(
+    'Table 4: Comprehensive Clinical Correlation Analysis',
+    fontsize=20, fontweight='bold', pad=20, loc='left'
+)
 
-# 添加注释
+# Notes
 note_text = (
     "*** p < 0.001, ** p < 0.01, * p < 0.05\n"
     f"Sample size: n = 46 subjects with complete data\n"
@@ -387,34 +386,34 @@ note_text = (
     "Simple correlations use mean_norm of each dimension"
 )
 
-plt.figtext(0.1, 0.02, note_text, fontsize=9, style='italic', 
-           wrap=True, ha='left', color='#555555')
+plt.figtext(0.1, 0.02, note_text, fontsize=9, style='italic',
+            wrap=True, ha='left', color='#555555')
 
 plt.tight_layout()
-plt.savefig('outputs/table4_enhanced.png', dpi=300, bbox_inches='tight', 
-           facecolor='white', edgecolor='none')
+plt.savefig('outputs/table4_enhanced.png', dpi=300, bbox_inches='tight',
+            facecolor='white', edgecolor='none')
 plt.savefig('outputs/table4_enhanced.pdf', bbox_inches='tight',
-           facecolor='white', edgecolor='none')
+            facecolor='white', edgecolor='none')
 print("  ✓ Saved: outputs/table4_enhanced.png")
 print("  ✓ Saved: outputs/table4_enhanced.pdf")
 plt.close()
 
 # ============================================================================
-# 保存CSV格式的表格数据
+# Save CSV versions of the table data
 # ============================================================================
 print("\n💾 Saving table data...")
 
-# 基础表格
+# Basic table
 basic_table = pd.DataFrame(table_data[1:], columns=table_data[0])
 basic_table.to_csv('outputs/table4_basic.csv', index=False)
 print("  ✓ Saved: outputs/table4_basic.csv")
 
-# 增强表格
+# Enhanced table
 enhanced_table = pd.DataFrame(table_data_enhanced[1:], columns=table_data_enhanced[0])
 enhanced_table.to_csv('outputs/table4_enhanced.csv', index=False)
 print("  ✓ Saved: outputs/table4_enhanced.csv")
 
-# 原始相关性数据
+# Raw correlation results
 results_df.to_csv('outputs/all_correlations.csv', index=False)
 print("  ✓ Saved: outputs/all_correlations.csv")
 

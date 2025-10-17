@@ -44,34 +44,6 @@ Each subject's `data` DataFrame must contain the following columns:
 | `day_of_week` | int | Day of week | 0-6 (Mon-Sun) |
 | `timestamp` | datetime | Event timestamp | ISO format (optional) |
 
-### Activity Classes (action_label)
-
-The 22 activity classes should follow this encoding:
-
-| ID | Activity | Category |
-|----|----------|----------|
-| 0 | Lying | Rest |
-| 1 | Sitting | Sedentary |
-| 2 | Standing | Static |
-| 3 | Walking | Movement |
-| 4 | Running | Movement |
-| 5 | Turning | Movement |
-| 6 | Eating | ADL |
-| 7 | Drinking | ADL |
-| 8 | Cooking | ADL |
-| 9 | Cleaning | ADL |
-| 10 | Washing | ADL |
-| 11 | Toileting | ADL |
-| 12 | Reading | Cognitive |
-| 13 | Writing | Cognitive |
-| 14 | Watching TV | Leisure |
-| 15 | Listening Music | Leisure |
-| 16 | Talking | Social |
-| 17 | Phone Call | Social |
-| 18 | Visiting | Social |
-| 19 | Shopping | IADL |
-| 20 | Gardening | IADL |
-| 21 | Other | Misc |
 
 ### Example
 
