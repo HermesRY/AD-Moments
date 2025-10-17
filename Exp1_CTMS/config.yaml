@@ -1,0 +1,59 @@
+# Experiment 1 (CTMS Violin) configuration — publication-facing version
+# Dataset
+dataset_path: ../sample_data/dataset_one_month.jsonl
+num_activities: 22
+
+# CTMS model
+ctms:
+  d_model: 64
+  alpha: [0.25, 0.25, 0.25, 0.25]  # [C, T, M, S]
+
+# Sliding window over action sequences
+window:
+  seq_len: 30
+  stride: 10
+  batch: 64
+  batch_cuda: 256
+
+# CN training subjects (fixed for public release)
+split_search:
+  cn_train_ids: [8, 16, 35, 41, 46, 47, 48, 49]
+  # For exploratory split search, use Exp1_CTMS/Exp1_backup/run_exp1_ctms_with_split_search.py
+
+# Subject filtering
+filter:
+  min_windows: 1
+  exclude_outliers: false
+  outlier_threshold: 3.0
+  min_cn_test: 10
+  min_ci_test: 10
+  drop_subjects:
+    CN: []
+    CI: []
+  balance:
+    seed: 42
+    match_ci_to_cn: true
+
+# Plot
+plot:
+  dims: [Circadian, Task, Movement, Social]
+  outfile: exp1_ctms_violin.png
+  title_prefix: CTMS Violin
+  dimension_colors:
+    Circadian: "#7FB3FF"
+    Task: "#F5A6B8"
+    Movement: "#A3E1B7"
+    Social: "#F8D07A"
+  cn_marker_color: "#2ECC71"
+  ci_marker_color: "#E74C3C"
+  marker_edge_color: "#1B1B1B"
+  violin_alpha: 0.65
+
+# Outputs
+outputs:
+  dir: outputs
+  stats_csv: exp1_ctms_statistics.csv
+  chosen_ids_json: chosen_cn_train_ids.json
+  config_used_json: exp1_config_used.json
+  subject_z_csv: exp1_subject_z_scores.csv
+  best_summary_json: exp1_best_summary.json

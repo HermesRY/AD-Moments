@@ -1,0 +1,52 @@
+# Experiment 3 (CTMS Classification) configuration — public release
+# Dataset
+dataset_path: ../sample_data/dataset_one_month.jsonl
+num_activities: 22
+
+# CTMS encoder
+ctms:
+  d_model: 64
+  alpha: [0.29, 0.30, 0.23, 0.18]  # [Circadian, Task, Movement, Social]
+
+# Sliding window over action sequences
+window:
+  seq_len: 30
+  stride: 10
+  batch: 64
+  batch_cuda: 256
+
+# CN training cohort for baseline calibration
+split:
+  cn_train_ids: [8, 16, 35, 41, 46, 47, 48, 49]
+
+# Subject filtering and evaluation cohorts
+filter:
+  min_windows: 5
+  drop_subjects:
+    CN: [18, 42, 43, 40]
+    CI: []
+  min_cn_eval: 6
+  min_ci_eval: 12
+
+# Scoring configuration
+scoring:
+  use_abs_z: false
+  personal_fraction: 0.2       # first 20% windows build personal baseline
+  personal_min_windows: 15     # require at least 15 windows to form personal baseline
+  min_windows_per_subject: 8   # discard subjects with fewer windows
+  window_threshold: 1.4        # anomaly if score exceeds this value
+  daytime_only: true           # discard windows outside daylight hours
+  daytime_hours: [8.0, 19.0]
+  classification_feature: anomaly_rate
+
+# Classification settings
+classification:
+  threshold_percentiles: [20, 25, 30, 35, 40, 45, 50, 55, 60]
+  summary_json: exp3_classification_summary.json
+  per_subject_csv: exp3_classification_subject_metrics.csv
+  figure: exp3_score_distribution.png
+  threshold_metrics_csv: exp3_threshold_metrics.csv
+
+# Outputs
+outputs:
+  dir: outputs

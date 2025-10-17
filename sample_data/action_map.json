@@ -1,0 +1,23 @@
+{
+  "cleaning": 0,
+  "communicating_or_socializing": 1,
+  "doing_some_action_not_listed": 2,
+  "dressing_or_undressing": 3,
+  "drinking": 4,
+  "exercising": 5,
+  "handling_objects": 6,
+  "no_one_or_senior_not_present": 7,
+  "rubbing_hands": 8,
+  "sitting": 9,
+  "sleeping_or_lying": 10,
+  "smoking": 11,
+  "standing": 12,
+  "static_action": 13,
+  "stretching_or_yawning": 14,
+  "taking_medicine_or_eating": 15,
+  "touching_head_or_grooming": 16,
+  "transitioning_from_sitting_or_lying": 17,
+  "using_phone": 18,
+  "walking": 19,
+  "watching_TV": 20
+}

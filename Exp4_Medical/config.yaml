@@ -1,0 +1,51 @@
+# Experiment 4 (Medical Correlation) configuration — clean release
+
+# Core dataset locations
+dataset_path: ../sample_data/dataset_one_month.jsonl
+subject_metadata: ../sample_data/subjects_public.json
+num_activities: 22
+random_seed: 5
+
+# CTMS encoder parameters
+ctms:
+  d_model: 64
+  alpha: [0.5, 0.0, 0.0, 0.5]  # [Circadian, Task, Movement, Social]
+
+# Sliding window specification
+window:
+  seq_len: 30
+  stride: 10
+  batch: 64
+  batch_cuda: 256
+
+# CN baseline cohort used to construct CTMS reference statistics
+split:
+  cn_baseline_ids: [8, 16, 35, 41, 46, 47, 48, 49]
+
+# Subject-level filtering
+filter:
+  min_windows: 4            # discard subjects with fewer raw windows
+  min_subject_windows: 8    # require at least this many windows after filtering
+  drop_subjects:
+    CN: [18, 40, 42, 43]
+    CI: [4, 24, 28, 31]
+  daytime_only: false
+  daytime_hours: [8.0, 19.0]
+
+# Scoring knobs
+scoring:
+  use_abs_z: true          # use magnitude of deviation (set false for signed mean z-score)
+  score_statistic: median  # aggregate window z-scores via mean (options: mean, median)
+
+# Medical score handling
+medical:
+  scores: [moca, zbi, dss, fas]
+  min_samples: 8           # require N subjects with valid score before reporting correlation
+
+# Output artefacts
+outputs:
+  dir: outputs
+  summary_json: exp4_medical_correlations.json
+  subject_csv: exp4_medical_subject_metrics.csv
+  figure: exp4_medical_correlations.png
+  figure_pdf: exp4_medical_correlations.pdf

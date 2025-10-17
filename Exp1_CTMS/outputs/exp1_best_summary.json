@@ -1,0 +1,22 @@
+{
+  "score": 3.9993718028757,
+  "cn_train_size": 8,
+  "min_windows": 1,
+  "outlier_threshold": 3.0,
+  "used_cn": 13,
+  "used_ci": 13,
+  "title": "CTMS Violin (n=26; CN-train=8; minW=1; thr=3.0; sep=3.999)",
+  "subject_count": 26,
+  "figure": "exp1_ctms_violin.png",
+  "stats_csv": "exp1_ctms_statistics.csv",
+  "cn_train_ids": [
+    8,
+    16,
+    35,
+    41,
+    46,
+    47,
+    48,
+    49
+  ]
+}

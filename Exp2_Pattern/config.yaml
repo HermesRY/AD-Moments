@@ -1,0 +1,55 @@
+# Experiment 2 (Daily Pattern) configuration — public release
+# Dataset
+dataset_path: ../sample_data/dataset_one_month.jsonl
+num_activities: 22
+
+# CTMS encoder
+ctms:
+  d_model: 64
+  alpha: [0.5, 0.3, 0.1, 0.1]  # [Circadian, Task, Movement, Social]
+
+# Sliding window over action sequences
+window:
+  seq_len: 30
+  stride: 10
+  batch: 64
+  batch_cuda: 256
+
+# CN training cohort for baseline calibration
+split:
+  cn_train_ids: [8, 16, 35, 41, 46, 47, 48, 49]
+
+# Subject filtering and evaluation cohorts
+filter:
+  min_windows: 5
+  drop_subjects:
+    CN: [18, 42, 43]
+    CI: []
+  min_cn_eval: 8
+  min_ci_eval: 12
+  balance:
+    seed: 73
+    max_cn: null
+    max_ci: null
+
+# Anomaly scoring
+anomaly:
+  use_abs_z: false
+  threshold: 0.0
+  min_windows_per_subject: 10
+
+# Temporal binning (hours of day)
+time_bins:
+  start_hour: 10.0   # 10:00
+  end_hour: 19.5    # 19:30
+  bin_minutes: 30
+
+# Outputs
+outputs:
+  dir: outputs
+  figure: exp2_daily_pattern.png
+  figure_pdf: exp2_daily_pattern.pdf
+  rates_csv: exp2_daily_pattern_rates.csv
+  summary_json: exp2_daily_pattern_summary.json
+  config_used_json: exp2_config_used.json
+  per_subject_csv: exp2_daily_pattern_subject_metrics.csv

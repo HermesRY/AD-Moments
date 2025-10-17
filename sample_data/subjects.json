@@ -1,0 +1,954 @@
+[
+  {
+    "anon_id": 1,
+    "raw_id": "2-NX-1",
+    "label": "CI",
+    "gender": "F",
+    "age": "85",
+    "status": "MCI",
+    "scores": {
+      "moca": 6.0,
+      "zbi": 16.0,
+      "dss": 5.0,
+      "fas": 44.0
+    }
+  },
+  {
+    "anon_id": 2,
+    "raw_id": "2-NX-11",
+    "label": "CI",
+    "gender": "M",
+    "age": "84",
+    "status": "MCI",
+    "scores": {
+      "moca": 17.0,
+      "zbi": 19.0,
+      "dss": 10.0,
+      "fas": 41.0
+    }
+  },
+  {
+    "anon_id": 3,
+    "raw_id": "2-NX-12",
+    "label": "CI",
+    "gender": "F",
+    "age": "74",
+    "status": "MCI",
+    "scores": {
+      "moca": 25.0,
+      "zbi": 31.0,
+      "dss": 18.0,
+      "fas": 40.0
+    }
+  },
+  {
+    "anon_id": 4,
+    "raw_id": "2-NX-14",
+    "label": "CI",
+    "gender": "F",
+    "age": "80",
+    "status": "AD",
+    "scores": {
+      "moca": 4.0,
+      "zbi": 14.0,
+      "dss": 8.0,
+      "fas": 47.0
+    }
+  },
+  {
+    "anon_id": 5,
+    "raw_id": "2-NX-15",
+    "label": "CI",
+    "gender": "M",
+    "age": "88",
+    "status": "AD",
+    "scores": {
+      "moca": 15.0,
+      "zbi": 21.0,
+      "dss": 6.0,
+      "fas": 45.0
+    }
+  },
+  {
+    "anon_id": 6,
+    "raw_id": "2-NX-16",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 7,
+    "raw_id": "2-NX-18",
+    "label": "CI",
+    "gender": "F",
+    "age": "79",
+    "status": "MCI",
+    "scores": {
+      "moca": 28.0,
+      "zbi": 19.0,
+      "dss": 8.0,
+      "fas": 65.0
+    }
+  },
+  {
+    "anon_id": 8,
+    "raw_id": "2-NX-19",
+    "label": "CN",
+    "gender": "M",
+    "age": "62",
+    "status": "Normal",
+    "scores": {
+      "moca": 30.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 9,
+    "raw_id": "2-NX-2",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 10,
+    "raw_id": "2-NX-20",
+    "label": "CI",
+    "gender": "M",
+    "age": "82",
+    "status": "AD",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 11,
+    "raw_id": "2-NX-2-2",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 12,
+    "raw_id": "2-NX-3",
+    "label": "CI",
+    "gender": "F",
+    "age": "80",
+    "status": "MCI",
+    "scores": {
+      "moca": 13.0,
+      "zbi": 34.0,
+      "dss": 13.0,
+      "fas": 58.0
+    }
+  },
+  {
+    "anon_id": 13,
+    "raw_id": "2-NX-4",
+    "label": "CI",
+    "gender": "M",
+    "age": "78",
+    "status": "MCI",
+    "scores": {
+      "moca": 14.0,
+      "zbi": 17.0,
+      "dss": 11.0,
+      "fas": 34.0
+    }
+  },
+  {
+    "anon_id": 14,
+    "raw_id": "2-NX-5",
+    "label": "CI",
+    "gender": "F",
+    "age": "77",
+    "status": "MCI",
+    "scores": {
+      "moca": 13.0,
+      "zbi": 17.0,
+      "dss": 10.0,
+      "fas": 36.0
+    }
+  },
+  {
+    "anon_id": 15,
+    "raw_id": "2-NX-7",
+    "label": "CI",
+    "gender": "F",
+    "age": "88",
+    "status": "AD",
+    "scores": {
+      "moca": 11.0,
+      "zbi": 47.0,
+      "dss": 15.0,
+      "fas": 45.0
+    }
+  },
+  {
+    "anon_id": 16,
+    "raw_id": "2-NX-9",
+    "label": "CN",
+    "gender": "M",
+    "age": "69",
+    "status": "Normal",
+    "scores": {
+      "moca": 27.0,
+      "zbi": 5.0,
+      "dss": 11.0,
+      "fas": 38.0
+    }
+  },
+  {
+    "anon_id": 17,
+    "raw_id": "3NX18",
+    "label": "CI",
+    "gender": "M",
+    "age": "83",
+    "status": "MCI",
+    "scores": {
+      "moca": 1.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 18,
+    "raw_id": "3NX19",
+    "label": "CN",
+    "gender": "F",
+    "age": "61",
+    "status": "Normal",
+    "scores": {
+      "moca": 30.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 19,
+    "raw_id": "3NX23",
+    "label": "CI",
+    "gender": "F",
+    "age": "73",
+    "status": "MCI",
+    "scores": {
+      "moca": 21.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 20,
+    "raw_id": "3NX26",
+    "label": "CI",
+    "gender": "M",
+    "age": "80",
+    "status": "MCI",
+    "scores": {
+      "moca": 23.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 21,
+    "raw_id": "3NX28",
+    "label": "CI",
+    "gender": "F",
+    "age": "77",
+    "status": "AD",
+    "scores": {
+      "moca": 7.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 22,
+    "raw_id": "3NX29",
+    "label": "CI",
+    "gender": "F",
+    "age": "83",
+    "status": "AD",
+    "scores": {
+      "moca": 3.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 23,
+    "raw_id": "3NX30",
+    "label": "CI",
+    "gender": "F",
+    "age": "82",
+    "status": "MCI",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 24,
+    "raw_id": "3NX31",
+    "label": "CI",
+    "gender": "F",
+    "age": "84",
+    "status": "AD",
+    "scores": {
+      "moca": 5.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 25,
+    "raw_id": "3NX32",
+    "label": "CI",
+    "gender": "M",
+    "age": "79",
+    "status": "MCI",
+    "scores": {
+      "moca": 19.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 26,
+    "raw_id": "3NX34",
+    "label": "CI",
+    "gender": "M",
+    "age": "80",
+    "status": "MCI",
+    "scores": {
+      "moca": 27.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 27,
+    "raw_id": "3NX35",
+    "label": "CI",
+    "gender": "F",
+    "age": "79",
+    "status": "AD",
+    "scores": {
+      "moca": 15.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 28,
+    "raw_id": "3NX37",
+    "label": "CI",
+    "gender": "M",
+    "age": "85",
+    "status": "MCI",
+    "scores": {
+      "moca": 25.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 29,
+    "raw_id": "3NX43",
+    "label": "CI",
+    "gender": "M",
+    "age": "87",
+    "status": "AD",
+    "scores": {
+      "moca": 14.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 30,
+    "raw_id": "3NX8",
+    "label": "CI",
+    "gender": "F",
+    "age": "65",
+    "status": "AD",
+    "scores": {
+      "moca": 8.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 31,
+    "raw_id": "3NX9",
+    "label": "CI",
+    "gender": "F",
+    "age": "78",
+    "status": "MCI",
+    "scores": {
+      "moca": 23.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 32,
+    "raw_id": "NX1",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 33,
+    "raw_id": "NX10",
+    "label": "CN",
+    "gender": "F",
+    "age": "64",
+    "status": "Normal",
+    "scores": {
+      "moca": 20.0,
+      "zbi": 3.0,
+      "dss": 5.0,
+      "fas": 27.0
+    }
+  },
+  {
+    "anon_id": 34,
+    "raw_id": "NX11",
+    "label": "CN",
+    "gender": "M",
+    "age": "76",
+    "status": "Normal",
+    "scores": {
+      "moca": 27.0,
+      "zbi": 9.0,
+      "dss": 10.0,
+      "fas": 41.0
+    }
+  },
+  {
+    "anon_id": 35,
+    "raw_id": "NX12",
+    "label": "CN",
+    "gender": "F",
+    "age": "76",
+    "status": "Normal",
+    "scores": {
+      "moca": 25.0,
+      "zbi": 2.0,
+      "dss": 8.0,
+      "fas": 43.0
+    }
+  },
+  {
+    "anon_id": 36,
+    "raw_id": "NX13",
+    "label": "CN",
+    "gender": "M",
+    "age": "73",
+    "status": "Normal",
+    "scores": {
+      "moca": 25.0,
+      "zbi": 0.0,
+      "dss": 13.0,
+      "fas": 11.0
+    }
+  },
+  {
+    "anon_id": 37,
+    "raw_id": "NX14",
+    "label": "CN",
+    "gender": "M",
+    "age": "71",
+    "status": "Normal",
+    "scores": {
+      "moca": 25.0,
+      "zbi": 0.0,
+      "dss": 8.0,
+      "fas": 24.0
+    }
+  },
+  {
+    "anon_id": 38,
+    "raw_id": "NX15",
+    "label": "CN",
+    "gender": "F",
+    "age": "70",
+    "status": "Normal",
+    "scores": {
+      "moca": 26.0,
+      "zbi": 6.0,
+      "dss": 5.0,
+      "fas": 35.0
+    }
+  },
+  {
+    "anon_id": 39,
+    "raw_id": "NX2",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 40,
+    "raw_id": "NX3",
+    "label": "CN",
+    "gender": "M",
+    "age": "68",
+    "status": "Normal",
+    "scores": {
+      "moca": 27.0,
+      "zbi": 20.0,
+      "dss": 14.0,
+      "fas": 49.0
+    }
+  },
+  {
+    "anon_id": 41,
+    "raw_id": "NX4",
+    "label": "CN",
+    "gender": "F",
+    "age": "77",
+    "status": "Normal",
+    "scores": {
+      "moca": 27.0,
+      "zbi": 6.0,
+      "dss": 5.0,
+      "fas": 35.0
+    }
+  },
+  {
+    "anon_id": 42,
+    "raw_id": "NX5",
+    "label": "CN",
+    "gender": "M",
+    "age": "68",
+    "status": "Normal",
+    "scores": {
+      "moca": 27.0,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 43,
+    "raw_id": "NX6",
+    "label": "CN",
+    "gender": "M",
+    "age": "70",
+    "status": "Normal",
+    "scores": {
+      "moca": 24.0,
+      "zbi": 8.0,
+      "dss": 5.0,
+      "fas": 45.0
+    }
+  },
+  {
+    "anon_id": 44,
+    "raw_id": "NX7",
+    "label": "CN",
+    "gender": "F",
+    "age": "75",
+    "status": "Normal",
+    "scores": {
+      "moca": 26.0,
+      "zbi": 10.0,
+      "dss": 6.0,
+      "fas": 25.0
+    }
+  },
+  {
+    "anon_id": 45,
+    "raw_id": "NX8",
+    "label": "CN",
+    "gender": "M",
+    "age": "90",
+    "status": "Normal",
+    "scores": {
+      "moca": 11.0,
+      "zbi": 26.0,
+      "dss": 11.0,
+      "fas": 46.0
+    }
+  },
+  {
+    "anon_id": 46,
+    "raw_id": "NX9",
+    "label": "CN",
+    "gender": "F",
+    "age": "74",
+    "status": "Normal",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 47,
+    "raw_id": "V002",
+    "label": "CN",
+    "gender": "M",
+    "age": "64",
+    "status": "Normal",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 48,
+    "raw_id": "V004",
+    "label": "CN",
+    "gender": "M",
+    "age": "62",
+    "status": "Normal",
+    "scores": {
+      "moca": 29.0,
+      "zbi": 20.0,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 49,
+    "raw_id": "V005",
+    "label": "CN",
+    "gender": "F",
+    "age": "80",
+    "status": "Normal",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 50,
+    "raw_id": "V006",
+    "label": "CI",
+    "gender": "M",
+    "age": "71",
+    "status": "MCI",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 51,
+    "raw_id": "V007",
+    "label": "CI",
+    "gender": "F",
+    "age": "73",
+    "status": "AD",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 52,
+    "raw_id": "V008",
+    "label": "CI",
+    "gender": "F",
+    "age": "75",
+    "status": "AD",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 53,
+    "raw_id": "V009",
+    "label": "CI",
+    "gender": "F",
+    "age": "83",
+    "status": "AD",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 54,
+    "raw_id": "V010",
+    "label": "CI",
+    "gender": "M",
+    "age": "66",
+    "status": "AD",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 55,
+    "raw_id": "V011",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 56,
+    "raw_id": "V012",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 57,
+    "raw_id": "V013",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 58,
+    "raw_id": "V014",
+    "label": "CI",
+    "gender": "M",
+    "age": "64",
+    "status": "AD",
+    "scores": {
+      "moca": 0.0,
+      "zbi": 38.0,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 59,
+    "raw_id": "V015",
+    "label": "CI",
+    "gender": "M",
+    "age": "88",
+    "status": "MCI",
+    "scores": {
+      "moca": 18.0,
+      "zbi": 37.0,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 60,
+    "raw_id": "V016",
+    "label": "CI",
+    "gender": "F",
+    "age": "73",
+    "status": "MCI",
+    "scores": {
+      "moca": 19.0,
+      "zbi": 33.0,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 61,
+    "raw_id": "V017",
+    "label": "CN",
+    "gender": "F",
+    "age": "81",
+    "status": "AD",
+    "scores": {
+      "moca": 6.0,
+      "zbi": 48.0,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 62,
+    "raw_id": "V018",
+    "label": "CI",
+    "gender": "F",
+    "age": "76",
+    "status": "AD",
+    "scores": {
+      "moca": 15.0,
+      "zbi": 50.0,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 63,
+    "raw_id": "V019",
+    "label": "CI",
+    "gender": "F",
+    "age": "74",
+    "status": "AD",
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 64,
+    "raw_id": "V023",
+    "label": "CI",
+    "gender": "M",
+    "age": "87",
+    "status": "MCI",
+    "scores": {
+      "moca": 18.0,
+      "zbi": 17.0,
+      "dss": 12.0,
+      "fas": 21.0
+    }
+  },
+  {
+    "anon_id": 65,
+    "raw_id": "V024",
+    "label": "CN",
+    "gender": "F",
+    "age": "76",
+    "status": "Normal",
+    "scores": {
+      "moca": 16.0,
+      "zbi": 34.0,
+      "dss": 11.0,
+      "fas": 53.0
+    }
+  },
+  {
+    "anon_id": 66,
+    "raw_id": "V025",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 67,
+    "raw_id": "V026",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  },
+  {
+    "anon_id": 68,
+    "raw_id": "V027",
+    "label": null,
+    "gender": null,
+    "age": null,
+    "status": null,
+    "scores": {
+      "moca": null,
+      "zbi": null,
+      "dss": null,
+      "fas": null
+    }
+  }
+]

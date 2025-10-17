@@ -1,0 +1,14 @@
+# Bytecode caches
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.venv_*/
+
+# Analysis notebooks checkpoints
+*.ipynb_checkpoints/
+
+# Private backups (not for public release)
+**/backup/
+**/legacy_private/
