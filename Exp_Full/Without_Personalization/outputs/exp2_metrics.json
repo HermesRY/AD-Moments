@@ -1,0 +1,12 @@
+{
+  "cn_mean": 0.3724,
+  "cn_std": 0.128,
+  "ci_mean": 0.5248,
+  "ci_std": 0.165,
+  "ci_cn_ratio": 1.409,
+  "cn_peak_hour": 19.25,
+  "ci_peak_hour": 11.75,
+  "peak_shift_hours": -7.5,
+  "t_statistic": 4.23,
+  "p_value": 0.0003
+}

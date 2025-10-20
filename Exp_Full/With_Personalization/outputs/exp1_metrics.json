@@ -1,0 +1,9 @@
+{
+  "silhouette_score": 0.365,
+  "davies_bouldin_score": 1.542,
+  "n_cn": 13,
+  "n_ci": 13,
+  "separation_score": 4.521,
+  "cn_train_size": 8,
+  "improvement_vs_without": 0.053
+}

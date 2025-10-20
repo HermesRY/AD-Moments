@@ -1,0 +1,28 @@
+Experiment,Pipeline,Metric,Value
+Exp1: Embedding,Without Personalization,Silhouette Score,0.312
+Exp1: Embedding,Without Personalization,Davies-Bouldin Score,1.685
+Exp1: Embedding,With Personalization,Silhouette Score,0.365
+Exp1: Embedding,With Personalization,Davies-Bouldin Score,1.542
+Exp2: Daily Patterns,Without Personalization,CI/CN Ratio,1.409×
+Exp2: Daily Patterns,Without Personalization,P-value,<0.001***
+Exp2: Daily Patterns,Without Personalization,CN Mean Score,0.372
+Exp2: Daily Patterns,Without Personalization,CI Mean Score,0.525
+Exp2: Daily Patterns,With Personalization,CI/CN Ratio,1.537×
+Exp2: Daily Patterns,With Personalization,P-value,<0.001***
+Exp2: Daily Patterns,With Personalization,CN Mean Score,0.398
+Exp2: Daily Patterns,With Personalization,CI Mean Score,0.612
+Exp3: Classification,Without Personalization,F1 Score,0.800
+Exp3: Classification,Without Personalization,Sensitivity,88.9%
+Exp3: Classification,Without Personalization,Specificity,25.0%
+Exp3: Classification,Without Personalization,Precision,72.7%
+Exp3: Classification,Without Personalization,CI/CN Ratio,0.936×
+Exp3: Classification,With Personalization,F1 Score,0.824
+Exp3: Classification,With Personalization,Sensitivity,87.5%
+Exp3: Classification,With Personalization,Specificity,33.3%
+Exp3: Classification,With Personalization,Precision,77.8%
+Exp3: Classification,With Personalization,CI/CN Ratio,1.149×
+Exp4: Medical Corr,Without Personalization,Circadian vs MoCA,"r=0.381, 0.035*"
+Exp4: Medical Corr,With Personalization,Circadian vs MoCA,"r=0.420, 0.028*"
+Exp4: Medical Corr,With Personalization,Task vs ZBI,"r=0.380, 0.042*"
+Exp4: Medical Corr,With Personalization,Movement vs FAS,"r=0.440, 0.016*"
+Exp4: Medical Corr,With Personalization,Social vs NPI,"r=-0.390, 0.035*"

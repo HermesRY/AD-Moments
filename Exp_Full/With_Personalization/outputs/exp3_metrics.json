@@ -1,0 +1,13 @@
+{
+  "f1": 0.824,
+  "sensitivity": 0.875,
+  "specificity": 0.333,
+  "precision": 0.778,
+  "ci_cn_ratio": 1.149,
+  "threshold": 0.42,
+  "percentile": 18,
+  "tp": 7,
+  "fp": 2,
+  "tn": 1,
+  "fn": 1
+}

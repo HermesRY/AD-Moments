@@ -1,0 +1,26 @@
+{
+  "Circadian": {
+    "MoCA": {"r": 0.381, "p": 0.035, "significant": true},
+    "ZBI": {"r": -0.22, "p": 0.198, "significant": false},
+    "FAS": {"r": 0.28, "p": 0.112, "significant": false},
+    "NPI": {"r": -0.15, "p": 0.401, "significant": false}
+  },
+  "Task": {
+    "MoCA": {"r": 0.12, "p": 0.512, "significant": false},
+    "ZBI": {"r": 0.42, "p": 0.058, "significant": false},
+    "FAS": {"r": 0.18, "p": 0.321, "significant": false},
+    "NPI": {"r": 0.25, "p": 0.167, "significant": false}
+  },
+  "Movement": {
+    "MoCA": {"r": 0.16, "p": 0.378, "significant": false},
+    "ZBI": {"r": -0.09, "p": 0.621, "significant": false},
+    "FAS": {"r": 0.387, "p": 0.124, "significant": false},
+    "NPI": {"r": -0.11, "p": 0.548, "significant": false}
+  },
+  "Social": {
+    "MoCA": {"r": 0.09, "p": 0.623, "significant": false},
+    "ZBI": {"r": -0.28, "p": 0.118, "significant": false},
+    "FAS": {"r": 0.06, "p": 0.742, "significant": false},
+    "NPI": {"r": -0.35, "p": 0.067, "significant": false}
+  }
+}
