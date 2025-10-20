@@ -1,257 +1,260 @@
-#!/usr/bin/env python3
 """
 Exp4: Medical Correlations (Without Personalization)
-Analyzes correlations between CTMS dimensions and medical assessments.
-
-Usage:
-    python exp4_medical_correlations.py
-
-Note:
-    Requires subjects_public.json with MoCA, ZBI, DSS, FAS scores.
+Correlates CTMS scores with medical assessment scores (MoCA, ZBI, FAS, DSS).
 """
 
 import sys
-from pathlib import Path
-
-# Add parent directory to path for imports
-SCRIPT_DIR = Path(__file__).parent
-PROJECT_ROOT = SCRIPT_DIR.parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.append('/home/heming/Desktop/AD-Moments-1/AD-Moments')
 
 import json
 import torch
 import numpy as np
-import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 from tqdm import tqdm
 from scipy import stats
-from Model.ctms_model import CTMSModel
+from models.ctms import CTMSModel
 
 # Configuration
-DATA_PATH = PROJECT_ROOT / 'sample_data' / 'dataset_one_month.jsonl'
-SUBJECTS_PATH = PROJECT_ROOT / 'sample_data' / 'subjects_public.json'
-OUTPUT_DIR = SCRIPT_DIR / 'outputs'
+DATA_PATH = '/home/heming/Desktop/AD-Moments-1/AD-Moments/sample_data/dataset_one_month.jsonl'
+OUTPUT_DIR = '/home/heming/Desktop/AD-Moments-1/AD-Moments/Exp_Full/Without_Personalization/outputs'
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-# Optimal split from Exp2
-OPTIMAL_SPLIT = {
-    'cn_train': [8, 33, 34, 37, 40, 45, 46, 47, 48, 49, 61, 65],
-    'cn_test': [16, 35, 36, 38, 41, 44],
-    'ci_test': [4, 5, 7, 10, 12, 17, 19, 22, 23, 50, 62],
-}
+DROP_SUBJECTS = {'CN': [18, 42, 43], 'CI': []}
 
 # Model configuration
-ALPHA = np.array([0.5, 0.3, 0.1, 0.1])
+ALPHA = [0.5, 0.3, 0.1, 0.1]  # Use same alpha as other experiments
 SEQ_LEN = 30
 STRIDE = 10
 BATCH_SIZE = 256
-D_MODEL = 64
-NUM_ACTIVITIES = 22
 
-# Medical scores to correlate with
-MEDICAL_SCORES = ['moca', 'zbi', 'dss', 'fas']
-DIMENSION_NAMES = ['Circadian', 'Task', 'Movement', 'Social']
+import os
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Create output directory
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-
-def load_dataset():
-    """Load activity data and subject metadata."""
-    # Load activities
-    data = []
+def load_ci_subjects():
+    """Load only CI subjects with medical scores."""
+    ci_subjects = []
     with open(DATA_PATH, 'r') as f:
         for line in f:
-            subj = json.loads(line)
-            data.append(subj)
-    
-    # Load medical assessments
-    with open(SUBJECTS_PATH, 'r') as f:
-        subjects_meta = json.load(f)
-    
-    # Create lookup (subjects_public.json uses 'anon_id')
-    meta_lookup = {}
-    for s in subjects_meta:
-        anon_id = s.get('anon_id', s.get('subject_id'))
-        if anon_id is not None:
-            meta_lookup[anon_id] = s
-    
-    # Filter by split
-    all_ids = (OPTIMAL_SPLIT['cn_train'] + OPTIMAL_SPLIT['cn_test'] + 
-               OPTIMAL_SPLIT['ci_test'])
-    data = [s for s in data if s['subject_id'] in all_ids]
-    
-    print(f"Loaded {len(data)} subjects with medical data")
-    return data, meta_lookup
+            subject = json.loads(line)
+            if subject['label'] == 'CI' and subject['subject_id'] not in DROP_SUBJECTS['CI']:
+                # Check if medical scores exist in 'scores' field
+                if 'scores' in subject:
+                    scores = subject['scores']
+                    if all(k in scores for k in ['moca', 'zbi', 'fas', 'dss']):
+                        ci_subjects.append(subject)
+    return ci_subjects
 
+def create_windows(time_series, seq_len, stride):
+    """Create sliding windows from time series."""
+    windows = []
+    for i in range(0, len(time_series) - seq_len + 1, stride):
+        windows.append(time_series[i:i+seq_len])
+    return windows
 
-def create_sequences(activity_series, seq_len=SEQ_LEN, stride=STRIDE):
-    """Create sliding windows."""
-    sequences = []
-    for i in range(0, len(activity_series) - seq_len + 1, stride):
-        seq = activity_series[i:i+seq_len]
-        sequences.append(seq)
-    return sequences
-
-
-def encode_subject(subject, model):
-    """Encode all sequences of a subject."""
-    activities = subject['activities']
-    sequences = create_sequences(activities)
+def compute_dimension_scores(subject, model):
+    """Compute scores for each dimension separately."""
+    circ_windows = create_windows(subject['circadian_rhythm'], SEQ_LEN, STRIDE)
+    task_windows = create_windows(subject['task_completion'], SEQ_LEN, STRIDE)
+    move_windows = create_windows(subject['movement_patterns'], SEQ_LEN, STRIDE)
+    soc_windows = create_windows(subject['social_interactions'], SEQ_LEN, STRIDE)
     
-    if len(sequences) == 0:
-        return None
+    n_windows = len(circ_windows)
     
-    embeddings = []
-    with torch.no_grad():
-        for i in range(0, len(sequences), BATCH_SIZE):
-            batch = sequences[i:i+BATCH_SIZE]
-            batch_tensor = torch.LongTensor(batch).to(DEVICE)
-            emb = model(batch_tensor, return_dim_embeddings=True)  # [B, 4, D]
-            embeddings.append(emb.cpu())
+    circ_norms = []
+    task_norms = []
+    move_norms = []
+    soc_norms = []
     
-    embeddings = torch.cat(embeddings, dim=0)  # [N, 4, D]
-    return embeddings.numpy()
-
-
-def compute_baseline_unified(train_embeddings_list):
-    """Compute unified baseline from all CN training subjects."""
-    all_windows = np.concatenate(train_embeddings_list, axis=0)  # [Total, 4, D]
-    baseline_mean = np.mean(all_windows, axis=0)  # [4, D]
-    baseline_std = np.std(all_windows, axis=0)  # [4, D]
-    return baseline_mean, baseline_std
-
-
-def compute_dimension_scores(embeddings, baseline_mean, baseline_std):
-    """Compute per-dimension deviation scores."""
-    # embeddings: [N, 4, D]
-    # baseline_mean, baseline_std: [4, D]
-    diffs = embeddings - baseline_mean[np.newaxis, :, :]  # [N, 4, D]
-    z_scores = diffs / (baseline_std[np.newaxis, :, :] + 1e-8)  # [N, 4, D]
+    for i in range(0, n_windows, BATCH_SIZE):
+        batch_circ = torch.FloatTensor(circ_windows[i:i+BATCH_SIZE]).to(DEVICE)
+        batch_task = torch.FloatTensor(task_windows[i:i+BATCH_SIZE]).to(DEVICE)
+        batch_move = torch.FloatTensor(move_windows[i:i+BATCH_SIZE]).to(DEVICE)
+        batch_soc = torch.FloatTensor(soc_windows[i:i+BATCH_SIZE]).to(DEVICE)
+        
+        with torch.no_grad():
+            circ_emb = model.circadian_encoder(batch_circ)
+            task_emb = model.task_encoder(batch_task)
+            move_emb = model.movement_encoder(batch_move)
+            soc_emb = model.social_encoder(batch_soc)
+            
+            circ_norms.extend(torch.norm(circ_emb, dim=1).cpu().numpy())
+            task_norms.extend(torch.norm(task_emb, dim=1).cpu().numpy())
+            move_norms.extend(torch.norm(move_emb, dim=1).cpu().numpy())
+            soc_norms.extend(torch.norm(soc_emb, dim=1).cpu().numpy())
     
-    # Mean absolute z-score per dimension
-    dim_scores = np.mean(np.abs(z_scores), axis=(0, 2))  # [4]
-    return dim_scores
+    # Return mean norms for each dimension
+    return {
+        'circadian': np.mean(circ_norms),
+        'task': np.mean(task_norms),
+        'movement': np.mean(move_norms),
+        'social': np.mean(soc_norms)
+    }
 
-
-def correlate_with_medical(subject_scores_df, meta_lookup):
-    """Compute correlations between dimension scores and medical assessments."""
-    # Add medical scores to dataframe
-    for score_name in MEDICAL_SCORES:
-        subject_scores_df[score_name] = subject_scores_df['subject_id'].apply(
-            lambda sid: meta_lookup.get(sid, {}).get('scores', {}).get(score_name, np.nan)
-        )
+def analyze_correlations(ci_subjects, model):
+    """Compute correlations between CTMS dimensions and medical scores."""
+    # Collect data
+    circadian_scores = []
+    task_scores = []
+    movement_scores = []
+    social_scores = []
     
-    # Remove subjects without medical data
-    valid_mask = subject_scores_df[MEDICAL_SCORES].notna().all(axis=1)
-    df_valid = subject_scores_df[valid_mask].copy()
+    moca_scores = []
+    zbi_scores = []
+    fas_scores = []
+    dss_scores = []
     
-    print(f"   Valid subjects for correlation: {len(df_valid)}")
+    print("Computing dimension scores for CI subjects...")
+    for subject in tqdm(ci_subjects):
+        dim_scores = compute_dimension_scores(subject, model)
+        
+        circadian_scores.append(dim_scores['circadian'])
+        task_scores.append(dim_scores['task'])
+        movement_scores.append(dim_scores['movement'])
+        social_scores.append(dim_scores['social'])
+        
+        scores = subject['scores']
+        moca_scores.append(scores['moca'])
+        zbi_scores.append(scores['zbi'])
+        fas_scores.append(scores['fas'])
+        dss_scores.append(scores['dss'])
+    
+    # Convert to arrays
+    circadian_scores = np.array(circadian_scores)
+    task_scores = np.array(task_scores)
+    movement_scores = np.array(movement_scores)
+    social_scores = np.array(social_scores)
+    
+    moca_scores = np.array(moca_scores)
+    zbi_scores = np.array(zbi_scores)
+    fas_scores = np.array(fas_scores)
+    dss_scores = np.array(dss_scores)
     
     # Compute correlations
     correlations = {}
-    for dim_idx, dim_name in enumerate(DIMENSION_NAMES):
-        dim_col = f'dim_{dim_idx}'
+    
+    for dim_name, dim_scores in [
+        ('Circadian', circadian_scores),
+        ('Task', task_scores),
+        ('Movement', movement_scores),
+        ('Social', social_scores)
+    ]:
         correlations[dim_name] = {}
         
-        for score_name in MEDICAL_SCORES:
-            r, p = stats.pearsonr(df_valid[dim_col], df_valid[score_name])
-            correlations[dim_name][score_name] = {
+        for med_name, med_scores in [
+            ('MoCA', moca_scores),
+            ('ZBI', zbi_scores),
+            ('FAS', fas_scores),
+            ('DSS', dss_scores)
+        ]:
+            r, p = stats.pearsonr(dim_scores, med_scores)
+            correlations[dim_name][med_name] = {
                 'r': float(r),
                 'p': float(p),
-                'n': len(df_valid)
+                'significant': p < 0.05
             }
     
-    return correlations, df_valid
+    return correlations, {
+        'circadian': circadian_scores,
+        'task': task_scores,
+        'movement': movement_scores,
+        'social': social_scores,
+        'moca': moca_scores,
+        'zbi': zbi_scores,
+        'fas': fas_scores,
+        'dss': dss_scores
+    }
 
+def plot_correlations(correlations, data, save_path):
+    """Plot correlation heatmap."""
+    # Create correlation matrix
+    dims = ['Circadian', 'Task', 'Movement', 'Social']
+    meds = ['MoCA', 'ZBI', 'FAS', 'DSS']
+    
+    corr_matrix = np.zeros((len(dims), len(meds)))
+    p_matrix = np.zeros((len(dims), len(meds)))
+    
+    for i, dim in enumerate(dims):
+        for j, med in enumerate(meds):
+            corr_matrix[i, j] = correlations[dim][med]['r']
+            p_matrix[i, j] = correlations[dim][med]['p']
+    
+    # Plot heatmap
+    fig, ax = plt.subplots(figsize=(10, 8))
+    
+    # Create annotations with significance stars
+    annot = np.empty_like(corr_matrix, dtype=object)
+    for i in range(len(dims)):
+        for j in range(len(meds)):
+            r = corr_matrix[i, j]
+            p = p_matrix[i, j]
+            if p < 0.001:
+                annot[i, j] = f'{r:.3f}***'
+            elif p < 0.01:
+                annot[i, j] = f'{r:.3f}**'
+            elif p < 0.05:
+                annot[i, j] = f'{r:.3f}*'
+            else:
+                annot[i, j] = f'{r:.3f}'
+    
+    sns.heatmap(corr_matrix, annot=annot, fmt='', cmap='coolwarm', center=0,
+                xticklabels=meds, yticklabels=dims, ax=ax,
+                vmin=-1, vmax=1, cbar_kws={'label': 'Pearson r'})
+    
+    ax.set_title('CTMS-Medical Correlations (Without Personalization)\n* p<0.05, ** p<0.01, *** p<0.001',
+                fontsize=13, fontweight='bold')
+    ax.set_xlabel('Medical Assessment', fontsize=12)
+    ax.set_ylabel('CTMS Dimension', fontsize=12)
+    
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    plt.close()
 
 def main():
     print("="*80)
     print("EXP4: MEDICAL CORRELATIONS (WITHOUT PERSONALIZATION)")
     print("="*80)
     
-    # Load data
-    print("\n1. Loading dataset and medical assessments...")
-    data, meta_lookup = load_dataset()
-    
-    # Split data
-    cn_train = [s for s in data if s['subject_id'] in OPTIMAL_SPLIT['cn_train']]
-    test_subjects = [s for s in data if s['subject_id'] in 
-                     OPTIMAL_SPLIT['cn_test'] + OPTIMAL_SPLIT['ci_test']]
-    
-    print(f"   CN train: {len(cn_train)}")
-    print(f"   Test subjects: {len(test_subjects)}")
+    # Load CI subjects
+    print("\n1. Loading CI subjects with medical scores...")
+    ci_subjects = load_ci_subjects()
+    print(f"   Total CI subjects: {len(ci_subjects)}")
     
     # Initialize model
     print("\n2. Initializing CTMS model...")
-    model = CTMSModel(d_model=D_MODEL, num_activities=NUM_ACTIVITIES, device=DEVICE)
+    model = CTMSModel(d_model=64, device=DEVICE)
     model.to(DEVICE)
     model.eval()
+    print(f"   Alpha weights: {ALPHA}")
     
-    # Encode CN training set
-    print("\n3. Encoding CN training set...")
-    cn_train_embeddings = []
-    for subj in tqdm(cn_train, desc="CN train"):
-        emb = encode_subject(subj, model)
-        if emb is not None:
-            cn_train_embeddings.append(emb)
+    # Analyze correlations
+    print("\n3. Computing correlations...")
+    correlations, data = analyze_correlations(ci_subjects, model)
     
-    # Compute baseline statistics
-    print("\n4. Computing baseline statistics...")
-    baseline_mean, baseline_std = compute_baseline_unified(cn_train_embeddings)
-    print(f"   Baseline shape: {baseline_mean.shape}")
-    
-    # Encode test subjects and compute dimension scores
-    print("\n5. Computing dimension scores for test subjects...")
-    subject_scores = []
-    for subj in tqdm(test_subjects, desc="Test subjects"):
-        emb = encode_subject(subj, model)
-        if emb is not None:
-            dim_scores = compute_dimension_scores(emb, baseline_mean, baseline_std)
-            subject_scores.append({
-                'subject_id': subj['subject_id'],
-                'label': subj['label'],
-                **{f'dim_{i}': float(dim_scores[i]) for i in range(4)}
-            })
-    
-    subject_scores_df = pd.DataFrame(subject_scores)
-    print(f"   Computed scores for {len(subject_scores_df)} subjects")
-    
-    # Correlate with medical assessments
-    print("\n6. Computing correlations with medical assessments...")
-    correlations, df_valid = correlate_with_medical(subject_scores_df, meta_lookup)
-    
-    # Print significant correlations
     print("\n" + "="*80)
-    print("SIGNIFICANT CORRELATIONS (p < 0.05)")
+    print("RESULTS")
     print("="*80)
-    sig_count = 0
-    for dim_name in DIMENSION_NAMES:
-        for score_name in MEDICAL_SCORES:
-            corr = correlations[dim_name][score_name]
-            if corr['p'] < 0.05:
-                sig_count += 1
-                print(f"{dim_name} - {score_name.upper()}: "
-                      f"r={corr['r']:.3f}, p={corr['p']:.4f}{'*' if corr['p']<0.05 else ''}")
     
-    if sig_count == 0:
-        print("No significant correlations found (p < 0.05)")
+    for dim in ['Circadian', 'Task', 'Movement', 'Social']:
+        print(f"\n{dim}:")
+        for med in ['MoCA', 'ZBI', 'FAS', 'NPI']:
+            r = correlations[dim][med]['r']
+            p = correlations[dim][med]['p']
+            sig = '*' if p < 0.05 else ''
+            print(f"  vs {med}: r={r:.3f}, p={p:.4f} {sig}")
     
-    # Save results
-    output_path = OUTPUT_DIR / 'exp4_correlations.json'
-    results = {
-        'correlations': correlations,
-        'significant_count': sig_count,
-        'total_tests': len(DIMENSION_NAMES) * len(MEDICAL_SCORES),
-        'n_subjects': len(df_valid),
-        'dimension_names': DIMENSION_NAMES,
-        'medical_scores': MEDICAL_SCORES
-    }
+    # Plot
+    print("\n4. Generating visualization...")
+    save_path = os.path.join(OUTPUT_DIR, 'exp4_medical_correlations.png')
+    plot_correlations(correlations, data, save_path)
+    print(f"   Saved to: {save_path}")
     
-    with open(output_path, 'w') as f:
-        json.dump(results, f, indent=2)
-    print(f"\nResults saved to: {output_path}")
+    # Save correlations
+    corr_path = os.path.join(OUTPUT_DIR, 'exp4_correlations.json')
+    with open(corr_path, 'w') as f:
+        json.dump(correlations, f, indent=2)
+    print(f"   Correlations saved to: {corr_path}")
     print("="*80)
-
 
 if __name__ == '__main__':
     main()

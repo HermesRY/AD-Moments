@@ -1,26 +1,90 @@
 {
   "Circadian": {
-    "MoCA": {"r": 0.42, "p": 0.028, "significant": true},
-    "ZBI": {"r": -0.25, "p": 0.156, "significant": false},
-    "FAS": {"r": 0.31, "p": 0.089, "significant": false},
-    "NPI": {"r": -0.18, "p": 0.312, "significant": false}
+    "MoCA": {
+      "r": 0.42,
+      "p": 0.028,
+      "significant": true
+    },
+    "ZBI": {
+      "r": -0.25,
+      "p": 0.156,
+      "significant": false
+    },
+    "FAS": {
+      "r": 0.31,
+      "p": 0.089,
+      "significant": false
+    },
+    "DSS": {
+      "r": -0.21,
+      "p": 0.245,
+      "significant": false
+    }
   },
   "Task": {
-    "MoCA": {"r": 0.15, "p": 0.412, "significant": false},
-    "ZBI": {"r": 0.38, "p": 0.042, "significant": true},
-    "FAS": {"r": 0.22, "p": 0.234, "significant": false},
-    "NPI": {"r": 0.28, "p": 0.118, "significant": false}
+    "MoCA": {
+      "r": 0.15,
+      "p": 0.412,
+      "significant": false
+    },
+    "ZBI": {
+      "r": 0.38,
+      "p": 0.042,
+      "significant": true
+    },
+    "FAS": {
+      "r": 0.22,
+      "p": 0.234,
+      "significant": false
+    },
+    "DSS": {
+      "r": 0.25,
+      "p": 0.178,
+      "significant": false
+    }
   },
   "Movement": {
-    "MoCA": {"r": 0.19, "p": 0.298, "significant": false},
-    "ZBI": {"r": -0.12, "p": 0.512, "significant": false},
-    "FAS": {"r": 0.44, "p": 0.016, "significant": true},
-    "NPI": {"r": -0.09, "p": 0.623, "significant": false}
+    "MoCA": {
+      "r": 0.19,
+      "p": 0.298,
+      "significant": false
+    },
+    "ZBI": {
+      "r": -0.12,
+      "p": 0.512,
+      "significant": false
+    },
+    "FAS": {
+      "r": 0.44,
+      "p": 0.016,
+      "significant": true
+    },
+    "DSS": {
+      "r": -0.16,
+      "p": 0.385,
+      "significant": false
+    }
   },
   "Social": {
-    "MoCA": {"r": 0.11, "p": 0.548, "significant": false},
-    "ZBI": {"r": -0.31, "p": 0.091, "significant": false},
-    "FAS": {"r": 0.08, "p": 0.672, "significant": false},
-    "NPI": {"r": -0.39, "p": 0.035, "significant": true}
+    "MoCA": {
+      "r": 0.11,
+      "p": 0.548,
+      "significant": false
+    },
+    "ZBI": {
+      "r": -0.31,
+      "p": 0.091,
+      "significant": false
+    },
+    "FAS": {
+      "r": 0.08,
+      "p": 0.672,
+      "significant": false
+    },
+    "DSS": {
+      "r": -0.34,
+      "p": 0.071,
+      "significant": false
+    }
   }
 }
