@@ -1,0 +1,2550 @@
+{
+  "threshold": 1.790898436307907,
+  "threshold_percentile": 95,
+  "total_subjects_analyzed": 4,
+  "subjects_with_abnormalities": 1,
+  "abnormal_records": [
+    {
+      "subject_id": 8,
+      "label": "CN",
+      "total_windows": 226,
+      "abnormal_windows": 19,
+      "abnormal_percentage": 8.4070796460177,
+      "mean_score": 0.5943654179573059,
+      "max_score": 2.15506911277771,
+      "time_range": {
+        "min_timestamp": 1674220236,
+        "max_timestamp": 1675205563
+      },
+      "abnormal_segments": [
+        {
+          "window_idx": 72,
+          "event_start_idx": 720,
+          "event_end_idx": 750,
+          "score": 1.859181523323059,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674585860,
+            "max": 1674594876
+          },
+          "sequence_events": [
+            {
+              "ts": 1674585860,
+              "action_id": 13
+            },
+            {
+              "ts": 1674586220,
+              "action_id": 7
+            },
+            {
+              "ts": 1674586420,
+              "action_id": 9
+            },
+            {
+              "ts": 1674586420,
+              "action_id": 13
+            },
+            {
+              "ts": 1674587663,
+              "action_id": 7
+            },
+            {
+              "ts": 1674588026,
+              "action_id": 7
+            },
+            {
+              "ts": 1674588226,
+              "action_id": 7
+            },
+            {
+              "ts": 1674588827,
+              "action_id": 7
+            },
+            {
+              "ts": 1674588944,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589144,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589229,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589429,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589466,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589544,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589831,
+              "action_id": 7
+            },
+            {
+              "ts": 1674590031,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591344,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591544,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591636,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591836,
+              "action_id": 7
+            },
+            {
+              "ts": 1674592438,
+              "action_id": 7
+            },
+            {
+              "ts": 1674592744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593040,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593144,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593441,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593641,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593944,
+              "action_id": 7
+            },
+            {
+              "ts": 1674594876,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 73,
+          "event_start_idx": 730,
+          "event_end_idx": 760,
+          "score": 2.1469459533691406,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674589229,
+            "max": 1674596944
+          },
+          "sequence_events": [
+            {
+              "ts": 1674589229,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589429,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589466,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589544,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674589831,
+              "action_id": 7
+            },
+            {
+              "ts": 1674590031,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591344,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591544,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591636,
+              "action_id": 7
+            },
+            {
+              "ts": 1674591836,
+              "action_id": 7
+            },
+            {
+              "ts": 1674592438,
+              "action_id": 7
+            },
+            {
+              "ts": 1674592744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593040,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593144,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593441,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593641,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674593944,
+              "action_id": 7
+            },
+            {
+              "ts": 1674594876,
+              "action_id": 7
+            },
+            {
+              "ts": 1674594944,
+              "action_id": 7
+            },
+            {
+              "ts": 1674595144,
+              "action_id": 7
+            },
+            {
+              "ts": 1674595247,
+              "action_id": 7
+            },
+            {
+              "ts": 1674595544,
+              "action_id": 7
+            },
+            {
+              "ts": 1674595744,
+              "action_id": 7
+            },
+            {
+              "ts": 1674595777,
+              "action_id": 7
+            },
+            {
+              "ts": 1674595848,
+              "action_id": 7
+            },
+            {
+              "ts": 1674596344,
+              "action_id": 7
+            },
+            {
+              "ts": 1674596679,
+              "action_id": 7
+            },
+            {
+              "ts": 1674596944,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 125,
+          "event_start_idx": 1250,
+          "event_end_idx": 1280,
+          "score": 1.844359278678894,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674740938,
+            "max": 1674746548
+          },
+          "sequence_events": [
+            {
+              "ts": 1674740938,
+              "action_id": 7
+            },
+            {
+              "ts": 1674741138,
+              "action_id": 7
+            },
+            {
+              "ts": 1674741351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742074,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742274,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742474,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742675,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742741,
+              "action_id": 7
+            },
+            {
+              "ts": 1674742941,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743277,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743477,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743643,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743879,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744079,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744279,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744481,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744545,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744745,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674745684,
+              "action_id": 7
+            },
+            {
+              "ts": 1674745884,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746084,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746286,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746348,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746548,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 126,
+          "event_start_idx": 1260,
+          "event_end_idx": 1290,
+          "score": 1.8989006280899048,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674743151,
+            "max": 1674748091
+          },
+          "sequence_events": [
+            {
+              "ts": 1674743151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743277,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743477,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743643,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674743879,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744079,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744279,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744481,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744545,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744745,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674745684,
+              "action_id": 7
+            },
+            {
+              "ts": 1674745884,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746084,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746286,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746348,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746548,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746888,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747088,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747250,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747489,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747689,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747889,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748091,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 127,
+          "event_start_idx": 1270,
+          "event_end_idx": 1300,
+          "score": 1.9507147073745728,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674744545,
+            "max": 1674750154
+          },
+          "sequence_events": [
+            {
+              "ts": 1674744545,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744745,
+              "action_id": 7
+            },
+            {
+              "ts": 1674744951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674745684,
+              "action_id": 7
+            },
+            {
+              "ts": 1674745884,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746084,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746286,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746348,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746548,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746888,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747088,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747250,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747489,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747689,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747889,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748091,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749295,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749495,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749695,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749896,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749954,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750154,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 128,
+          "event_start_idx": 1280,
+          "event_end_idx": 1310,
+          "score": 1.991734504699707,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674746751,
+            "max": 1674751702
+          },
+          "sequence_events": [
+            {
+              "ts": 1674746751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674746888,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747088,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747250,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747489,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747689,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747889,
+              "action_id": 7
+            },
+            {
+              "ts": 1674747951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748091,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749295,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749495,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749695,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749896,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749954,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750154,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750498,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750698,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750856,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751100,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751300,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751500,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751702,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 129,
+          "event_start_idx": 1290,
+          "event_end_idx": 1320,
+          "score": 2.013803005218506,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674748151,
+            "max": 1674753951
+          },
+          "sequence_events": [
+            {
+              "ts": 1674748151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674748551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749295,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749495,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749695,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749896,
+              "action_id": 7
+            },
+            {
+              "ts": 1674749954,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750154,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750498,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750698,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750856,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751100,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751300,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751500,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751702,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751758,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751958,
+              "action_id": 7
+            },
+            {
+              "ts": 1674752151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674752905,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753105,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753305,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753507,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753561,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753951,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 130,
+          "event_start_idx": 1300,
+          "event_end_idx": 1330,
+          "score": 2.012941360473633,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674750351,
+            "max": 1674755364
+          },
+          "sequence_events": [
+            {
+              "ts": 1674750351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750498,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750698,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750856,
+              "action_id": 7
+            },
+            {
+              "ts": 1674750951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751100,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751300,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751500,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751702,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751758,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751958,
+              "action_id": 7
+            },
+            {
+              "ts": 1674752151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674752905,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753105,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753305,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753507,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753561,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754109,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754309,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754463,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754710,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754910,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755110,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755312,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755364,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 131,
+          "event_start_idx": 1310,
+          "event_end_idx": 1340,
+          "score": 1.9959288835525513,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674751758,
+            "max": 1674757719
+          },
+          "sequence_events": [
+            {
+              "ts": 1674751758,
+              "action_id": 7
+            },
+            {
+              "ts": 1674751958,
+              "action_id": 7
+            },
+            {
+              "ts": 1674752151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674752905,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753105,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753305,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753351,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753507,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753561,
+              "action_id": 7
+            },
+            {
+              "ts": 1674753951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754109,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754309,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754463,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754710,
+              "action_id": 7
+            },
+            {
+              "ts": 1674754910,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755110,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755151,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755312,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755364,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755564,
+              "action_id": 7
+            },
+            {
+              "ts": 1674755751,
+              "action_id": 7
+            },
+            {
+              "ts": 1674756516,
+              "action_id": 7
+            },
+            {
+              "ts": 1674756716,
+              "action_id": 7
+            },
+            {
+              "ts": 1674756916,
+              "action_id": 7
+            },
+            {
+              "ts": 1674757117,
+              "action_id": 7
+            },
+            {
+              "ts": 1674757168,
+              "action_id": 7
+            },
+            {
+              "ts": 1674757368,
+              "action_id": 7
+            },
+            {
+              "ts": 1674757551,
+              "action_id": 7
+            },
+            {
+              "ts": 1674757719,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 149,
+          "event_start_idx": 1490,
+          "event_end_idx": 1520,
+          "score": 1.936362385749817,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674827722,
+            "max": 1674843955
+          },
+          "sequence_events": [
+            {
+              "ts": 1674827722,
+              "action_id": 7
+            },
+            {
+              "ts": 1674828396,
+              "action_id": 7
+            },
+            {
+              "ts": 1674828926,
+              "action_id": 7
+            },
+            {
+              "ts": 1674829327,
+              "action_id": 7
+            },
+            {
+              "ts": 1674830155,
+              "action_id": 7
+            },
+            {
+              "ts": 1674830731,
+              "action_id": 7
+            },
+            {
+              "ts": 1674830755,
+              "action_id": 7
+            },
+            {
+              "ts": 1674831101,
+              "action_id": 7
+            },
+            {
+              "ts": 1674831133,
+              "action_id": 7
+            },
+            {
+              "ts": 1674832755,
+              "action_id": 7
+            },
+            {
+              "ts": 1674834355,
+              "action_id": 7
+            },
+            {
+              "ts": 1674834743,
+              "action_id": 7
+            },
+            {
+              "ts": 1674835609,
+              "action_id": 7
+            },
+            {
+              "ts": 1674836355,
+              "action_id": 7
+            },
+            {
+              "ts": 1674837150,
+              "action_id": 7
+            },
+            {
+              "ts": 1674837612,
+              "action_id": 7
+            },
+            {
+              "ts": 1674837955,
+              "action_id": 7
+            },
+            {
+              "ts": 1674838314,
+              "action_id": 7
+            },
+            {
+              "ts": 1674838354,
+              "action_id": 7
+            },
+            {
+              "ts": 1674839557,
+              "action_id": 7
+            },
+            {
+              "ts": 1674839755,
+              "action_id": 7
+            },
+            {
+              "ts": 1674840955,
+              "action_id": 7
+            },
+            {
+              "ts": 1674841219,
+              "action_id": 7
+            },
+            {
+              "ts": 1674841362,
+              "action_id": 7
+            },
+            {
+              "ts": 1674841555,
+              "action_id": 7
+            },
+            {
+              "ts": 1674841920,
+              "action_id": 7
+            },
+            {
+              "ts": 1674841964,
+              "action_id": 7
+            },
+            {
+              "ts": 1674843355,
+              "action_id": 7
+            },
+            {
+              "ts": 1674843555,
+              "action_id": 7
+            },
+            {
+              "ts": 1674843955,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 167,
+          "event_start_idx": 1670,
+          "event_end_idx": 1700,
+          "score": 1.8686214685440063,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674913348,
+            "max": 1674920159
+          },
+          "sequence_events": [
+            {
+              "ts": 1674913348,
+              "action_id": 7
+            },
+            {
+              "ts": 1674913772,
+              "action_id": 7
+            },
+            {
+              "ts": 1674914951,
+              "action_id": 7
+            },
+            {
+              "ts": 1674915378,
+              "action_id": 7
+            },
+            {
+              "ts": 1674915578,
+              "action_id": 7
+            },
+            {
+              "ts": 1674915778,
+              "action_id": 7
+            },
+            {
+              "ts": 1674915979,
+              "action_id": 7
+            },
+            {
+              "ts": 1674916179,
+              "action_id": 7
+            },
+            {
+              "ts": 1674916379,
+              "action_id": 7
+            },
+            {
+              "ts": 1674916581,
+              "action_id": 7
+            },
+            {
+              "ts": 1674916754,
+              "action_id": 7
+            },
+            {
+              "ts": 1674916954,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917159,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917183,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917383,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917583,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917656,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917759,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918557,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918757,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918959,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918988,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919188,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919388,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919459,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919559,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919590,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919790,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919990,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920159,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 168,
+          "event_start_idx": 1680,
+          "event_end_idx": 1710,
+          "score": 1.9250752925872803,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674916754,
+            "max": 1674922164
+          },
+          "sequence_events": [
+            {
+              "ts": 1674916754,
+              "action_id": 7
+            },
+            {
+              "ts": 1674916954,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917159,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917183,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917383,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917583,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917656,
+              "action_id": 7
+            },
+            {
+              "ts": 1674917759,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918557,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918757,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918959,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918988,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919188,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919388,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919459,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919559,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919590,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919790,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919990,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920159,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920192,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920360,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920560,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920759,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920793,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920993,
+              "action_id": 7
+            },
+            {
+              "ts": 1674921193,
+              "action_id": 7
+            },
+            {
+              "ts": 1674921262,
+              "action_id": 7
+            },
+            {
+              "ts": 1674921359,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922164,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 169,
+          "event_start_idx": 1690,
+          "event_end_idx": 1720,
+          "score": 1.8497211933135986,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674918959,
+            "max": 1674923600
+          },
+          "sequence_events": [
+            {
+              "ts": 1674918959,
+              "action_id": 7
+            },
+            {
+              "ts": 1674918988,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919188,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919388,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919459,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919559,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919590,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919790,
+              "action_id": 7
+            },
+            {
+              "ts": 1674919990,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920159,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920192,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920360,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920560,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920759,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920793,
+              "action_id": 7
+            },
+            {
+              "ts": 1674920993,
+              "action_id": 7
+            },
+            {
+              "ts": 1674921193,
+              "action_id": 7
+            },
+            {
+              "ts": 1674921262,
+              "action_id": 7
+            },
+            {
+              "ts": 1674921359,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922164,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922364,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922559,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922599,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922799,
+              "action_id": 7
+            },
+            {
+              "ts": 1674922999,
+              "action_id": 7
+            },
+            {
+              "ts": 1674923065,
+              "action_id": 7
+            },
+            {
+              "ts": 1674923159,
+              "action_id": 7
+            },
+            {
+              "ts": 1674923200,
+              "action_id": 19
+            },
+            {
+              "ts": 1674923200,
+              "action_id": 13
+            },
+            {
+              "ts": 1674923600,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 182,
+          "event_start_idx": 1820,
+          "event_end_idx": 1850,
+          "score": 1.9594459533691406,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1674941051,
+            "max": 1674952686
+          },
+          "sequence_events": [
+            {
+              "ts": 1674941051,
+              "action_id": 12
+            },
+            {
+              "ts": 1674941160,
+              "action_id": 7
+            },
+            {
+              "ts": 1674941453,
+              "action_id": 7
+            },
+            {
+              "ts": 1674941653,
+              "action_id": 7
+            },
+            {
+              "ts": 1674942360,
+              "action_id": 7
+            },
+            {
+              "ts": 1674942456,
+              "action_id": 7
+            },
+            {
+              "ts": 1674942901,
+              "action_id": 7
+            },
+            {
+              "ts": 1674944160,
+              "action_id": 7
+            },
+            {
+              "ts": 1674945465,
+              "action_id": 7
+            },
+            {
+              "ts": 1674945606,
+              "action_id": 7
+            },
+            {
+              "ts": 1674945806,
+              "action_id": 7
+            },
+            {
+              "ts": 1674946267,
+              "action_id": 7
+            },
+            {
+              "ts": 1674946467,
+              "action_id": 7
+            },
+            {
+              "ts": 1674946507,
+              "action_id": 7
+            },
+            {
+              "ts": 1674946560,
+              "action_id": 7
+            },
+            {
+              "ts": 1674947760,
+              "action_id": 7
+            },
+            {
+              "ts": 1674948072,
+              "action_id": 7
+            },
+            {
+              "ts": 1674948311,
+              "action_id": 7
+            },
+            {
+              "ts": 1674948360,
+              "action_id": 7
+            },
+            {
+              "ts": 1674948474,
+              "action_id": 7
+            },
+            {
+              "ts": 1674948960,
+              "action_id": 7
+            },
+            {
+              "ts": 1674949076,
+              "action_id": 7
+            },
+            {
+              "ts": 1674949212,
+              "action_id": 7
+            },
+            {
+              "ts": 1674950077,
+              "action_id": 7
+            },
+            {
+              "ts": 1674950160,
+              "action_id": 7
+            },
+            {
+              "ts": 1674951360,
+              "action_id": 7
+            },
+            {
+              "ts": 1674951483,
+              "action_id": 7
+            },
+            {
+              "ts": 1674951683,
+              "action_id": 7
+            },
+            {
+              "ts": 1674951960,
+              "action_id": 7
+            },
+            {
+              "ts": 1674952686,
+              "action_id": 9
+            }
+          ]
+        },
+        {
+          "window_idx": 191,
+          "event_start_idx": 1910,
+          "event_end_idx": 1940,
+          "score": 1.804897427558899,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1675010723,
+            "max": 1675020963
+          },
+          "sequence_events": [
+            {
+              "ts": 1675010723,
+              "action_id": 13
+            },
+            {
+              "ts": 1675010723,
+              "action_id": 12
+            },
+            {
+              "ts": 1675010763,
+              "action_id": 13
+            },
+            {
+              "ts": 1675010763,
+              "action_id": 12
+            },
+            {
+              "ts": 1675010963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675011363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675012861,
+              "action_id": 7
+            },
+            {
+              "ts": 1675013428,
+              "action_id": 7
+            },
+            {
+              "ts": 1675013763,
+              "action_id": 7
+            },
+            {
+              "ts": 1675013963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014065,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014129,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014666,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675015932,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016132,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016672,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016763,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016834,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017073,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017273,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017736,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675018277,
+              "action_id": 7
+            },
+            {
+              "ts": 1675019739,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020684,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020963,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 192,
+          "event_start_idx": 1920,
+          "event_end_idx": 1950,
+          "score": 2.0265486240386963,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1675014065,
+            "max": 1675024949
+          },
+          "sequence_events": [
+            {
+              "ts": 1675014065,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014129,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014666,
+              "action_id": 7
+            },
+            {
+              "ts": 1675014963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675015932,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016132,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016672,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016763,
+              "action_id": 7
+            },
+            {
+              "ts": 1675016834,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017073,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017273,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017736,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675018277,
+              "action_id": 7
+            },
+            {
+              "ts": 1675019739,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020684,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021163,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021286,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021542,
+              "action_id": 7
+            },
+            {
+              "ts": 1675022087,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023145,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023693,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023964,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024047,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024247,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024949,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 193,
+          "event_start_idx": 1930,
+          "event_end_idx": 1960,
+          "score": 2.1026368141174316,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1675017073,
+            "max": 1675028764
+          },
+          "sequence_events": [
+            {
+              "ts": 1675017073,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017273,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017736,
+              "action_id": 7
+            },
+            {
+              "ts": 1675017963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675018277,
+              "action_id": 7
+            },
+            {
+              "ts": 1675019739,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020363,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020684,
+              "action_id": 7
+            },
+            {
+              "ts": 1675020963,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021163,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021286,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021542,
+              "action_id": 7
+            },
+            {
+              "ts": 1675022087,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023145,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023693,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023964,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024047,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024247,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024949,
+              "action_id": 7
+            },
+            {
+              "ts": 1675025164,
+              "action_id": 7
+            },
+            {
+              "ts": 1675025698,
+              "action_id": 7
+            },
+            {
+              "ts": 1675025764,
+              "action_id": 7
+            },
+            {
+              "ts": 1675026752,
+              "action_id": 7
+            },
+            {
+              "ts": 1675026964,
+              "action_id": 7
+            },
+            {
+              "ts": 1675027303,
+              "action_id": 7
+            },
+            {
+              "ts": 1675027854,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028164,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028364,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028764,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 194,
+          "event_start_idx": 1940,
+          "event_end_idx": 1970,
+          "score": 2.15506911277771,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1675021163,
+            "max": 1675032364
+          },
+          "sequence_events": [
+            {
+              "ts": 1675021163,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021286,
+              "action_id": 7
+            },
+            {
+              "ts": 1675021542,
+              "action_id": 7
+            },
+            {
+              "ts": 1675022087,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023145,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023693,
+              "action_id": 7
+            },
+            {
+              "ts": 1675023964,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024047,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024247,
+              "action_id": 7
+            },
+            {
+              "ts": 1675024949,
+              "action_id": 7
+            },
+            {
+              "ts": 1675025164,
+              "action_id": 7
+            },
+            {
+              "ts": 1675025698,
+              "action_id": 7
+            },
+            {
+              "ts": 1675025764,
+              "action_id": 7
+            },
+            {
+              "ts": 1675026752,
+              "action_id": 7
+            },
+            {
+              "ts": 1675026964,
+              "action_id": 7
+            },
+            {
+              "ts": 1675027303,
+              "action_id": 7
+            },
+            {
+              "ts": 1675027854,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028164,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028364,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028764,
+              "action_id": 7
+            },
+            {
+              "ts": 1675028964,
+              "action_id": 7
+            },
+            {
+              "ts": 1675029108,
+              "action_id": 7
+            },
+            {
+              "ts": 1675029308,
+              "action_id": 7
+            },
+            {
+              "ts": 1675029364,
+              "action_id": 7
+            },
+            {
+              "ts": 1675030358,
+              "action_id": 7
+            },
+            {
+              "ts": 1675030564,
+              "action_id": 7
+            },
+            {
+              "ts": 1675030764,
+              "action_id": 7
+            },
+            {
+              "ts": 1675031114,
+              "action_id": 7
+            },
+            {
+              "ts": 1675031460,
+              "action_id": 7
+            },
+            {
+              "ts": 1675032364,
+              "action_id": 7
+            }
+          ]
+        },
+        {
+          "window_idx": 215,
+          "event_start_idx": 2150,
+          "event_end_idx": 2180,
+          "score": 1.7909680604934692,
+          "num_events": 30,
+          "timestamp_range": {
+            "min": 1675122645,
+            "max": 1675181562
+          },
+          "sequence_events": [
+            {
+              "ts": 1675122645,
+              "action_id": 7
+            },
+            {
+              "ts": 1675125350,
+              "action_id": 7
+            },
+            {
+              "ts": 1675125559,
+              "action_id": 7
+            },
+            {
+              "ts": 1675125729,
+              "action_id": 7
+            },
+            {
+              "ts": 1675167250,
+              "action_id": 7
+            },
+            {
+              "ts": 1675167561,
+              "action_id": 7
+            },
+            {
+              "ts": 1675167852,
+              "action_id": 7
+            },
+            {
+              "ts": 1675168052,
+              "action_id": 7
+            },
+            {
+              "ts": 1675168161,
+              "action_id": 7
+            },
+            {
+              "ts": 1675168361,
+              "action_id": 7
+            },
+            {
+              "ts": 1675168627,
+              "action_id": 7
+            },
+            {
+              "ts": 1675168761,
+              "action_id": 7
+            },
+            {
+              "ts": 1675168961,
+              "action_id": 7
+            },
+            {
+              "ts": 1675169055,
+              "action_id": 7
+            },
+            {
+              "ts": 1675169657,
+              "action_id": 7
+            },
+            {
+              "ts": 1675171662,
+              "action_id": 7
+            },
+            {
+              "ts": 1675172361,
+              "action_id": 7
+            },
+            {
+              "ts": 1675174471,
+              "action_id": 7
+            },
+            {
+              "ts": 1675174671,
+              "action_id": 7
+            },
+            {
+              "ts": 1675175273,
+              "action_id": 7
+            },
+            {
+              "ts": 1675175562,
+              "action_id": 7
+            },
+            {
+              "ts": 1675177762,
+              "action_id": 7
+            },
+            {
+              "ts": 1675178544,
+              "action_id": 7
+            },
+            {
+              "ts": 1675178683,
+              "action_id": 7
+            },
+            {
+              "ts": 1675179285,
+              "action_id": 7
+            },
+            {
+              "ts": 1675179887,
+              "action_id": 7
+            },
+            {
+              "ts": 1675180087,
+              "action_id": 7
+            },
+            {
+              "ts": 1675180347,
+              "action_id": 7
+            },
+            {
+              "ts": 1675180489,
+              "action_id": 7
+            },
+            {
+              "ts": 1675181562,
+              "action_id": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
