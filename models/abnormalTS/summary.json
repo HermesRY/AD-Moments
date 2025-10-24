@@ -1,0 +1,21 @@
+{
+  "total_subjects_analyzed": 55,
+  "test_cn_subjects": 13,
+  "test_ci_subjects": 42,
+  "subjects_with_anomalies": 20,
+  "total_abnormal_timestamps": 10320,
+  "anomaly_threshold": 0.0671030342578888,
+  "anomaly_percentile": 90,
+  "time_range": "9.0h - 19.5h",
+  "subjects_by_label": {
+    "CN": 4,
+    "CI": 16
+  },
+  "score_statistics": {
+    "min": 0.0,
+    "max": 0.08627365231513978,
+    "mean": 0.013163888630979219,
+    "median": 0.0,
+    "std": 0.026318993023380532
+  }
+}

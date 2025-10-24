@@ -1,0 +1,4069 @@
+{
+  "subject_id": 46,
+  "label": "CN",
+  "total_abnormal_timestamps": 270,
+  "abnormal_timestamps": [
+    {
+      "timestamp": 1668536924,
+      "timestamp_readable": "2022-11-15 18:28:44",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668536924,
+      "timestamp_readable": "2022-11-15 18:28:44",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668536955,
+      "timestamp_readable": "2022-11-15 18:29:15",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668536955,
+      "timestamp_readable": "2022-11-15 18:29:15",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537090,
+      "timestamp_readable": "2022-11-15 18:31:30",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537090,
+      "timestamp_readable": "2022-11-15 18:31:30",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537290,
+      "timestamp_readable": "2022-11-15 18:34:50",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537290,
+      "timestamp_readable": "2022-11-15 18:34:50",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537426,
+      "timestamp_readable": "2022-11-15 18:37:06",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537426,
+      "timestamp_readable": "2022-11-15 18:37:06",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537556,
+      "timestamp_readable": "2022-11-15 18:39:16",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537556,
+      "timestamp_readable": "2022-11-15 18:39:16",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537556,
+      "timestamp_readable": "2022-11-15 18:39:16",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537556,
+      "timestamp_readable": "2022-11-15 18:39:16",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537890,
+      "timestamp_readable": "2022-11-15 18:44:50",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537890,
+      "timestamp_readable": "2022-11-15 18:44:50",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537890,
+      "timestamp_readable": "2022-11-15 18:44:50",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668537890,
+      "timestamp_readable": "2022-11-15 18:44:50",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538090,
+      "timestamp_readable": "2022-11-15 18:48:10",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538090,
+      "timestamp_readable": "2022-11-15 18:48:10",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538090,
+      "timestamp_readable": "2022-11-15 18:48:10",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538090,
+      "timestamp_readable": "2022-11-15 18:48:10",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538158,
+      "timestamp_readable": "2022-11-15 18:49:18",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538158,
+      "timestamp_readable": "2022-11-15 18:49:18",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538158,
+      "timestamp_readable": "2022-11-15 18:49:18",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538158,
+      "timestamp_readable": "2022-11-15 18:49:18",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538290,
+      "timestamp_readable": "2022-11-15 18:51:30",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538290,
+      "timestamp_readable": "2022-11-15 18:51:30",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538290,
+      "timestamp_readable": "2022-11-15 18:51:30",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538290,
+      "timestamp_readable": "2022-11-15 18:51:30",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538527,
+      "timestamp_readable": "2022-11-15 18:55:27",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538527,
+      "timestamp_readable": "2022-11-15 18:55:27",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538527,
+      "timestamp_readable": "2022-11-15 18:55:27",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538527,
+      "timestamp_readable": "2022-11-15 18:55:27",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538527,
+      "timestamp_readable": "2022-11-15 18:55:27",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538527,
+      "timestamp_readable": "2022-11-15 18:55:27",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538727,
+      "timestamp_readable": "2022-11-15 18:58:47",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538727,
+      "timestamp_readable": "2022-11-15 18:58:47",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538727,
+      "timestamp_readable": "2022-11-15 18:58:47",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538727,
+      "timestamp_readable": "2022-11-15 18:58:47",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538727,
+      "timestamp_readable": "2022-11-15 18:58:47",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668538727,
+      "timestamp_readable": "2022-11-15 18:58:47",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539361,
+      "timestamp_readable": "2022-11-15 19:09:21",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539361,
+      "timestamp_readable": "2022-11-15 19:09:21",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539361,
+      "timestamp_readable": "2022-11-15 19:09:21",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539361,
+      "timestamp_readable": "2022-11-15 19:09:21",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539361,
+      "timestamp_readable": "2022-11-15 19:09:21",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539361,
+      "timestamp_readable": "2022-11-15 19:09:21",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539490,
+      "timestamp_readable": "2022-11-15 19:11:30",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539490,
+      "timestamp_readable": "2022-11-15 19:11:30",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539490,
+      "timestamp_readable": "2022-11-15 19:11:30",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539490,
+      "timestamp_readable": "2022-11-15 19:11:30",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539490,
+      "timestamp_readable": "2022-11-15 19:11:30",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539490,
+      "timestamp_readable": "2022-11-15 19:11:30",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539690,
+      "timestamp_readable": "2022-11-15 19:14:50",
+      "action_id": 9,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539690,
+      "timestamp_readable": "2022-11-15 19:14:50",
+      "action_id": 13,
+      "window_center_hour": 18.802777777777777,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 19,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539690,
+      "timestamp_readable": "2022-11-15 19:14:50",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539690,
+      "timestamp_readable": "2022-11-15 19:14:50",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539690,
+      "timestamp_readable": "2022-11-15 19:14:50",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539690,
+      "timestamp_readable": "2022-11-15 19:14:50",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539890,
+      "timestamp_readable": "2022-11-15 19:18:10",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539890,
+      "timestamp_readable": "2022-11-15 19:18:10",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539890,
+      "timestamp_readable": "2022-11-15 19:18:10",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539890,
+      "timestamp_readable": "2022-11-15 19:18:10",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539963,
+      "timestamp_readable": "2022-11-15 19:19:23",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539963,
+      "timestamp_readable": "2022-11-15 19:19:23",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539963,
+      "timestamp_readable": "2022-11-15 19:19:23",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668539963,
+      "timestamp_readable": "2022-11-15 19:19:23",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540090,
+      "timestamp_readable": "2022-11-15 19:21:30",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540090,
+      "timestamp_readable": "2022-11-15 19:21:30",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540090,
+      "timestamp_readable": "2022-11-15 19:21:30",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540090,
+      "timestamp_readable": "2022-11-15 19:21:30",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540131,
+      "timestamp_readable": "2022-11-15 19:22:11",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540131,
+      "timestamp_readable": "2022-11-15 19:22:11",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540131,
+      "timestamp_readable": "2022-11-15 19:22:11",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540131,
+      "timestamp_readable": "2022-11-15 19:22:11",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540331,
+      "timestamp_readable": "2022-11-15 19:25:31",
+      "action_id": 9,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540331,
+      "timestamp_readable": "2022-11-15 19:25:31",
+      "action_id": 13,
+      "window_center_hour": 19.155833333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540331,
+      "timestamp_readable": "2022-11-15 19:25:31",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540331,
+      "timestamp_readable": "2022-11-15 19:25:31",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540565,
+      "timestamp_readable": "2022-11-15 19:29:25",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540565,
+      "timestamp_readable": "2022-11-15 19:29:25",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540690,
+      "timestamp_readable": "2022-11-15 19:31:30",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540690,
+      "timestamp_readable": "2022-11-15 19:31:30",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540890,
+      "timestamp_readable": "2022-11-15 19:34:50",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668540890,
+      "timestamp_readable": "2022-11-15 19:34:50",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668541166,
+      "timestamp_readable": "2022-11-15 19:39:26",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668541166,
+      "timestamp_readable": "2022-11-15 19:39:26",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668541290,
+      "timestamp_readable": "2022-11-15 19:41:30",
+      "action_id": 9,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668541290,
+      "timestamp_readable": "2022-11-15 19:41:30",
+      "action_id": 13,
+      "window_center_hour": 19.358333333333334,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -115.34925079345703,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 20,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668951968,
+      "timestamp_readable": "2022-11-20 13:46:08",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668951968,
+      "timestamp_readable": "2022-11-20 13:46:08",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952088,
+      "timestamp_readable": "2022-11-20 13:48:08",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952088,
+      "timestamp_readable": "2022-11-20 13:48:08",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952169,
+      "timestamp_readable": "2022-11-20 13:49:29",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952169,
+      "timestamp_readable": "2022-11-20 13:49:29",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952369,
+      "timestamp_readable": "2022-11-20 13:52:49",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952369,
+      "timestamp_readable": "2022-11-20 13:52:49",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952442,
+      "timestamp_readable": "2022-11-20 13:54:02",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952442,
+      "timestamp_readable": "2022-11-20 13:54:02",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952642,
+      "timestamp_readable": "2022-11-20 13:57:22",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952642,
+      "timestamp_readable": "2022-11-20 13:57:22",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952642,
+      "timestamp_readable": "2022-11-20 13:57:22",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952642,
+      "timestamp_readable": "2022-11-20 13:57:22",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952688,
+      "timestamp_readable": "2022-11-20 13:58:08",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952688,
+      "timestamp_readable": "2022-11-20 13:58:08",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952688,
+      "timestamp_readable": "2022-11-20 13:58:08",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668952688,
+      "timestamp_readable": "2022-11-20 13:58:08",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953373,
+      "timestamp_readable": "2022-11-20 14:09:33",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953373,
+      "timestamp_readable": "2022-11-20 14:09:33",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953373,
+      "timestamp_readable": "2022-11-20 14:09:33",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953373,
+      "timestamp_readable": "2022-11-20 14:09:33",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953573,
+      "timestamp_readable": "2022-11-20 14:12:53",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953573,
+      "timestamp_readable": "2022-11-20 14:12:53",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953573,
+      "timestamp_readable": "2022-11-20 14:12:53",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953573,
+      "timestamp_readable": "2022-11-20 14:12:53",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953888,
+      "timestamp_readable": "2022-11-20 14:18:08",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953888,
+      "timestamp_readable": "2022-11-20 14:18:08",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953888,
+      "timestamp_readable": "2022-11-20 14:18:08",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953888,
+      "timestamp_readable": "2022-11-20 14:18:08",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953974,
+      "timestamp_readable": "2022-11-20 14:19:34",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953974,
+      "timestamp_readable": "2022-11-20 14:19:34",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953974,
+      "timestamp_readable": "2022-11-20 14:19:34",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953974,
+      "timestamp_readable": "2022-11-20 14:19:34",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953974,
+      "timestamp_readable": "2022-11-20 14:19:34",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668953974,
+      "timestamp_readable": "2022-11-20 14:19:34",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954174,
+      "timestamp_readable": "2022-11-20 14:22:54",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954174,
+      "timestamp_readable": "2022-11-20 14:22:54",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954174,
+      "timestamp_readable": "2022-11-20 14:22:54",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954174,
+      "timestamp_readable": "2022-11-20 14:22:54",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954174,
+      "timestamp_readable": "2022-11-20 14:22:54",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954174,
+      "timestamp_readable": "2022-11-20 14:22:54",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954245,
+      "timestamp_readable": "2022-11-20 14:24:05",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954245,
+      "timestamp_readable": "2022-11-20 14:24:05",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954245,
+      "timestamp_readable": "2022-11-20 14:24:05",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954245,
+      "timestamp_readable": "2022-11-20 14:24:05",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954245,
+      "timestamp_readable": "2022-11-20 14:24:05",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954245,
+      "timestamp_readable": "2022-11-20 14:24:05",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954445,
+      "timestamp_readable": "2022-11-20 14:27:25",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954445,
+      "timestamp_readable": "2022-11-20 14:27:25",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954445,
+      "timestamp_readable": "2022-11-20 14:27:25",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954445,
+      "timestamp_readable": "2022-11-20 14:27:25",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954445,
+      "timestamp_readable": "2022-11-20 14:27:25",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954445,
+      "timestamp_readable": "2022-11-20 14:27:25",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954488,
+      "timestamp_readable": "2022-11-20 14:28:08",
+      "action_id": 9,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954488,
+      "timestamp_readable": "2022-11-20 14:28:08",
+      "action_id": 13,
+      "window_center_hour": 14.159166666666666,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954488,
+      "timestamp_readable": "2022-11-20 14:28:08",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954488,
+      "timestamp_readable": "2022-11-20 14:28:08",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954488,
+      "timestamp_readable": "2022-11-20 14:28:08",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954488,
+      "timestamp_readable": "2022-11-20 14:28:08",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954576,
+      "timestamp_readable": "2022-11-20 14:29:36",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954576,
+      "timestamp_readable": "2022-11-20 14:29:36",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954576,
+      "timestamp_readable": "2022-11-20 14:29:36",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954576,
+      "timestamp_readable": "2022-11-20 14:29:36",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954576,
+      "timestamp_readable": "2022-11-20 14:29:36",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954576,
+      "timestamp_readable": "2022-11-20 14:29:36",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954776,
+      "timestamp_readable": "2022-11-20 14:32:56",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954776,
+      "timestamp_readable": "2022-11-20 14:32:56",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954776,
+      "timestamp_readable": "2022-11-20 14:32:56",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954776,
+      "timestamp_readable": "2022-11-20 14:32:56",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954776,
+      "timestamp_readable": "2022-11-20 14:32:56",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954776,
+      "timestamp_readable": "2022-11-20 14:32:56",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954976,
+      "timestamp_readable": "2022-11-20 14:36:16",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954976,
+      "timestamp_readable": "2022-11-20 14:36:16",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954976,
+      "timestamp_readable": "2022-11-20 14:36:16",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954976,
+      "timestamp_readable": "2022-11-20 14:36:16",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954976,
+      "timestamp_readable": "2022-11-20 14:36:16",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668954976,
+      "timestamp_readable": "2022-11-20 14:36:16",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955088,
+      "timestamp_readable": "2022-11-20 14:38:08",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955088,
+      "timestamp_readable": "2022-11-20 14:38:08",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955088,
+      "timestamp_readable": "2022-11-20 14:38:08",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955088,
+      "timestamp_readable": "2022-11-20 14:38:08",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955088,
+      "timestamp_readable": "2022-11-20 14:38:08",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955088,
+      "timestamp_readable": "2022-11-20 14:38:08",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955147,
+      "timestamp_readable": "2022-11-20 14:39:07",
+      "action_id": 9,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955147,
+      "timestamp_readable": "2022-11-20 14:39:07",
+      "action_id": 13,
+      "window_center_hour": 14.401388888888889,
+      "anomaly_score": 0.08065789341926576,
+      "z_scores": {
+        "circadian": 0.8065789341926575,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 10,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955147,
+      "timestamp_readable": "2022-11-20 14:39:07",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955147,
+      "timestamp_readable": "2022-11-20 14:39:07",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955147,
+      "timestamp_readable": "2022-11-20 14:39:07",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955147,
+      "timestamp_readable": "2022-11-20 14:39:07",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955178,
+      "timestamp_readable": "2022-11-20 14:39:38",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955178,
+      "timestamp_readable": "2022-11-20 14:39:38",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955178,
+      "timestamp_readable": "2022-11-20 14:39:38",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955178,
+      "timestamp_readable": "2022-11-20 14:39:38",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955378,
+      "timestamp_readable": "2022-11-20 14:42:58",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955378,
+      "timestamp_readable": "2022-11-20 14:42:58",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955378,
+      "timestamp_readable": "2022-11-20 14:42:58",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955378,
+      "timestamp_readable": "2022-11-20 14:42:58",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955578,
+      "timestamp_readable": "2022-11-20 14:46:18",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955578,
+      "timestamp_readable": "2022-11-20 14:46:18",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955578,
+      "timestamp_readable": "2022-11-20 14:46:18",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955578,
+      "timestamp_readable": "2022-11-20 14:46:18",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955688,
+      "timestamp_readable": "2022-11-20 14:48:08",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955688,
+      "timestamp_readable": "2022-11-20 14:48:08",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955688,
+      "timestamp_readable": "2022-11-20 14:48:08",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955688,
+      "timestamp_readable": "2022-11-20 14:48:08",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955780,
+      "timestamp_readable": "2022-11-20 14:49:40",
+      "action_id": 9,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955780,
+      "timestamp_readable": "2022-11-20 14:49:40",
+      "action_id": 13,
+      "window_center_hour": 14.604444444444445,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.903436541557312,
+        "movement": -121.74272918701172,
+        "social": -0.44589564204216003
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955780,
+      "timestamp_readable": "2022-11-20 14:49:40",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955780,
+      "timestamp_readable": "2022-11-20 14:49:40",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955980,
+      "timestamp_readable": "2022-11-20 14:53:00",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668955980,
+      "timestamp_readable": "2022-11-20 14:53:00",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956049,
+      "timestamp_readable": "2022-11-20 14:54:09",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956049,
+      "timestamp_readable": "2022-11-20 14:54:09",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956249,
+      "timestamp_readable": "2022-11-20 14:57:29",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956249,
+      "timestamp_readable": "2022-11-20 14:57:29",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956288,
+      "timestamp_readable": "2022-11-20 14:58:08",
+      "action_id": 9,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956288,
+      "timestamp_readable": "2022-11-20 14:58:08",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956983,
+      "timestamp_readable": "2022-11-20 15:09:43",
+      "action_id": 13,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668956983,
+      "timestamp_readable": "2022-11-20 15:09:43",
+      "action_id": 12,
+      "window_center_hour": 14.771666666666667,
+      "anomaly_score": 0.07072685956954956,
+      "z_scores": {
+        "circadian": 0.7072685956954956,
+        "task": -0.950654923915863,
+        "movement": -121.48947143554688,
+        "social": -0.4483383595943451
+      },
+      "time_bin": 11,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668959855,
+      "timestamp_readable": "2022-11-20 15:57:35",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668959888,
+      "timestamp_readable": "2022-11-20 15:58:08",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668959888,
+      "timestamp_readable": "2022-11-20 15:58:08",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668960593,
+      "timestamp_readable": "2022-11-20 16:09:53",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668960593,
+      "timestamp_readable": "2022-11-20 16:09:53",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668960793,
+      "timestamp_readable": "2022-11-20 16:13:13",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668960793,
+      "timestamp_readable": "2022-11-20 16:13:13",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668960993,
+      "timestamp_readable": "2022-11-20 16:16:33",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668960993,
+      "timestamp_readable": "2022-11-20 16:16:33",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961088,
+      "timestamp_readable": "2022-11-20 16:18:08",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961088,
+      "timestamp_readable": "2022-11-20 16:18:08",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961088,
+      "timestamp_readable": "2022-11-20 16:18:08",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961195,
+      "timestamp_readable": "2022-11-20 16:19:55",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961195,
+      "timestamp_readable": "2022-11-20 16:19:55",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961195,
+      "timestamp_readable": "2022-11-20 16:19:55",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961195,
+      "timestamp_readable": "2022-11-20 16:19:55",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961395,
+      "timestamp_readable": "2022-11-20 16:23:15",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961395,
+      "timestamp_readable": "2022-11-20 16:23:15",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961395,
+      "timestamp_readable": "2022-11-20 16:23:15",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961395,
+      "timestamp_readable": "2022-11-20 16:23:15",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961458,
+      "timestamp_readable": "2022-11-20 16:24:18",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961458,
+      "timestamp_readable": "2022-11-20 16:24:18",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961458,
+      "timestamp_readable": "2022-11-20 16:24:18",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961458,
+      "timestamp_readable": "2022-11-20 16:24:18",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961658,
+      "timestamp_readable": "2022-11-20 16:27:38",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961658,
+      "timestamp_readable": "2022-11-20 16:27:38",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961658,
+      "timestamp_readable": "2022-11-20 16:27:38",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961658,
+      "timestamp_readable": "2022-11-20 16:27:38",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961688,
+      "timestamp_readable": "2022-11-20 16:28:08",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961688,
+      "timestamp_readable": "2022-11-20 16:28:08",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961688,
+      "timestamp_readable": "2022-11-20 16:28:08",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961688,
+      "timestamp_readable": "2022-11-20 16:28:08",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961797,
+      "timestamp_readable": "2022-11-20 16:29:57",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961797,
+      "timestamp_readable": "2022-11-20 16:29:57",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961797,
+      "timestamp_readable": "2022-11-20 16:29:57",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961797,
+      "timestamp_readable": "2022-11-20 16:29:57",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961997,
+      "timestamp_readable": "2022-11-20 16:33:17",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961997,
+      "timestamp_readable": "2022-11-20 16:33:17",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961997,
+      "timestamp_readable": "2022-11-20 16:33:17",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668961997,
+      "timestamp_readable": "2022-11-20 16:33:17",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962197,
+      "timestamp_readable": "2022-11-20 16:36:37",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962197,
+      "timestamp_readable": "2022-11-20 16:36:37",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962197,
+      "timestamp_readable": "2022-11-20 16:36:37",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962197,
+      "timestamp_readable": "2022-11-20 16:36:37",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962360,
+      "timestamp_readable": "2022-11-20 16:39:20",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962360,
+      "timestamp_readable": "2022-11-20 16:39:20",
+      "action_id": 13,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962360,
+      "timestamp_readable": "2022-11-20 16:39:20",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962360,
+      "timestamp_readable": "2022-11-20 16:39:20",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962399,
+      "timestamp_readable": "2022-11-20 16:39:59",
+      "action_id": 9,
+      "window_center_hour": 16.405,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 14,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962399,
+      "timestamp_readable": "2022-11-20 16:39:59",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962399,
+      "timestamp_readable": "2022-11-20 16:39:59",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962799,
+      "timestamp_readable": "2022-11-20 16:46:39",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962799,
+      "timestamp_readable": "2022-11-20 16:46:39",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962888,
+      "timestamp_readable": "2022-11-20 16:48:08",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668962888,
+      "timestamp_readable": "2022-11-20 16:48:08",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668963000,
+      "timestamp_readable": "2022-11-20 16:50:00",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668963000,
+      "timestamp_readable": "2022-11-20 16:50:00",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668963200,
+      "timestamp_readable": "2022-11-20 16:53:20",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668963200,
+      "timestamp_readable": "2022-11-20 16:53:20",
+      "action_id": 13,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    },
+    {
+      "timestamp": 1668963261,
+      "timestamp_readable": "2022-11-20 16:54:21",
+      "action_id": 9,
+      "window_center_hour": 16.610277777777778,
+      "anomaly_score": 0.08065621256828309,
+      "z_scores": {
+        "circadian": 0.8065621256828308,
+        "task": -0.9030968546867371,
+        "movement": -121.74272918701172,
+        "social": -0.4460718631744385
+      },
+      "time_bin": 15,
+      "label": "CN"
+    }
+  ],
+  "metadata": {
+    "anomaly_threshold": 0.0671030342578888,
+    "anomaly_percentile": 90,
+    "time_range": "9.0h - 19.5h",
+    "fusion_weights": [
+      0.1,
+      0.1,
+      0.7,
+      0.1
+    ],
+    "use_abs_z": false
+  }
+}

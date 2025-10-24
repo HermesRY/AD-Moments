@@ -314,6 +314,49 @@ def collate_fn(batch: List[Dict]) -> Dict[str, torch.Tensor]:
     }
 
 
+def prepare_single_sample(month_data: Dict,
+                          label: Optional[int] = None,
+                          anon_id: Optional[int] = None,
+                          max_seq_len: int = 500,
+                          min_seq_len: int = 10) -> Optional[Dict[str, torch.Tensor]]:
+    """
+    Prepare a single month-level sequence sample in the same format as CTMSDataset.
+    
+    Used by evaluation utilities where sequences are manipulated outside the Dataset.
+    
+    Args:
+        month_data: Dictionary with keys {"anon_id", "month", "sequence": [...]}
+        label: Optional binary label (0=CN, 1=CI). Defaults to 0 if not provided.
+        anon_id: Optional participant ID override.
+        max_seq_len: Maximum sequence length (truncate if longer).
+        min_seq_len: Minimum sequence length (returns None if shorter).
+    
+    Returns:
+        Dictionary compatible with collate_fn, or None if sequence too short.
+    """
+    sequence = month_data.get('sequence', [])
+    if len(sequence) < min_seq_len:
+        return None
+    
+    # Extract fields with truncation
+    activity_ids = [item['action_id'] for item in sequence[:max_seq_len]]
+    timestamps = [item['ts'] for item in sequence[:max_seq_len]]
+    
+    sample_label = 0 if label is None else int(label)
+    sample_anon = anon_id if anon_id is not None else month_data.get('anon_id', -1)
+    
+    activity_tensor = torch.tensor(activity_ids, dtype=torch.long)
+    timestamp_tensor = torch.tensor(timestamps, dtype=torch.long)
+    
+    return {
+        'activity_ids': activity_tensor,
+        'timestamps': timestamp_tensor,
+        'label': torch.tensor(sample_label, dtype=torch.float32),
+        'anon_id': sample_anon,
+        'seq_len': len(activity_tensor)
+    }
+
+
 def create_dataloaders(sequence_file: str,
                        label_file: str,
                        batch_size: int = 32,

@@ -1176,7 +1176,7 @@ class CTMSModel(nn.Module):
 
 
 # ============================================================================
-# ANOMALY DETECTION - Paper Section 3.5
+# ANOMALY DETECTION - Paper Section 2.5
 # ============================================================================
 
 def compute_anomaly_scores(encodings: Dict[str, torch.Tensor],

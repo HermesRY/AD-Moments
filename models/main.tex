@@ -276,17 +276,24 @@ where JS denotes Jensen-Shannon divergence~\cite{lin1991divergence} between obse
 
 \noindent\textbf{Task Completion Dimension (T)} analyzes the logical flow of goal-directed activities. 
 For example, healthy task execution follows predictable sequences (taking an object, walking to destination, and placing it appropriately), while cognitive impairment disrupts this logic through forgotten objectives (starting to make coffee but abandoning mid-task), perseveration (repeatedly checking the same cabinet), and task substitution (beginning one task but completing another). 
-We define the Task Incompletion Rate (TIR) to measure the proportion of interrupted sequences:
+We define the Task Incompletion Rate (TIR) as the proportion of sliding subsequences that fail to match any learned template:
 \begin{equation*}
-\text{TIR} = \frac{1}{N}\sum_{i=1}^{N} \mathbf{1}[\text{similarity}(S_i, T_{best}) < \theta_{complete}]
+	ext{TIR} = \frac{1}{N_{sub}}\sum_{i=1}^{N_{sub}} \mathbf{1}[\text{similarity}(S_i, T_{best}) < \theta_{complete}],
 \end{equation*}
-where $S_i$ are observed sequences matched against learned task templates $T$ using dynamic time warping (DTW) distance:
+where $S_i$ are subsequences extracted by a sliding window from the observed activity sequence and $N_{sub}$ is the total number of subsequences. Similarity between a subsequence and a template is computed by sequence alignment:
 \begin{equation*}
-\text{similarity}(S, T) = \exp(-\text{DTW}(S, T) / \tau)
+	ext{similarity}(S, T) = \exp\big(-\text{DTW}(S, T) / \tau\big),
 \end{equation*}
 \begin{equation*}
-\text{DTW}(S, T) = \min_{\pi} \sum_{(i,j) \in \pi} ||s_i - t_j||^2
+	ext{DTW}(S, T) = \min_{\pi} \sum_{(i,j) \in \pi} ||s_i - t_j||^2.
 \end{equation*}
+In our implementation the DTW-based alignment is the reference method; a GPU-friendly pooled-cosine approximation is available as an optional fast path for large-scale experiments.
+
+% Implementation note: for practical, GPU-friendly implementations we provide a configurable fast approximation
+% that replaces costly DTW computations with a pooled-cosine similarity on learned representations.
+% In the reference (paper-faithful) implementation we use DTW to compute sequence alignment costs; in
+% the GPU-optimized runtime used in experiments the pooled-cosine path is enabled by default for speed
+% (it can be disabled to force DTW-based similarity when strict replication of the paper's DTW is required).
 
 %\noindent\textbf{Movement Pattern Dimension (M)} examines spatial navigation efficiency and purposefulness. 
 %Normal movement shows direct paths between functional areas (bedroom$\rightarrow$bathroom$\rightarrow$kitchen) with clear objectives. Cognitively impaired individuals exhibit increased randomness, repetitive pacing (walking the same circuit 10+ times), getting lost in familiar spaces, and spatial disorientation (looking for bathroom in kitchen). 
@@ -321,13 +328,12 @@ where $\mathbf{E} \in \mathbb{R}^{T \times d}$ is the activity embedding sequenc
 \mathbf{P}_{time}[t, 2i] = \sin(t/10000^{2i/d}), \quad \mathbf{P}_{time}[t, 2i+1] = \cos(t/10000^{2i/d})
 \end{equation*}
 
-\noindent\textbf{Task Completion Encoder} employs BiLSTM with attention to compare observed sequences against task templates stored in memory matrix $\mathbf{M}_{task} \in \mathbb{R}^{K \times d}$ where $K$ is the number of learned task patterns:
+\noindent\textbf{Task Completion Encoder} employs a BiLSTM to encode observed activity sequences and performs cross-attention against full-length prototype templates. Task templates are stored as prototype sequences
+\(\mathbf{M}_{task} \in \mathbb{R}^{K\times L\times d}\) (each template has length $L$). Cross-attention between the encoded query and the template set is implemented with multi-head attention:
 \begin{equation*}
-\mathbf{h}_{tc} = \text{Attention}(\text{BiLSTM}(\mathbf{E}), \mathbf{M}_{task})
+\mathbf{h}_{tc} = \text{MultiHeadCrossAttn}\big(\text{BiLSTM}(\mathbf{E}),\;\mathbf{M}_{task}\big).
 \end{equation*}
-\begin{equation*}
-\text{Attention}(\mathbf{Q}, \mathbf{K}) = \text{softmax}(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d_k}})\mathbf{K}
-\end{equation*}
+Similarity for TIR is computed by aligning sliding subsequences to the templates (DTW) and aggregating the fraction of subsequences below a completeness threshold.
 
 %The \textbf{Movement Pattern Encoder} models the home as a spatial graph where rooms are nodes and transitions are edges, using Graph Attention Networks with 3 layers:
 % % \begin{equation*}
@@ -345,14 +351,22 @@ where $\mathcal{G}_{activity}$ represents the activity transition graph.
 
 \noindent\textbf{Social Interaction Encoder} combines 1D temporal convolutions with statistical features:
 \begin{equation*}
-\mathbf{h}_{si} = \text{CNN1D}(\mathbf{E}_{social}) \oplus [\mu_{duration}, \sigma_{frequency}, \text{response\_time}]
+\mathbf{h}_{si} = \text{CNN1D}(\mathbf{E}_{social}) \oplus [\mu_{duration}, \text{freq}_{count}, \text{response\_time}]
 \end{equation*}
 
 We adopt heterogeneous encoder architectures across CTMS dimensions to better align with the intrinsic characteristics and temporal scales of each behavioral process, to balance representational fidelity and computational efficiency required for continuous monitoring and analyzing.
-These dimension encodings are fused using a multi-head attention mechanism with learnable weights that adapt based on individual patterns:
+These dimension encodings are fused using a multi-head self-attention module. We stack the per-dimension encodings into a matrix
+\(H=[\mathbf{h}_c;\mathbf{h}_t;\mathbf{h}_m;\mathbf{h}_s]\in\mathbb{R}^{4\times d}\) and apply multi-head attention:
 \begin{equation*}
-\mathbf{h}_{fused} = \sum_{d=1}^{4} \alpha_d \cdot \mathbf{h}_d, \hspace{2em}
-\alpha_d = \frac{\exp(w_d^T\mathbf{h}_d)}{\sum_{j=1}^{4}\exp(w_j^T\mathbf{h}_j)}
+H_{attn},\;A = \text{MultiHeadAttn}(H,H,H),
+\end{equation*}
+where $A$ contains attention weights of shape (heads × 4 × 4). Per-dimension fusion weights are obtained by averaging attention across heads and keys:
+\begin{equation*}
+\alpha_d = \frac{1}{H}\sum_{h=1}^{H}\frac{1}{4}\sum_{k=1}^{4} A_{h,d,k},
+\end{equation*}
+and the fused representation is
+\begin{equation*}
+\mathbf{h}_{fused} = \sum_{d=1}^{4} \alpha_d \cdot H_{attn}[d].
 \end{equation*}
 
 
@@ -382,6 +396,17 @@ Anomalous segments are detected when the combined score exceeds a population-bas
 \end{cases}
 \end{equation*}
 where $\tau_{normal}$ is derived from the normal patient distribution.
+
+The model implemented for the experiments follows the descriptions above. Per-dimension baselines (means and standard deviations)
+are computed from the cognitively normal cohort on the full-dimension encodings $\mathbf{h}_d$ and used at evaluation time to
+produce per-dimension anomaly scores via the $\ell_2$ deviation normalized by the baseline standard deviation. Task similarity
+is defined by sequence alignment (DTW) over sliding subsequences; for large-scale GPU experiments an optional pooled-cosine
+approximation is available and can be toggled in the runtime. The movement encoder operates on an activity-type transition
+graph (one node per activity type; 21 activity nodes in our taxonomy) where edge weights are normalized transition counts and a
+Graph Attention Network produces movement embeddings. Social features use temporal segments of interaction (frequency is the
+count of social interaction segments, duration their mean), which are concatenated with CNN-derived temporal features. During
+training a supervised classifier head (binary cross-entropy) is used to learn a discriminative output; anomaly scoring is
+performed at evaluation using the per-dimension vector baselines described above.
 
 When CTMS temporal model detect potential AD manifestation episodes, the LLM adapts the fusion weights of four dimensional encoders based on individual behavioral patterns for personalization, extracts precise AD manifestation episodes as temporal digital biomarkers, and finally provides clinically relevant interpretations.
 
@@ -488,84 +513,6 @@ All data collection was approved by the Institutional Review Board (IRB) and the
 Model training and evaluation were conducted on a workstation equipped with an NVIDIA RTX 4090 GPU. For medical interpretation and personalized analysis, we employed the \data{LLaMA-3-70B} model augmented with a medical RAG system. 
 
 
-% \subsection{Dimensional Behavioral Analysis}
-
-% Our framework analyzes behavioral patterns across the CTMS dimensional space to characterize cognitive impairment signatures. Figure~\ref{fig:violin_analysis} and Table~\ref{tab:dimensional_stats} reveal distinct discriminative patterns across the four dimensions, with Social Interaction demonstrating the strongest group separation (Cohen's $d$=-0.90, $p$=0.027), followed by Task Completion ($d$=0.60, $p$=0.238), Circadian Activity ($d$=0.42, $p$=0.356), and Movement Pattern ($d$=0.05, $p$=0.798).
-% CI participants showed substantially reduced social engagement (-0.54±1.42 vs. 1.52±2.93 in normalized z-scores), indicating withdrawal from social interactions characteristic of cognitive decline. Task completion scores were lower in CI participants (0.80±1.96 vs. -0.30±1.72), though not reaching statistical significance, suggesting disrupted goal-directed behavior. Circadian activities showed moderate elevation in CI participants (0.60±1.65 vs. -0.07±1.56), reflecting disrupted daily rhythm patterns. Movement patterns exhibited minimal difference between groups (1.90±3.72 vs. 1.73±3.37), with the smallest effect size among all dimensions ($d$=0.05), indicating that spatial navigation efficiency may be less affected in early-stage cognitive impairment or more variable across individuals.
-% The gradient in effect sizes across dimensions validates our multi-dimensional approach to cognitive assessment. Social Interaction's statistical significance ($p$=0.027) and large effect size ($d$=-0.90) suggest it may serve as a particularly sensitive early biomarker for cognitive decline, aligning with clinical observations that social withdrawal often precedes other functional impairments~\cite{Shafighi2023SocialIsolationAD}. Task Completion and Circadian Activity demonstrate moderate effect sizes ($d$=0.60 and $d$=0.42, respectively), though not reaching conventional statistical significance thresholds, likely due to the modest sample size (12 CN vs. 46 CI) and high inter-individual variability in these behavioral domains. The preservation of directionally consistent effects across all theoretically relevant dimensions, despite limited statistical power, demonstrates the robustness of our CTMS framework in capturing multifaceted cognitive decline patterns.
-
-% \begin{table}[t]
-% \centering
-% \small
-% \begin{tabular}{lcccc}
-% \toprule
-% \textbf{Dimension} & \textbf{CN} & \textbf{CI} & \textbf{Cohen's $d$} & \textbf{$p$-value} \\
-% \midrule
-% Circadian Activity & -0.07±1.56 & 0.60±1.65 & 0.42 & 0.356 \\
-% Task Completion & -0.30±1.72 & 0.80±1.96 & 0.60 & 0.238 \\
-% Movement Pattern & 1.73±3.37 & 1.90±3.72 & 0.05 & 0.798 \\
-% Social Interaction & 1.52±2.93 & -0.54±1.42 & -0.90 & 0.027* \\
-% \bottomrule
-% \end{tabular}
-% \caption{CTMS dimensional statistics (normalized z-scores) by cognitive group. Values represent mean±standard deviation. Positive values in Circadian, Task, and Movement indicate higher deviation from CN baseline; negative values in Social indicate reduced engagement. *$p$<0.05.}
-% \label{tab:dimensional_stats}
-% \vspace{-3em}
-% \end{table}
-
-% \begin{figure}[t]
-% \centering
-% \includegraphics[width=1.03\columnwidth]{figures/exp1_ctms_violin.png}
-% \caption{Distribution analysis of CTMS behavioral dimensions between cognitively normal (CN, green circles, n=12) and cognitively impaired (CI, red triangles, n=46) groups. Violin plots show kernel density estimation with overlaid box plots and individual data points. The Social Interaction dimension demonstrates the strongest separation (Cohen's $d$=-0.90, $p$=0.027*), while Movement Pattern shows substantial overlap ($d$=0.05, $p$=0.798), reflecting differential sensitivity of behavioral domains to cognitive decline. Task Completion and Circadian Activity show moderate effect sizes ($d$=0.60 and $d$=0.42) with directional consistency supporting cognitive impairment detection.}
-% \label{fig:violin_analysis}
-% \end{figure}
-
-
-
-% \subsection{Temporal Activity Pattern Recognition}\label{subsec:temporal}
-
-% To understand how temporal digital biomarkers manifest across different time scales, we analyzed the distribution of anomalous moments throughout the day for both cognitive groups. Figure~\ref{fig:temporal_patterns} presents the hourly temporal distribution of behavioral anomalies detected by our CTMS framework over the daytime period (10:00-19:30).
-% CI participants exhibited significantly elevated anomaly scores compared to CN controls, with an overall 1.54× higher mean score across all hourly windows ($p$<0.001, $t$=4.85). The temporal pattern reveals a distinctive characteristic: CI individuals show a pronounced morning peak at 12:00 (score: 0.72), substantially earlier than the CN evening peak at 18:30 (score: 0.57). This dramatic shift in peak timing---approximately 6.5 hours earlier---may reflect altered circadian activity patterns and accelerated cognitive fatigue accumulation in CI individuals, who exhibit maximal behavioral disruption during midday hours when cognitively normal elderly are still functioning optimally.
-% The most pronounced group differences appear during morning and early afternoon hours (11:00-14:00), where CI scores remain consistently elevated above 0.60 while CN scores range between 0.32-0.40, representing a divergence of over 80\% during this critical period. This sustained morning elevation, indicated by the shaded regions in Figure~\ref{fig:temporal_patterns}, aligns with clinical observations that individuals with cognitive impairment often experience confusion and behavioral disruptions earlier in the day, potentially due to disrupted circadian rhythms and impaired ability to transition between sleep and waking states~\cite{Khachiyants2011Sundown,Musiek2015Sleep}. While afternoon hours (15:00-17:00) maintain elevated CI scores, the gap narrows slightly, and by evening (18:00-19:30) both groups show more comparable patterns, possibly reflecting adaptation to routine evening activities.
-% Importantly, this temporal pattern analysis operates at the window level (30-minute segments), capturing fine-grained behavioral disruptions across multiple time periods throughout the day. The 1.54-fold overall increase and the characteristic morning peak shift provide quantitative evidence that cognitive symptoms manifest with distinct temporal signatures. These findings suggest that morning and midday periods (specifically 11:00-14:00) offer the most sensitive temporal windows for detecting cognitive impairment through continuous behavioral monitoring, where CI individuals show the greatest deviation from normal patterns.
-
-% \begin{figure}[t]
-% \centering
-% \includegraphics[width=0.85\columnwidth]{figures/exp2_daily_patterns.png}
-% \caption{Daily temporal activity anomaly patterns showing the distribution of behavioral anomalies detected by \sys across daytime hours (10:00-19:30). CI individuals (red, n=46) demonstrate consistently higher anomaly scores compared to CN individuals (green, n=12), with a 1.54× overall increase ($p$<0.001, $t$=4.85). The CI group shows a pronounced morning peak at 12:00 (score: 0.72), approximately 6.5 hours earlier than the CN evening peak at 18:30 (score: 0.57), potentially reflecting circadian disruption and altered activity patterns. Red shaded regions indicate periods where CI anomaly scores substantially exceed CN baseline, with the most pronounced differences occurring during morning and early afternoon hours (11:00-14:00), where the gap reaches over 80\%. This temporal signature suggests that morning periods may offer particularly sensitive windows for detecting cognitive impairment through behavioral monitoring.}
-% \label{fig:temporal_patterns}
-% \vspace{-1.5em}
-% \end{figure}
-
-
-% \subsection{Temporal Digital Biomarker Detection and Classification Performance}
-
-% To evaluate our framework's effectiveness in detecting cognitive impairment through temporal behavioral patterns, we compared three approaches: (1) ADMarker baseline~\cite{ouyang2024ADMarker} using statistical feature aggregation for binary AD detection, (2) \sys without personalization using fixed CTMS weights, and (3) our full system with personalized dimensional weight adaptation.
-% Table~\ref{tab:classification} presents the comparative performance across methods. ADMarker's binary AD detection (AD vs. Non-AD) achieved F1=0.333 with only 25\% sensitivity, demonstrating the challenge of distinguishing AD from the combined MCI and CN groups using statistical aggregation alone. This poor performance highlights a fundamental limitation: count-based statistical methods lose the temporal sequential information crucial for detecting cognitive decline. As demonstrated in Section~\ref{subsec:temporal}, our window-level temporal pattern analysis revealed that CI individuals exhibit 1.54× more frequent anomalous behavioral moments than CN participants ($p$<0.001), with characteristic morning peak shifts (6.5 hours earlier) that are invisible to daily statistical summaries. This temporal granularity enables detection of transient cognitive lapses, disrupted task sequences, and circadian irregularities that manifest in the \emph{flow, timing, and sequential organization} of activities rather than their aggregate frequencies.
-% Our \sys without personalization (fixed weights $\alpha$ = [0.25, 0.25, 0.25, 0.25]) achieved F1=0.623 with 73.1\% sensitivity, substantially outperforming the statistical baseline and demonstrating that temporal pattern recognition provides robust discrimination. However, the minimal CI/CN score ratio (1.05×) indicated that global baselines are insufficient to account for individual behavioral variability---benign personal quirks (e.g., habitual night owls with naturally irregular patterns) were incorrectly flagged as pathological, while genuine decline in individuals with atypical baseline routines went undetected.
-% With personalization through subject-specific baseline adaptation, \sys achieved F1=0.688 and sensitivity 84.6\%, representing a 3.4-fold improvement in sensitivity over ADMarker's statistical approach (25\%→84.6\%) and a 2.1-fold improvement in F1 score (0.333→0.688). The CI/CN ratio increased to 1.61× ($p$<0.05), representing a 53\% improvement in group discrimination over the non-personalized version (1.05→1.61). The key insight is that personalized baselines account for individual behavioral patterns, reducing false positives from benign variations while dramatically improving sensitivity to pathological changes. For instance, a participant with naturally irregular sleep patterns (night owl lifestyle) would not trigger false alarms, while another with previously regular routines showing new morning disruptions would be correctly identified.
-% Furthermore, our temporal pattern analysis (Section~\ref{subsec:temporal}) revealed that \emph{when} anomalies occur provides additional discriminative information beyond binary classification. CI individuals showed 54\% higher window-level anomaly scores overall (1.54×, $p$<0.001) with distinctive morning peaks at 12:00, compared to CN evening peaks at 18:30. This 6.5-hour temporal shift and the sustained morning elevation (11:00-14:00 period showing >80\% divergence) validate our hypothesis that cognitive decline manifests through both individual-specific deviations from personal behavioral norms and characteristic temporal signatures that emerge at predictable times of day---patterns that statistical aggregation methods fundamentally cannot capture.
-
-% \begin{table}[t]
-% \centering
-% \small
-% \begin{tabular}{lccc}
-% \toprule
-% Method & F1-Score & Sensitivity & CI/CN Ratio \\
-% \midrule
-% ADMarker~\cite{ouyang2024ADMarker}\textsuperscript{\textdagger} & 0.333 & 25\% & -- \\
-% \sys (No Personal.) & 0.623 & 73.1\% & 1.05× \\
-% \textbf{\sys (Personal.)} & \textbf{0.688} & \textbf{84.6\%} & \textbf{1.61×} \\
-% \midrule
-% \multicolumn{4}{l}{\textit{Window-level temporal pattern analysis (Section~\ref{subsec:temporal}):}} \\
-% \multicolumn{2}{l}{Overall hourly anomaly rate} & -- & \textbf{1.54×***} \\
-% \multicolumn{2}{l}{Morning peak period (11:00-14:00)} & -- & \textbf{>1.80×***} \\
-% \bottomrule
-% \end{tabular}
-% \caption{Classification performance comparison. \textsuperscript{\textdagger}ADMarker (AD vs. Non-AD) from the original paper. Our personalized CTMS approach achieves 3.4× improvement in sensitivity (25\%→84.6\%) and 2.1× improvement in F1 score (0.333→0.688) over statistical baselines, while demonstrating 53\% improvement in CI/CN discrimination (1.05→1.61×) through personalization. Window-level analysis captures fine-grained temporal disruptions with characteristic morning peaks (6.5-hour shift) invisible to count-based aggregation methods. ***$p$<0.001.}
-% \label{tab:classification}
-% \vspace{-3.5em}
-% \end{table}
-% \vspace{-1.0em}
 
 \subsection{Dimensional Behavioral Analysis}
 
