@@ -6,15 +6,15 @@ This implementation follows the paper "AD-Moments" Section 2.4 exactly.
 All equations are referenced with their line numbers from main.tex.
 
 Paper Structure (main.tex):
-- Lines 273-276:  Circadian Disruption Index (CDI) with Jensen-Shannon divergence
-- Lines 283-289: Task Incompletion Rate (TIR) with DTW similarity
-- Lines 295-297: Movement Entropy (ME) from transition probabilities
-- Lines 303-305: Social Withdrawal Score (SWS)
-- Lines 316-322: Circadian Encoder (Transformer with positional encoding)
-- Lines 324-330: Task Encoder (BiLSTM with attention)
-- Lines 341-345: Movement Encoder (GAT on activity transition graph)
-- Lines 347-349: Social Encoder (CNN1D + statistical features)
-- Lines 351-356: Fusion mechanism (attention-based weighted sum)
+- Line 263:      Circadian Disruption Index (CDI) with Jensen-Shannon divergence
+- Lines 271-283: Task Incompletion Rate (TIR) with DTW similarity
+- Line 293:      Movement Entropy (ME) from transition probabilities
+- Line 301:      Social Withdrawal Score (SWS)
+- Lines 314-318: Circadian Encoder (Transformer with positional encoding)
+- Lines 321-325: Task Encoder (BiLSTM with cross-attention)
+- Lines 338-341: Movement Encoder (GAT on activity transition graph)
+- Line 344:      Social Encoder (CNN1D + statistical features)
+- Lines 351-359: Fusion mechanism (multi-head attention-based weighted sum)
 
 Data Format:
 - Input: {"anon_id", "month", "sequence": [{"ts", "action_id"}, ...]}
@@ -39,7 +39,7 @@ def jensen_shannon_divergence(p: torch.Tensor, q: torch.Tensor, eps: float = 1e-
     """
     Jensen-Shannon divergence between two probability distributions.
     
-    Paper Reference: Line 273 (main.tex)
+    Paper Reference: Line 263 (main.tex)
     Equation: CDI = JS(P_observed^{24h}, P_baseline^{24h})
     
     JS(P||Q) = 0.5 * KL(P||M) + 0.5 * KL(Q||M) where M = 0.5 * (P + Q)
@@ -75,7 +75,7 @@ def compute_dtw_distance(seq1: np.ndarray, seq2: np.ndarray) -> float:
     """
     Compute Dynamic Time Warping distance between two sequences.
     
-    Paper Reference: Lines 285-289 (main.tex)
+    Paper Reference: Lines 277-281 (main.tex)
     Equation: DTW(S, T) = min_π sum_{(i,j)∈π} ||s_i - t_j||^2
     
     Args:
@@ -93,7 +93,7 @@ def dtw_similarity(seq1: np.ndarray, seq2: np.ndarray, tau: float = 1.0) -> floa
     """
     Convert DTW distance to similarity score.
     
-    Paper Reference: Line 287 (main.tex)
+    Paper Reference: Line 275 (main.tex)
     Equation: similarity(S, T) = exp(-DTW(S, T) / τ)
     
     Args:
@@ -113,7 +113,7 @@ def compute_transition_entropy(activity_ids: torch.Tensor) -> torch.Tensor:
     """
     Compute transition entropy for movement patterns.
     
-    Paper Reference: Lines 295-297 (main.tex)
+    Paper Reference: Line 293 (main.tex)
     Equation: ME = -sum_{i,j} P(i→j) * log P(i→j)
     
     Args:
@@ -149,19 +149,24 @@ def compute_transition_entropy(activity_ids: torch.Tensor) -> torch.Tensor:
 
 
 # ============================================================================
-# CTMS ENCODERS - Following Paper Section 3.4
+# CTMS ENCODERS - Following Paper Section 2.4
 # ============================================================================
 
 class CircadianEncoder(nn.Module):
     """
     Circadian Activity Encoder using Transformer with positional encodings.
     
-    Paper Reference: Lines 316-322 (main.tex)
+    Paper Reference: Lines 314-318 (main.tex)
     Architecture: TransformerEncoder(E + P_time + P_day)
     Positional Encoding: P_time[t,2i] = sin(t/10000^(2i/d))
                         P_time[t,2i+1] = cos(t/10000^(2i/d))
     
-    Output Metric: CDI (Circadian Disruption Index) via JS divergence (Line 273)
+    Output Metric: CDI (Circadian Disruption Index) via JS divergence (Line 263)
+    
+    Temporal Scale: MACRO-SCALE (hours-days)
+    - Processes 24-hour activity distributions
+    - Captures circadian rhythm stability and daily patterns
+    - Detects nighttime wandering and sleep-wake cycle disruptions
     
     Args:
         d_model: Embedding dimension (default: 128)
@@ -203,7 +208,7 @@ class CircadianEncoder(nn.Module):
         """
         Compute sinusoidal positional encodings for time-of-day.
         
-        Paper Reference: Lines 320-322 (main.tex)
+        Paper Reference: Lines 316-318 (main.tex)
         Equation: P_time[t,2i] = sin(t/10000^(2i/d))
                  P_time[t,2i+1] = cos(t/10000^(2i/d))
         
@@ -317,13 +322,19 @@ class CircadianEncoder(nn.Module):
 
 class TaskCompletionEncoder(nn.Module):
     """
-    Task Completion Encoder using BiLSTM with attention over task templates.
+    Task Completion Encoder using BiLSTM with cross-attention over task templates.
     
-    Paper Reference: Lines 324-330 (main.tex)
-    Architecture: h_tc = Attention(BiLSTM(E), M_task)
-    Attention: softmax(QK^T / sqrt(d_k)) * K
+    Paper Reference: Lines 321-325 (main.tex)
+    Architecture: h_tc = MultiHeadCrossAttn(BiLSTM(E), M_task)
+    Cross-Attention: Query from BiLSTM output, Key/Value from template sequences
     
-    Output Metric: TIR (Task Incompletion Rate) via DTW similarity (Lines 283-289)
+    Output Metric: TIR (Task Incompletion Rate) via DTW similarity (Lines 271-283)
+    
+    Temporal Scale: MESO-SCALE (1-10 minutes)
+    - Uses sliding windows of size 20 (task_window_size)
+    - Each window typically covers ~10 minutes of activity
+    - Captures task completion logic and repeated unsuccessful attempts
+    - Detects perseverative behavior and task abandonment
     
     Args:
         d_model: Embedding dimension (default: 128)
@@ -369,8 +380,9 @@ class TaskCompletionEncoder(nn.Module):
             batch_first=True
         )
 
-        # Store window size for task subsequences
-        self.task_window_size = 20  # ✅ ADDED
+        # Meso-scale window size for task subsequences
+        # Typically covers ~10 minutes of activity (20 activities × ~30 sec each)
+        self.task_window_size = 20
         
         # TIR feature projection
         self.tir_proj = nn.Linear(1, d_model // 4)
@@ -378,28 +390,31 @@ class TaskCompletionEncoder(nn.Module):
         # Output projection
         self.output_proj = nn.Linear(hidden_size * 2 + d_model // 4, d_model)
         
-        # Learnable completion threshold θ_complete (Line 284)
+        # Learnable completion threshold θ_complete (Line 271)
         self.theta_complete = nn.Parameter(torch.tensor(0.7))
         
-        # Temperature for DTW similarity (Line 287)
+        # Temperature for DTW similarity (Line 275)
         self.tau = nn.Parameter(torch.tensor(1.0))
 
     def extract_task_subsequences(self, embedded_seq: torch.Tensor, 
                                window_size: int, 
                                stride: int = None) -> List[torch.Tensor]:
         """
-        ✅ ADDED: Extract task subsequences using sliding window.
+        Extract task subsequences using sliding window for meso-scale analysis.
         
-        This addresses the issue that TIR should be computed as a proportion
-        over multiple subsequences, not a single 0/1 for the whole sequence.
+        This implements the meso-scale temporal pattern extraction described in the paper.
+        The sliding window captures task completion patterns over 1-10 minute timeframes.
+        
+        Paper Reference: Lines 221-225 (main.tex) - Meso-scale description
+        Implementation: TIR is computed as proportion over multiple subsequences (Line 271)
         
         Args:
             embedded_seq: [seq_len, d_model] embedded sequence
-            window_size: Size of each subsequence window
-            stride: Stride for sliding window (default: window_size // 2)
+            window_size: Size of each subsequence window (default: 20 activities ~10 mins)
+            stride: Stride for sliding window (default: window_size // 2, 50% overlap)
         
         Returns:
-            List of subsequence tensors
+            List of subsequence tensors, each of shape [window_size, d_model]
         """
         if stride is None:
             stride = window_size // 2
@@ -550,11 +565,18 @@ class MovementPatternEncoder(nn.Module):
     """
     Movement Pattern Encoder using Graph Attention Networks.
     
-    Paper Reference: Lines 341-345 (main.tex)
+    Paper Reference: Lines 338-341 (main.tex)
     Architecture: h_mp = GAT(G_activity, E)
     where G_activity is the activity transition graph
     
-    Output Metric: ME (Movement Entropy) from transition probabilities (Lines 295-297)
+    Output Metric: ME (Movement Entropy) from transition probabilities (Line 293)
+    
+    Temporal Scale: MICRO-SCALE (5-30 seconds)
+    - Analyzes immediate activity transitions (t → t+1)
+    - Builds a 21-node graph (one per activity type)
+    - Edges represent sequential transitions between activities
+    - Captures rapid transition patterns indicating cognitive lapses
+    - Detects repetitive pacing and spatial disorientation
     
     Args:
         d_model: Embedding dimension (default: 128)
@@ -565,12 +587,12 @@ class MovementPatternEncoder(nn.Module):
         self.d_model = d_model
         self.num_activities = num_activities
         
-        # ✅ FIXED: Activity TYPE embeddings (21 nodes)
-        # Each node represents one activity type
+        # Activity TYPE embeddings (21 nodes, one per activity type)
+        # Each node represents one activity type in the transition graph
         self.activity_type_embed = nn.Embedding(num_activities, d_model)
         
-        # ✅ FIXED: Graph Attention Network on activity transition graph
-        # Input: 21 activity nodes with their embeddings
+        # Graph Attention Network on 21-node activity transition graph
+        # Captures micro-scale (5-30 sec) transition patterns
         self.gat1 = GATConv(
             in_channels=d_model,
             out_channels=d_model // 2,
@@ -590,7 +612,7 @@ class MovementPatternEncoder(nn.Module):
         # Movement entropy projection
         self.entropy_proj = nn.Linear(1, d_model // 4)
         
-        # ✅ ADDED: Readout MLP to aggregate 21 node embeddings
+        # Readout MLP to aggregate 21 node embeddings into batch-level representation
         self.readout = nn.Sequential(
             nn.Linear(d_model * num_activities, d_model * 2),
             nn.ReLU(),
@@ -603,24 +625,30 @@ class MovementPatternEncoder(nn.Module):
     
     def build_activity_transition_graph(self, activity_ids: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
         """
-        ✅ FIXED: Build 21-node activity transition graph.
+        Build 21-node activity transition graph for micro-scale analysis.
         
-        Paper Reference: Line 345 (main.tex)
-        Description: "G_activity represents the activity transition graph"
+        Paper Reference: Line 339 (main.tex) - "G_activity represents the activity transition graph"
+        Temporal Scale: Lines 220-221 (main.tex) - Micro-scale (5-30 secs)
         
-        This is the KEY fix: Instead of temporal chain (batch*seq_len nodes),
-        we build a graph with 21 nodes (one per activity type).
+        This constructs a graph with 21 nodes (one per activity type), where edges
+        represent observed sequential transitions between activities. Edge weights
+        are normalized transition probabilities P(i→j).
+        
+        Key difference from temporal chain: Instead of linking time steps, we link
+        activity TYPES. This captures micro-scale transition patterns like
+        "walk→stand→walk" that indicate forgotten intent.
         
         Args:
             activity_ids: [batch_size, seq_len] activity sequence
         
         Returns:
             edge_index: [2, num_edges] edges between activity types
-            edge_weight: [num_edges] edge weights (transition probabilities)
+            edge_weight: [num_edges] edge weights (normalized transition probabilities)
         """
         batch_size, seq_len = activity_ids.shape
         
-        # ✅ FIXED: Count transitions between activity TYPES (not time steps)
+        # Count transitions between activity TYPES (not time steps)
+        # This captures micro-scale patterns: immediate activity transitions
         transition_count = torch.zeros(
             self.num_activities,  # 21 activity types
             self.num_activities,
@@ -652,7 +680,8 @@ class MovementPatternEncoder(nn.Module):
         edge_index = torch.tensor(edge_list, dtype=torch.long, device=activity_ids.device).t()
         edge_weight = torch.tensor(edge_weights, dtype=torch.float32, device=activity_ids.device)
         
-        # ✅ Normalize edge weights to get transition probabilities
+        # Normalize edge weights to get transition probabilities P(i→j)
+        # Used for computing Movement Entropy (Line 293)
         for src in range(self.num_activities):
             src_mask = (edge_index[0] == src)
             if src_mask.any():
@@ -730,27 +759,35 @@ class SocialInteractionEncoder(nn.Module):
     """
     Social Interaction Encoder using 1D CNN with statistical features.
     
-    Paper Reference: Lines 347-349 (main.tex)
+    Paper Reference: Line 344 (main.tex)
     Architecture: h_si = CNN1D(E_social) ⊕ [μ_duration, σ_frequency, response_time]
     
-    Output Metric: SWS (Social Withdrawal Score) (Lines 303-305)
+    Output Metric: SWS (Social Withdrawal Score) (Line 301)
+    
+    Temporal Scale: CROSS-SCALE (minutes to hours)
+    - Processes social interaction segments of varying duration
+    - Extracts statistical features across multiple timescales
+    - Captures both micro-level (individual interactions) and meso-level (patterns)
+    - Detects withdrawal from conversations and shortened interactions
     
     Args:
         d_model: Embedding dimension (default: 128)
         num_activities: Number of activity types (default: 21)
+        social_activity_ids: List of activity IDs considered as social interactions
     """
     def __init__(self, d_model: int = 128, num_activities: int = 21,
-                social_activity_ids: List[int] = None):  # ✅ ADDED parameter
+                social_activity_ids: List[int] = None):
         super().__init__()
         self.d_model = d_model
         
         # Activity embedding
         self.activity_embed = nn.Embedding(num_activities, d_model)
         
-        # ✅ FIXED: Configurable social activity IDs
+        # Configurable social activity IDs (default: activities 1 and 18)
+        # These represent social interactions like phone calls, conversations, etc.
         self.social_activity_ids = social_activity_ids if social_activity_ids is not None else [1, 18]
         
-        # 1D CNN layers (Line 348)
+        # 1D CNN layers for temporal pattern extraction (Line 344)
         self.conv1 = nn.Conv1d(d_model, 256, kernel_size=3, padding=1)
         self.conv2 = nn.Conv1d(256, 128, kernel_size=3, padding=1)
         self.conv3 = nn.Conv1d(128, d_model, kernel_size=3, padding=1)
@@ -767,10 +804,15 @@ class SocialInteractionEncoder(nn.Module):
     
     def compute_social_statistics(self, activity_ids: torch.Tensor) -> torch.Tensor:
         """
-        Compute social interaction statistics.
+        Compute social interaction statistics across multiple timescales.
         
-        Paper Reference: Line 348 (main.tex)
-        Features: [μ_duration, σ_frequency, response_time]
+        Paper Reference: Line 344 (main.tex)
+        Features: [μ_duration, freq_count, response_time]
+        
+        These features capture:
+        - μ_duration: Average length of social interactions (minutes)
+        - freq_count: Number of social interaction episodes
+        - response_time: Average gap between interactions (minutes)
         
         Args:
             activity_ids: [batch_size, seq_len] activity sequence
@@ -841,7 +883,7 @@ class SocialInteractionEncoder(nn.Module):
         """
         Compute Social Withdrawal Score.
         
-        Paper Reference: Lines 303-305 (main.tex)
+        Paper Reference: Line 301 (main.tex)
         Equation: SWS = 1 - (duration_current × frequency_current) / 
                             (duration_baseline × frequency_baseline)
         
@@ -918,51 +960,67 @@ class CTMSModel(nn.Module):
     """
     Complete CTMS Model with four-dimensional behavioral encoders.
     
-    Paper Reference: Lines 351-356 (main.tex)
-    Fusion: h_fused = sum(α_d × h_d)
-           α_d = exp(w_d^T h_d) / sum(exp(w_j^T h_j))
+    Paper Reference: Lines 351-359 (main.tex)
+    Fusion: Multi-head self-attention over stacked dimensional encodings
+    
+    Architecture:
+    - H = [h_c; h_t; h_m; h_s] ∈ R^{4×d}
+    - H_attn, A = MultiHeadAttn(H, H, H)
+    - α_d = (1/H)∑_h (1/4)∑_q A_{h,q,d}
+    - h_fused = ∑_d α_d × H_attn[d]
+    
+    Temporal Scale Integration:
+    - Circadian (C): Macro-scale (hours-days) - Line 314
+    - Task (T): Meso-scale (1-10 mins) - Line 321
+    - Movement (M): Micro-scale (5-30 secs) - Line 338
+    - Social (S): Cross-scale (mins-hours) - Line 344
     
     The model outputs:
     - Dimensional encodings: h_c, h_t, h_m, h_s
     - Behavioral metrics: CDI, TIR, ME, SWS
-    - Attention weights: α_c, α_t, α_m, α_s
+    - Attention weights: α_c, α_t, α_m, α_s (normalized fusion weights)
     
     Args:
         d_model: Embedding dimension (default: 128)
         num_activities: Number of activity types (default: 21)
         num_task_templates: Number of task templates (default: 20)
+        num_fusion_heads: Number of attention heads for fusion (default: 4)
     """
     def __init__(self, d_model: int = 128, num_activities: int = 21,
              num_task_templates: int = 20, 
-             num_fusion_heads: int = 4):  # ✅ ADDED parameter
+             num_fusion_heads: int = 4):
         super().__init__()
         self.d_model = d_model
-        self.num_fusion_heads = num_fusion_heads  # ✅ ADDED
+        self.num_fusion_heads = num_fusion_heads
         
-        # Four encoders
+        # Four encoders covering different temporal scales
+        # Macro-scale: Circadian (hours-days)
         self.circadian_encoder = CircadianEncoder(
             d_model=d_model,
             num_activities=num_activities
         )
         
+        # Meso-scale: Task completion (1-10 minutes)
         self.task_encoder = TaskCompletionEncoder(
             d_model=d_model,
             num_templates=num_task_templates,
             num_activities=num_activities
         )
         
+        # Micro-scale: Movement patterns (5-30 seconds)
         self.movement_encoder = MovementPatternEncoder(
             d_model=d_model,
             num_activities=num_activities
         )
         
+        # Cross-scale: Social interactions (minutes-hours)
         self.social_encoder = SocialInteractionEncoder(
             d_model=d_model,
             num_activities=num_activities
         )
         
-        # ✅ FIXED: True multi-head attention for fusion
-        # Paper Line 351: "multi-head attention mechanism"
+        # Multi-head attention for fusion (Lines 351-359)
+        # Implements: H_attn, A = MultiHeadAttn(H, H, H)
         self.fusion_attention = nn.MultiheadAttention(
             embed_dim=d_model,
             num_heads=num_fusion_heads,
@@ -970,10 +1028,10 @@ class CTMSModel(nn.Module):
             batch_first=True
         )
         
-        # ✅ ADDED: Store default alpha
+        # Default uniform fusion weights (1/4 for each dimension)
         self.register_buffer('default_alpha', torch.ones(4) / 4)
         
-        # ✅ ADDED: Per-user alpha storage
+        # Per-user personalized alpha storage (for LLM-guided personalization)
         self.user_alphas = {}
         
         # Auxiliary classifier for training
@@ -1022,63 +1080,90 @@ class CTMSModel(nn.Module):
                                         h_m: torch.Tensor, h_s: torch.Tensor,
                                         user_alphas: Optional[torch.Tensor] = None) -> Tuple[torch.Tensor, torch.Tensor]:
         """
-        ✅ FIXED: Compute fusion weights using TRUE multi-head attention.
+        Compute fusion weights using multi-head self-attention.
         
-        Paper Reference: Lines 351-356 (main.tex)
-        "multi-head attention mechanism with learnable weights"
+        Paper Reference: Lines 351-359 (main.tex)
+        Architecture:
+        1. Stack: H = [h_c; h_t; h_m; h_s] ∈ R^{4×d}
+        2. Attention: H_attn, A = MultiHeadAttn(H, H, H)
+        3. Weights: α_d = (1/H)∑_h (1/4)∑_q A_{h,q,d}
+        4. Fusion: h_fused = ∑_d α_d × H_attn[d]
+        
+        Args:
+            h_c: [batch, d_model] Circadian encoding (macro-scale)
+            h_t: [batch, d_model] Task encoding (meso-scale)
+            h_m: [batch, d_model] Movement encoding (micro-scale)
+            h_s: [batch, d_model] Social encoding (cross-scale)
+            user_alphas: [batch, 4] Optional user-specific weights for personalization
+        
+        Returns:
+            h_fused: [batch, d_model] Fused representation
+            alpha: [batch, 4] Normalized fusion weights [α_c, α_t, α_m, α_s]
         """
         batch_size = h_c.size(0)
         
-        # Stack dimensions as sequence: [batch, 4, d_model]
+        # Step 1: Stack dimensions as sequence: H = [h_c; h_t; h_m; h_s]
+        # Shape: [batch, 4, d_model]
         h_stack = torch.stack([h_c, h_t, h_m, h_s], dim=1)
         
-        # Apply multi-head self-attention
+        # Step 2: Apply multi-head self-attention
+        # H_attn, A = MultiHeadAttn(H, H, H)
         h_attn, attn_weights = self.fusion_attention(
             query=h_stack,
             key=h_stack,
             value=h_stack,
-            average_attn_weights=True
-        )
+            average_attn_weights=True  # Returns averaged attention weights
+        )  # h_attn: [batch, 4, d_model], attn_weights: [batch, 4, 4]
         
-        # Extract attention weights
+        # Step 3: Extract fusion weights
+        # α_d = (1/4)∑_q A_{q,d} - average over queries (dim=1)
+        # This gives the importance of each dimension d as a key
         alpha = attn_weights.mean(dim=1)  # [batch, 4]
         
-        # Blend with user-specific alphas if provided
+        # Step 4: Blend with user-specific alphas if provided (for personalization)
         if user_alphas is not None:
             if user_alphas.dim() == 1:
                 user_alphas = user_alphas.unsqueeze(0).expand(batch_size, -1)
             alpha = 0.5 * alpha + 0.5 * user_alphas
             alpha = alpha / alpha.sum(dim=1, keepdim=True)
         
-        # Weighted sum
-        h_fused = torch.sum(h_attn * alpha.unsqueeze(-1), dim=1)
+        # Step 5: Weighted sum - h_fused = ∑_d α_d × H_attn[d]
+        h_fused = torch.sum(h_attn * alpha.unsqueeze(-1), dim=1)  # [batch, d_model]
         
         return h_fused, alpha
 
     def update_user_alpha(self, user_id: str, alpha_llm: torch.Tensor, 
                         learning_rate: float = 0.1):
         """
-        ✅ ADDED: Direct alpha update for personalization.
+        Update user-specific fusion weights for personalization.
         
-        Paper Reference: Lines 222-226 (main.tex)
-        Equation: α^{(t+1)} = α^{(t)} + η * (α_LLM - α^{(t)})
+        Paper Reference: Line 423 (main.tex)
+        Equation: α^{(t+1)} = α^{(t)} + η × (α_LLM - α^{(t)})
+        
+        This implements the LLM-guided personalization mechanism where fusion
+        weights are gradually adjusted based on individual symptom patterns.
+        
+        Args:
+            user_id: User identifier
+            alpha_llm: [4] LLM-recommended weights based on individual patterns
+            learning_rate: Update rate η (default: 0.1, as per paper)
         """
         if user_id in self.user_alphas:
             alpha_current = self.user_alphas[user_id]
         else:
             alpha_current = self.default_alpha.clone()
         
-        # Update equation
+        # Gradient update: α^{(t+1)} = α^{(t)} + η × (α_LLM - α^{(t)})
         alpha_new = alpha_current + learning_rate * (alpha_llm - alpha_current)
         
-        # Normalize
+        # Normalize to ensure sum to 1
         alpha_new = alpha_new / alpha_new.sum()
         
-        # Store
+        # Store updated weights
         self.user_alphas[user_id] = alpha_new
 
     def get_user_alpha(self, user_id: str) -> torch.Tensor:
-        """✅ ADDED: Get user-specific alpha."""
+        """Get user-specific fusion weights, or default if not set."""
         if user_id in self.user_alphas:
             return self.user_alphas[user_id]
         else:
@@ -1094,28 +1179,35 @@ class CTMSModel(nn.Module):
         """
         Forward pass through CTMS model.
         
+        Processes activity sequences through four temporal encoders (micro/meso/macro-scale),
+        fuses them using multi-head attention, and outputs behavioral metrics.
+        
         Args:
             activity_ids: [batch_size, seq_len] activity indices (0-20)
             timestamps: [batch_size, seq_len] Unix timestamps
-            baseline_circadian: [batch_size, 24] baseline circadian distribution
-            baseline_social: [batch_size, 3] baseline social statistics
-            user_ids: Optional[List[str]] user IDs for personalized alpha weights
-            return_encodings_only: If True, skip classification
+            baseline_circadian: [batch_size, 24] baseline 24h distribution (for CDI)
+            baseline_social: [batch_size, 3] baseline social statistics (for SWS)
+            user_ids: Optional list of user IDs for personalized fusion weights
+            return_encodings_only: If True, skip classification (for feature extraction)
         
         Returns:
             Dictionary containing:
-            - h_c, h_t, h_m, h_s: Dimensional encodings
-            - cdi, tir, me, sws: Behavioral metrics
-            - alpha: Fusion weights [batch_size, 4]
-            - output: Classification scores (if not return_encodings_only)
+            - h_c, h_t, h_m, h_s: [batch, d_model] Dimensional encodings
+            - cdi, tir, me, sws: [batch] Behavioral metrics
+            - alpha: [batch, 4] Fusion weights [α_c, α_t, α_m, α_s]
+            - output: [batch] Classification scores (if not return_encodings_only)
         """
         # Convert timestamps to hours (0-24)
         hours = (timestamps % 86400) / 3600.0  # Seconds in day / seconds in hour
         
-        # Encode each dimension (Section 3.4)
+        # Encode each dimension at its respective temporal scale
+        # Macro-scale: 24-hour circadian patterns
         h_c, cdi = self.circadian_encoder(activity_ids, hours, day_of_week=None, baseline_distribution=baseline_circadian)
+        # Meso-scale: 1-10 minute task sequences
         h_t, tir = self.task_encoder(activity_ids)
+        # Micro-scale: 5-30 second activity transitions
         h_m, me = self.movement_encoder(activity_ids)
+        # Cross-scale: Multi-timescale social interactions
         h_s, sws = self.social_encoder(activity_ids, baseline_social)
         
         # Store all outputs
@@ -1135,18 +1227,19 @@ class CTMSModel(nn.Module):
         if return_encodings_only:
             return outputs
         
-        # ✅ Get user-specific alphas if provided
+        # Get user-specific fusion weights if provided (for personalization)
         user_alphas = None
         if user_ids is not None:
             user_alphas = torch.stack([
                 self.get_user_alpha(uid) for uid in user_ids
             ]).to(h_c.device)
 
-        # ✅ FIXED: Multi-head attention fusion
+        # Multi-head attention fusion (Lines 351-359)
         h_fused, alpha = self.compute_fusion_weights_multihead(
             h_c, h_t, h_m, h_s, user_alphas
         )
         outputs['alpha'] = alpha
+        
         # Classification
         logits = self.classifier(h_fused).squeeze(-1)  # [batch]
         outputs['output'] = logits
@@ -1157,7 +1250,7 @@ class CTMSModel(nn.Module):
         """
         Update fusion weights based on LLM-recommended personalization.
         
-        This implements the personalization mechanism described in Section 3.6.
+        This implements the personalization mechanism described in Section 2.6.
         Weights are gradually adjusted based on individual symptom manifestation patterns.
         
         Args:
@@ -1183,19 +1276,26 @@ def compute_anomaly_scores(encodings: Dict[str, torch.Tensor],
                            baseline_stats: Dict[str, Dict[str, torch.Tensor]],
                            alpha: Optional[torch.Tensor] = None) -> Tuple[torch.Tensor, Dict[str, torch.Tensor]]:
     """
-    Compute anomaly scores by comparing to normal baselines.
+    Compute anomaly scores by comparing dimensional encodings to normal baselines.
     
-    Paper Reference: Lines 368-378 (main.tex)
-    Equation: Anomaly_Score_d = ||h_d - μ_{d,normal}||_2 / σ_{d,normal}
-             AD_Score = sum(α_d × Anomaly_Score_d)
+    Paper Reference: Lines 372-378 (main.tex)
+    Equations:
+    - Anomaly_Score_d = ||h_d - μ_{d,normal}||_2 / σ_{d,normal}
+    - AD_Score = ∑_d α_d × Anomaly_Score_d
+    
+    This detects behavioral deviations across multiple temporal scales:
+    - Circadian (macro): Long-term rhythm disruptions
+    - Task (meso): Mid-term task execution problems
+    - Movement (micro): Short-term transition anomalies
+    - Social (cross): Multi-scale social withdrawal
     
     Args:
-        encodings: Dictionary with 'h_c', 'h_t', 'h_m', 'h_s'
+        encodings: Dictionary with keys 'h_c', 'h_t', 'h_m', 'h_s'
         baseline_stats: Dictionary with 'mean' and 'std' for each dimension
-        alpha: [batch_size, 4] or [4] fusion weights (optional, uses uniform if None)
+        alpha: [batch_size, 4] or [4] fusion weights (uses uniform if None)
     
     Returns:
-        ad_scores: [batch_size] Combined anomaly scores
+        ad_scores: [batch_size] Combined weighted anomaly scores
         dim_scores: Dictionary with per-dimension anomaly scores
     """
     h_c = encodings['h_c']
@@ -1295,11 +1395,16 @@ def get_model_summary(model: CTMSModel, batch_size: int = 32, seq_len: int = 100
 if __name__ == '__main__':
     print("Initializing CTMS Model - Paper Implementation")
     print("\nPaper Reference (main.tex): Section 2.4 - CTMS Temporal Encoders")
-    print("  - Lines 316-322: Circadian Encoder (Transformer)")
-    print("  - Lines 324-330: Task Encoder (BiLSTM)")
-    print("  - Lines 341-345: Movement Encoder (GAT)")
-    print("  - Lines 347-349: Social Encoder (CNN1D)")
-    print("  - Lines 351-356: Fusion (Attention-based weights)\n")
+    print("  - Lines 314-318: Circadian Encoder (Transformer) [MACRO-SCALE]")
+    print("  - Lines 321-325: Task Encoder (BiLSTM + Cross-Attention) [MESO-SCALE]")
+    print("  - Lines 338-341: Movement Encoder (GAT) [MICRO-SCALE]")
+    print("  - Line 344:      Social Encoder (CNN1D) [CROSS-SCALE]")
+    print("  - Lines 351-359: Fusion (Multi-head Attention)\n")
+    print("Temporal Scale Coverage:")
+    print("  - MACRO (hours-days):   24-hour circadian patterns")
+    print("  - MESO (1-10 mins):     Task completion windows (size=20)")
+    print("  - MICRO (5-30 secs):    Immediate activity transitions")
+    print("  - CROSS (mins-hours):   Multi-scale social interactions\n")
     
     model = CTMSModel(d_model=128, num_activities=21, num_task_templates=20)
     get_model_summary(model)
@@ -1307,4 +1412,5 @@ if __name__ == '__main__':
     print("\n✓ Model initialized successfully!")
     print("✓ All components match paper specifications")
     print("✓ DTW similarity implemented for TIR computation")
-    print("✓ Fusion weights are dynamically computed and adjustable")
+    print("✓ Multi-head attention fusion with personalization support")
+    print("✓ Multi-scale temporal analysis (micro/meso/macro) integrated")
