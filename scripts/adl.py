@@ -1,5 +1,6 @@
-# adl.py
+# Sample ADL Extraction Model
 # Depth-only, ADMarker-like lightweight 8-layer 3D-CNN -> structured activity sequences.
+# Reference Results from ADMarker (https://dl.acm.org/doi/pdf/10.1145/3636534.3649370), for the accuracy of biomarker (ADLs) detection, the mean accuracy is over 94.51% for AD subjects, while 87.83% and 91.67% for cognitively normal and MCI.
 # Input : (B, 1, T, H, W)
 # Output: dict(feat_seq: (B, S, D), logits_t: (B, S, C)|None, logits_clip: (B, C)|None)
 
