@@ -1,3 +1,17 @@
+# ============================================
+# ONLY KEEP: Fixed/ and sample_data/
+# ============================================
+
+# Ignore all root-level directories EXCEPT Fixed and sample_data
+/Analysis_Sig/
+/Data/
+/Full/
+/New/
+/P_value/
+/analysis/
+/models/
+/scripts/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -11,10 +25,6 @@ build/
 # Jupyter Notebook
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
-
-# PyTorch models (optional - uncomment if you don't want to push large model files)
-# *.pt
-# *.pth
 
 # IDE
 .vscode/

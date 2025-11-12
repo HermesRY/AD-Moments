@@ -1,0 +1,42 @@
+{
+  "dataset": {
+    "total_subjects": 68,
+    "train_subjects": 47,
+    "test_subjects": 21
+  },
+  "model": {
+    "name": "Temporal Digital Biomarker (TDB) System",
+    "features": [
+      "diversity_impairment",
+      "temporal_impairment",
+      "perseveration_impairment",
+      "activity_impairment",
+      "daytime_impairment",
+      "social_impairment"
+    ],
+    "weights": {
+      "diversity_impairment": 0.15,
+      "temporal_impairment": 0.2,
+      "perseveration_impairment": 0.15,
+      "activity_impairment": 0.2,
+      "daytime_impairment": 0.25,
+      "social_impairment": 0.05
+    },
+    "threshold": 37.9253882259574
+  },
+  "performance": {
+    "train_accuracy": 0.6382978723404256,
+    "test_accuracy": 0.7619047619047619,
+    "auc": 0.576923076923077,
+    "sensitivity": 0.9230769230769231,
+    "specificity": 0.5,
+    "ppv": 0.75,
+    "npv": 0.8
+  },
+  "confusion_matrix": {
+    "tn": 4,
+    "fp": 4,
+    "fn": 1,
+    "tp": 12
+  }
+}
