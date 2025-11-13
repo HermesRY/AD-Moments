@@ -6,15 +6,28 @@ This repository contains a novel **Temporal Digital Biomarker (TDB) system** for
 
 ```
 .
-├── Fixed/                      # TDB System Implementation
-│   ├── tdb_system.ipynb       # Main analysis notebook
-│   ├── cn_baseline_final.json # CN population baseline
-│   └── ...                    # Results and visualizations
+.
+├── Fixed/                           #Fixed Weight (Default)
+│   ├── tdb_system.ipynb
+│   ├── anomalous_time_stamps_export
+│   ├── heatmap.png
 │
-└── sample_data/               # Dataset
-    ├── subjects.json          # Subject metadata
-    ├── sequences.jsonl        # Behavioral sequences
-    └── ...
+├── LLM (Gemini)/                    #Fixed & LLM Adjusted Weights Comparison
+│   ├── tdb_system_LLM.ipynb
+│   └── anomalous_time_stamps_export
+│   └── llm_logs for weights adjustment
+│   └── medical reports
+│
+├── VideoLM/                         #TODO
+│   └── videolm_eval.ipynb
+│
+├── sample_data/
+│   ├── subjects.json
+│   ├── action.json
+│   ├── sequences.jsonl
+│
+├── .gitignore
+└── README.md
 ```
 
 ## 🎯 Key Features
