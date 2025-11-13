@@ -1,0 +1,24 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Activity Pattern Consistency",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "improving",
+  "adjusted_weights": {
+    "diversity_impairment": 0.00,
+    "temporal_impairment": 0.40,
+    "perseveration_impairment": 0.00,
+    "activity_impairment": 0.30,
+    "daytime_impairment": 0.30,
+    "social_impairment": 0.00
+  },
+  "clinical_summary": "Patient #35, despite a 'Cognitively Normal' diagnosis, displays severe and persistent impairments in Temporal Regularity, Activity Pattern Consistency, and Daytime Energy Distribution. These patterns suggest significant disruptions in daily routine predictability and circadian rhythm, which are highly unusual for a cognitively normal individual and warrant immediate further investigation.",
+  "recommendations": [
+    "Initiate an urgent, comprehensive clinical and neuropsychological evaluation to reconcile these striking digital biomarker findings with the 'Cognitively Normal' diagnosis and explore potential underlying medical, neurological, or sleep disorders.",
+    "Gather detailed collateral information regarding the patient's daily routines, sleep habits, medication adherence, and environmental factors that might contribute to such profound temporal disorganization.",
+    "Develop a highly structured daily schedule with consistent sleep-wake times, meal times, and activity periods, while closely monitoring TDB metrics for improvements and providing psychoeducation to the patient and family on chronotherapy principles."
+  ]
+}
+```

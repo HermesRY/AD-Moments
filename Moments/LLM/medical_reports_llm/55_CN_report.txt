@@ -1,0 +1,81 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            55
+Known Diagnosis:       CN
+TDB Classification:    Cognitively Impaired (CI)
+Analysis Period:       3 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    91.89 / 100
+Default Score:         58.29 / 100
+Score Difference:      +33.61
+
+Classification Threshold: 82.93
+Risk Level:            HIGH
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Daytime Energy Distribution
+  3. Behavioral Diversity
+
+Temporal Trend:        STABLE
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.200 (default: 0.150) ↑
+  Temporal                                : 0.400 (default: 0.200) ↑
+  Perseveration                           : 0.000 (default: 0.150) ↓
+  Activity                                : 0.000 (default: 0.200) ↓
+  Daytime                                 : 0.400 (default: 0.250) ↑
+  Social                                  : 0.000 (default: 0.050) ↓
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #55, despite a cognitively normal (CN) diagnosis, demonstrates striking and stable maximal impairment in Temporal Regularity and Daytime Energy Distribution, alongside consistent impairment in Behavioral Diversity. This pattern strongly suggests significant disruption in the organization of daily activities and circadian rhythms, which is highly atypical for a truly CN individual and warrants immediate investigation.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    40 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2022-06-23 13:44 - 14:44
+     TDB Score: 80.00
+     Top Features:
+       - Temporal: 40.00
+       - Daytime: 40.00
+       - Diversity: 0.00
+
+  2. 2022-06-26 16:55 - 17:55
+     TDB Score: 80.00
+     Top Features:
+       - Temporal: 40.00
+       - Daytime: 40.00
+       - Diversity: 0.00
+
+  3. 2022-06-26 18:48 - 19:48
+     TDB Score: 80.00
+     Top Features:
+       - Temporal: 40.00
+       - Daytime: 40.00
+       - Diversity: 0.00
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Verify the 'CN' diagnosis through comprehensive clinical and neuropsychological evaluation, considering the profound and consistent TDB abnormalities.
+  2. Initiate targeted interventions for sleep hygiene, light exposure, and activity scheduling to address the severe circadian rhythm disruption and improve temporal regularity.
+  3. Introduce structured daily routines and environmental cues to support broader behavioral diversity and reduce disorganization.
+  4. Conduct further medical workup to rule out other contributing factors (e.g., medical conditions, medications, primary sleep disorders) for the observed TDB patterns.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

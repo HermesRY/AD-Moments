@@ -1,0 +1,976 @@
+{
+  "subject_info": {
+    "anon_id": 34,
+    "diagnosis": "MCI",
+    "predicted_label": "CN",
+    "personalized_tdb_score": 79.97195670314633,
+    "default_tdb_score": 59.48547179092257
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.05,
+      "temporal_impairment": 0.4,
+      "perseveration_impairment": 0.08,
+      "activity_impairment": 0.35,
+      "daytime_impairment": 0.07,
+      "social_impairment": 0.05
+    },
+    "most_impaired_domains": [
+      "Temporal Regularity",
+      "Activity Pattern Consistency"
+    ],
+    "temporal_trend": "worsening"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2023-07-18 15:37:02",
+      "end_timestamp": "2023-07-18 16:37:02",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-18 18:47:32",
+      "end_timestamp": "2023-07-18 19:47:32",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-19 07:40:24",
+      "end_timestamp": "2023-07-19 08:40:24",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-19 14:49:18",
+      "end_timestamp": "2023-07-19 15:49:18",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-19 15:26:14",
+      "end_timestamp": "2023-07-19 16:26:14",
+      "tdb_score": 83.29759862571116,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-19 15:39:19",
+      "end_timestamp": "2023-07-19 16:39:19",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-20 14:27:40",
+      "end_timestamp": "2023-07-20 15:27:40",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-20 16:38:09",
+      "end_timestamp": "2023-07-20 17:38:09",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-24 13:49:16",
+      "end_timestamp": "2023-07-24 14:49:16",
+      "tdb_score": 82.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-24 14:37:22",
+      "end_timestamp": "2023-07-24 15:37:22",
+      "tdb_score": 82.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-25 14:52:40",
+      "end_timestamp": "2023-07-25 15:52:40",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-25 15:36:01",
+      "end_timestamp": "2023-07-25 16:36:01",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-26 07:30:17",
+      "end_timestamp": "2023-07-26 08:30:17",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-26 16:35:08",
+      "end_timestamp": "2023-07-26 17:35:08",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-29 18:32:54",
+      "end_timestamp": "2023-07-29 19:32:54",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 13:26:40",
+      "end_timestamp": "2023-07-30 14:26:40",
+      "tdb_score": 85.36314075391414,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 29.074118705080856
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 13:49:12",
+      "end_timestamp": "2023-07-30 14:49:12",
+      "tdb_score": 90.61788162479871,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 34.32885957596542
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 14:19:40",
+      "end_timestamp": "2023-07-30 15:19:40",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 14:45:08",
+      "end_timestamp": "2023-07-30 15:45:08",
+      "tdb_score": 85.59433494151531,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 29.305312892682032
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 15:15:11",
+      "end_timestamp": "2023-07-30 16:15:11",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 15:26:53",
+      "end_timestamp": "2023-07-30 16:26:53",
+      "tdb_score": 94.87092636461098,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 15:56:56",
+      "end_timestamp": "2023-07-30 16:56:56",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 16:39:41",
+      "end_timestamp": "2023-07-30 17:39:41",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 16:45:21",
+      "end_timestamp": "2023-07-30 17:45:21",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 18:45:33",
+      "end_timestamp": "2023-07-30 19:45:33",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-07-30 19:15:37",
+      "end_timestamp": "2023-07-30 20:15:37",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-01 19:09:49",
+      "end_timestamp": "2023-08-01 20:09:49",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-03 15:18:35",
+      "end_timestamp": "2023-08-03 16:18:35",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-04 08:23:20",
+      "end_timestamp": "2023-08-04 09:23:20",
+      "tdb_score": 94.87092636461098,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-04 08:38:13",
+      "end_timestamp": "2023-08-04 09:38:13",
+      "tdb_score": 87.59708784972246,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 34.66672102140033
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-04 14:43:21",
+      "end_timestamp": "2023-08-04 15:43:21",
+      "tdb_score": 90.69015146268308,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 30.8192250980721
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-04 15:13:21",
+      "end_timestamp": "2023-08-04 16:13:21",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-04 17:16:20",
+      "end_timestamp": "2023-08-04 18:16:20",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-05 07:36:44",
+      "end_timestamp": "2023-08-05 08:36:44",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-05 16:42:21",
+      "end_timestamp": "2023-08-05 17:42:21",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-07 07:07:04",
+      "end_timestamp": "2023-08-07 08:07:04",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-07 07:31:28",
+      "end_timestamp": "2023-08-07 08:31:28",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-07 07:53:31",
+      "end_timestamp": "2023-08-07 08:53:31",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-07 08:27:18",
+      "end_timestamp": "2023-08-07 09:27:18",
+      "tdb_score": 94.87092636461098,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-07 08:34:54",
+      "end_timestamp": "2023-08-07 09:34:54",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-07 12:10:12",
+      "end_timestamp": "2023-08-07 13:10:12",
+      "tdb_score": 84.5192069786658,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 30.8192250980721
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 6.829055515982733
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-08 08:10:16",
+      "end_timestamp": "2023-08-08 09:10:16",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-09 12:25:26",
+      "end_timestamp": "2023-08-09 13:25:26",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-09 13:50:21",
+      "end_timestamp": "2023-08-09 14:50:21",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-10 09:23:44",
+      "end_timestamp": "2023-08-10 10:23:44",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-10 10:50:28",
+      "end_timestamp": "2023-08-10 11:50:28",
+      "tdb_score": 92.93036682832212,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 33.05944046371114
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 8.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-10 13:28:06",
+      "end_timestamp": "2023-08-10 14:28:06",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-10 14:50:25",
+      "end_timestamp": "2023-08-10 15:50:25",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-10 15:17:50",
+      "end_timestamp": "2023-08-10 16:17:50",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-08-10 15:54:37",
+      "end_timestamp": "2023-08-10 16:54:37",
+      "tdb_score": 83.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 35.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 7.000000000000001
+        }
+      ]
+    }
+  ]
+}

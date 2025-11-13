@@ -1,0 +1,37 @@
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Social Engagement",
+    "Daytime Energy Distribution",
+    "Behavioral Diversity"
+  ],
+  "temporal_trend": "stable",
+  "adjusted_weights": {
+    "diversity_impairment": 0.15,
+    "temporal_impairment": 0.3,
+    "perseveration_impairment": 0.025,
+    "activity_impairment": 0.025,
+    "daytime_impairment": 0.2,
+    "social_impairment": 0.3
+  },
+  "clinical_summary": "Patient #1, an individual with MCI, exhibits a critically concerning pattern of severe disruption in temporal regularity of daily activities and profound social disengagement. This profile is further characterized by moderate impairment in circadian rhythm and reduced behavioral diversity, indicating significant challenges in maintaining structured routines and engaging with the environment. These findings suggest potential apathy, social withdrawal, and a substantial impact on daily functioning.",
+  "recommendations": [
+    "Implement highly structured daily schedules and environmental cues to re-establish temporal regularity and improve sleep-wake cycles.",
+    "Develop tailored interventions to facilitate social engagement, starting with low-pressure, familiar contexts, and assess for underlying apathy or anxiety contributing to withdrawal.",
+    "Introduce novel, yet manageable, goal-oriented activities to enhance behavioral diversity and provide cognitive stimulation.",
+    "Consider a comprehensive neuropsychological evaluation to further characterize cognitive deficits and emotional factors contributing to these observed behavioral patterns."
+  ],
+  "anon_id": 1,
+  "status": "MCI",
+  "weekly_features": [
+    {
+      "diversity_impairment": 44.76336546326924,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 14.503144572247063,
+      "daytime_impairment": 58.157090404399604,
+      "social_impairment": 0.0
+    }
+  ],
+  "n_weeks_analyzed": 1
+}

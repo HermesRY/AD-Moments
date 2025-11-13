@@ -1,0 +1,80 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            21
+Known Diagnosis:       CN
+TDB Classification:    Cognitively Normal (CN)
+Analysis Period:       3 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    49.52 / 100
+Default Score:         51.50 / 100
+Score Difference:      -1.98
+
+Classification Threshold: 82.93
+Risk Level:            LOW
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Social Engagement
+  3. Daytime Energy Distribution
+
+Temporal Trend:        WORSENING
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.050 (default: 0.150) ↓
+  Temporal                                : 0.250 (default: 0.200) ↑
+  Perseveration                           : 0.050 (default: 0.150) ↓
+  Activity                                : 0.150 (default: 0.200) ↓
+  Daytime                                 : 0.200 (default: 0.250) ↓
+  Social                                  : 0.300 (default: 0.050) ↑
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Despite a Cognitively Normal diagnosis, Patient #21 displays concerning temporal behavioral patterns, including profound rigidity in activity timing and significant circadian rhythm disruption. The most alarming trend is the progressive and severe decline in social engagement observed over three weeks, indicating an overall worsening clinical picture.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    20 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2023-07-29 18:29 - 19:29
+     TDB Score: 74.58
+     Top Features:
+       - Temporal: 21.85
+       - Daytime: 20.00
+       - Activity: 15.00
+
+  2. 2023-07-29 18:48 - 19:48
+     TDB Score: 72.85
+     Top Features:
+       - Temporal: 25.00
+       - Daytime: 15.95
+       - Activity: 14.17
+
+  3. 2023-07-30 10:18 - 11:18
+     TDB Score: 72.85
+     Top Features:
+       - Temporal: 25.00
+       - Daytime: 15.95
+       - Activity: 14.17
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Conduct a thorough re-evaluation of the patient's cognitive status, including neuropsychological assessment focused on executive function flexibility, social cognition, and mood, given the emerging concerns.
+  2. Implement objective monitoring of sleep-wake cycles (e.g., actigraphy) to further characterize circadian rhythm disruption and explore potential interventions.
+  3. Develop a care plan to address social disengagement, including targeted strategies to promote interaction and regular monitoring for depressive symptoms or apathy.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

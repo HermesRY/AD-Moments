@@ -1,0 +1,388 @@
+{
+  "subject_info": {
+    "anon_id": 35,
+    "diagnosis": "CN",
+    "predicted_label": "CI",
+    "personalized_tdb_score": 85.58935176053393,
+    "default_tdb_score": 54.139759225460516
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.0,
+      "temporal_impairment": 0.4,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 0.3,
+      "daytime_impairment": 0.3,
+      "social_impairment": 0.0
+    },
+    "most_impaired_domains": [
+      "Temporal Regularity",
+      "Activity Pattern Consistency",
+      "Daytime Energy Distribution"
+    ],
+    "temporal_trend": "improving"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2022-10-20 12:14:11",
+      "end_timestamp": "2022-10-20 13:14:11",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-10-20 17:34:15",
+      "end_timestamp": "2022-10-20 18:34:15",
+      "tdb_score": 90.33892572310901,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 26.41647865549037
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-10-20 17:37:35",
+      "end_timestamp": "2022-10-20 18:37:35",
+      "tdb_score": 92.2591103222282,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-10-20 17:44:15",
+      "end_timestamp": "2022-10-20 18:44:15",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-10-22 08:37:38",
+      "end_timestamp": "2022-10-22 09:37:38",
+      "tdb_score": 89.76680334807523,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 39.4278776249662
+        },
+        {
+          "feature": "activity",
+          "contribution": 26.41647865549037
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-10-22 08:40:58",
+      "end_timestamp": "2022-10-22 09:40:58",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-10-29 19:45:43",
+      "end_timestamp": "2022-10-29 20:45:43",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-10 07:52:51",
+      "end_timestamp": "2022-11-10 08:52:51",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-17 07:49:33",
+      "end_timestamp": "2022-11-17 08:49:33",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-17 09:36:58",
+      "end_timestamp": "2022-11-17 10:36:58",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-18 18:12:41",
+      "end_timestamp": "2022-11-18 19:12:41",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-19 08:14:15",
+      "end_timestamp": "2022-11-19 09:14:15",
+      "tdb_score": 92.2591103222282,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-20 07:50:03",
+      "end_timestamp": "2022-11-20 08:50:03",
+      "tdb_score": 90.33892572310901,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 26.41647865549037
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-20 08:26:48",
+      "end_timestamp": "2022-11-20 09:26:48",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-20 15:47:50",
+      "end_timestamp": "2022-11-20 16:47:50",
+      "tdb_score": 90.33892572310901,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 26.41647865549037
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-20 16:54:00",
+      "end_timestamp": "2022-11-20 17:54:00",
+      "tdb_score": 87.97023150461254,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 37.63130578150352
+        },
+        {
+          "feature": "activity",
+          "contribution": 26.41647865549037
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-20 17:24:00",
+      "end_timestamp": "2022-11-20 18:24:00",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-21 07:39:28",
+      "end_timestamp": "2022-11-21 08:39:28",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-11-22 10:17:31",
+      "end_timestamp": "2022-11-22 11:17:31",
+      "tdb_score": 80.74238980782522,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 28.48327948559702
+        },
+        {
+          "feature": "activity",
+          "contribution": 28.33666325460955
+        },
+        {
+          "feature": "daytime",
+          "contribution": 23.922447067618656
+        }
+      ]
+    }
+  ]
+}

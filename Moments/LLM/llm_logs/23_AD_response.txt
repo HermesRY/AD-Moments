@@ -1,0 +1,26 @@
+```json
+{
+  "most_impaired_domains": [
+    "Behavioral Diversity",
+    "Temporal Regularity",
+    "Activity Pattern Consistency",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.20,
+    "temporal_impairment": 0.25,
+    "perseveration_impairment": 0.05,
+    "activity_impairment": 0.25,
+    "daytime_impairment": 0.20,
+    "social_impairment": 0.05
+  },
+  "clinical_summary": "Patient #23 exhibits significant and persistent disruptions in temporal organization, activity consistency, and circadian rhythm, with an emerging decline in behavioral diversity. The overall pattern suggests an unstable and worsening trajectory, with high and sustained impairment in fundamental daily routine maintenance and energy distribution.",
+  "recommendations": [
+    "Implement highly structured daily routines and environmental cues to mitigate severe temporal disorganization and improve activity pattern consistency.",
+    "Conduct a thorough assessment of sleep-wake cycles and explore interventions for profound circadian rhythm disruption (Daytime Energy Distribution), considering both behavioral and pharmacological strategies.",
+    "Introduce a variety of simple, enjoyable, and cognitively accessible activities into the daily schedule to counteract the observed decline in behavioral diversity and maintain engagement.",
+    "Closely monitor for further deterioration in these key domains and adjust care plans to provide increasing levels of support for daily living and safety as cognitive decline progresses."
+  ]
+}
+```

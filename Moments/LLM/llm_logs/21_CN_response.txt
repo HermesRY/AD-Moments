@@ -1,0 +1,24 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Social Engagement",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.05,
+    "temporal_impairment": 0.25,
+    "perseveration_impairment": 0.05,
+    "activity_impairment": 0.15,
+    "daytime_impairment": 0.20,
+    "social_impairment": 0.30
+  },
+  "clinical_summary": "Despite a Cognitively Normal diagnosis, Patient #21 displays concerning temporal behavioral patterns, including profound rigidity in activity timing and significant circadian rhythm disruption. The most alarming trend is the progressive and severe decline in social engagement observed over three weeks, indicating an overall worsening clinical picture.",
+  "recommendations": [
+    "Conduct a thorough re-evaluation of the patient's cognitive status, including neuropsychological assessment focused on executive function flexibility, social cognition, and mood, given the emerging concerns.",
+    "Implement objective monitoring of sleep-wake cycles (e.g., actigraphy) to further characterize circadian rhythm disruption and explore potential interventions.",
+    "Develop a care plan to address social disengagement, including targeted strategies to promote interaction and regular monitoring for depressive symptoms or apathy."
+  ]
+}
+```

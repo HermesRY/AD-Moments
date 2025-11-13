@@ -1,0 +1,1623 @@
+{
+  "subject_info": {
+    "anon_id": 17,
+    "diagnosis": "MCI",
+    "predicted_label": "CN",
+    "personalized_tdb_score": 57.10945060139736,
+    "default_tdb_score": 60.4445863926747
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.15,
+      "temporal_impairment": 0.2,
+      "perseveration_impairment": 0.15,
+      "activity_impairment": 0.1,
+      "daytime_impairment": 0.2,
+      "social_impairment": 0.2
+    },
+    "most_impaired_domains": [
+      "Temporal Regularity",
+      "Daytime Energy Distribution",
+      "Social Engagement"
+    ],
+    "temporal_trend": "worsening"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2023-01-18 07:08:00",
+      "end_timestamp": "2023-01-18 08:08:00",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-18 07:32:25",
+      "end_timestamp": "2023-01-18 08:32:25",
+      "tdb_score": 68.38482315250332,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 10.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-20 14:38:15",
+      "end_timestamp": "2023-01-20 15:38:15",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-20 18:11:57",
+      "end_timestamp": "2023-01-20 19:11:57",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-21 07:10:01",
+      "end_timestamp": "2023-01-21 08:10:01",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-21 07:34:40",
+      "end_timestamp": "2023-01-21 08:34:40",
+      "tdb_score": 81.45847954784989,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 16.302391352516754
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-22 07:12:34",
+      "end_timestamp": "2023-01-22 08:12:34",
+      "tdb_score": 79.9098791255757,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-22 07:34:31",
+      "end_timestamp": "2023-01-22 08:34:31",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-23 16:34:26",
+      "end_timestamp": "2023-01-23 17:34:26",
+      "tdb_score": 79.51054211963383,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 19.600662994058126
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-23 17:23:07",
+      "end_timestamp": "2023-01-23 18:23:07",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-25 11:55:46",
+      "end_timestamp": "2023-01-25 12:55:46",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-25 12:26:34",
+      "end_timestamp": "2023-01-25 13:26:34",
+      "tdb_score": 81.10438624041224,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-25 12:45:53",
+      "end_timestamp": "2023-01-25 13:45:53",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-25 13:06:34",
+      "end_timestamp": "2023-01-25 14:06:34",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-25 13:36:34",
+      "end_timestamp": "2023-01-25 14:36:34",
+      "tdb_score": 81.10438624041224,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-26 13:11:45",
+      "end_timestamp": "2023-01-26 14:11:45",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-26 13:33:18",
+      "end_timestamp": "2023-01-26 14:33:18",
+      "tdb_score": 76.32513592317262,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-26 13:49:58",
+      "end_timestamp": "2023-01-26 14:49:58",
+      "tdb_score": 72.48203930423186,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-26 14:15:12",
+      "end_timestamp": "2023-01-26 15:15:12",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-30 16:51:09",
+      "end_timestamp": "2023-01-30 17:51:09",
+      "tdb_score": 84.14592602300372,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-01-30 17:26:54",
+      "end_timestamp": "2023-01-30 18:26:54",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 11:53:31",
+      "end_timestamp": "2023-02-01 12:53:31",
+      "tdb_score": 66.54409753274314,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 12.181899551559153
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 12:28:22",
+      "end_timestamp": "2023-02-01 13:28:22",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 12:53:37",
+      "end_timestamp": "2023-02-01 13:53:37",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 13:28:32",
+      "end_timestamp": "2023-02-01 14:28:32",
+      "tdb_score": 83.25155485466762,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 18.095466659334473
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 13:51:56",
+      "end_timestamp": "2023-02-01 14:51:56",
+      "tdb_score": 81.77110048306022,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 16.61501228772708
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 14:27:02",
+      "end_timestamp": "2023-02-01 15:27:02",
+      "tdb_score": 75.58044267152532,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 14:42:09",
+      "end_timestamp": "2023-02-01 15:42:09",
+      "tdb_score": 76.62529160116448,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 15:23:53",
+      "end_timestamp": "2023-02-01 16:23:53",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 15:48:54",
+      "end_timestamp": "2023-02-01 16:48:54",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 16:27:02",
+      "end_timestamp": "2023-02-01 17:27:02",
+      "tdb_score": 67.65391627555026,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 16:54:03",
+      "end_timestamp": "2023-02-01 17:54:03",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 17:22:28",
+      "end_timestamp": "2023-02-01 18:22:28",
+      "tdb_score": 79.89856403582648,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 18.794177795414242
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-01 17:39:11",
+      "end_timestamp": "2023-02-01 18:39:11",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-06 08:24:13",
+      "end_timestamp": "2023-02-06 09:24:13",
+      "tdb_score": 77.18747842170787,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 16.08309218129562
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-06 08:44:49",
+      "end_timestamp": "2023-02-06 09:44:49",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-06 09:14:54",
+      "end_timestamp": "2023-02-06 10:14:54",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-06 09:36:01",
+      "end_timestamp": "2023-02-06 10:36:01",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-06 10:11:45",
+      "end_timestamp": "2023-02-06 11:11:45",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-06 11:21:12",
+      "end_timestamp": "2023-02-06 12:21:12",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-09 09:20:55",
+      "end_timestamp": "2023-02-09 10:20:55",
+      "tdb_score": 72.78867371998459,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-09 09:42:36",
+      "end_timestamp": "2023-02-09 10:42:36",
+      "tdb_score": 74.36114775008004,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-09 10:17:35",
+      "end_timestamp": "2023-02-09 11:17:35",
+      "tdb_score": 84.52493060290158,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-09 11:50:56",
+      "end_timestamp": "2023-02-09 12:50:56",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-09 12:14:04",
+      "end_timestamp": "2023-02-09 13:14:04",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-11 07:07:47",
+      "end_timestamp": "2023-02-11 08:07:47",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-11 09:25:17",
+      "end_timestamp": "2023-02-11 10:25:17",
+      "tdb_score": 69.50731006942647,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 13.107305380748466
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-11 09:47:47",
+      "end_timestamp": "2023-02-11 10:47:47",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-11 10:22:07",
+      "end_timestamp": "2023-02-11 11:22:07",
+      "tdb_score": 81.41673932852886,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 17.579544596212045
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 09:55:10",
+      "end_timestamp": "2023-02-14 10:55:10",
+      "tdb_score": 67.48728130330844,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 11.355817722608059
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 10:28:00",
+      "end_timestamp": "2023-02-14 11:28:00",
+      "tdb_score": 83.87529244085982,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 18.719204245526683
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 10:55:21",
+      "end_timestamp": "2023-02-14 11:55:21",
+      "tdb_score": 81.2862389155734,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 16.130150720240263
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 11:54:41",
+      "end_timestamp": "2023-02-14 12:54:41",
+      "tdb_score": 78.13889005733746,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 12:31:21",
+      "end_timestamp": "2023-02-14 13:31:21",
+      "tdb_score": 67.80558937542696,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 11.292578179549047
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 15:36:10",
+      "end_timestamp": "2023-02-14 16:36:10",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-14 16:31:22",
+      "end_timestamp": "2023-02-14 17:31:22",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 07:11:37",
+      "end_timestamp": "2023-02-18 08:11:37",
+      "tdb_score": 79.9098791255757,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 07:43:19",
+      "end_timestamp": "2023-02-18 08:43:19",
+      "tdb_score": 77.21808105406872,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 16.66814039545329
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 10:11:38",
+      "end_timestamp": "2023-02-18 11:11:38",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 18:55:20",
+      "end_timestamp": "2023-02-18 19:55:20",
+      "tdb_score": 83.86352964452136,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 18.707441449188224
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 19:31:40",
+      "end_timestamp": "2023-02-18 20:31:40",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 19:45:00",
+      "end_timestamp": "2023-02-18 20:45:00",
+      "tdb_score": 79.9098791255757,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-18 19:51:40",
+      "end_timestamp": "2023-02-18 20:51:40",
+      "tdb_score": 80.54994065861543,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 07:17:37",
+      "end_timestamp": "2023-02-19 08:17:37",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 07:39:12",
+      "end_timestamp": "2023-02-19 08:39:12",
+      "tdb_score": 81.10438624041224,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 09:48:22",
+      "end_timestamp": "2023-02-19 10:48:22",
+      "tdb_score": 72.49686678209954,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 10:18:22",
+      "end_timestamp": "2023-02-19 11:18:22",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 10:42:51",
+      "end_timestamp": "2023-02-19 11:42:51",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 11:18:23",
+      "end_timestamp": "2023-02-19 12:18:23",
+      "tdb_score": 81.57851217803429,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 16.422423982701144
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 11:42:57",
+      "end_timestamp": "2023-02-19 12:42:57",
+      "tdb_score": 71.66282504766843,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-19 12:18:35",
+      "end_timestamp": "2023-02-19 13:18:35",
+      "tdb_score": 66.56481557606206,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 11.408727380728918
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 09:57:00",
+      "end_timestamp": "2023-02-20 10:57:00",
+      "tdb_score": 84.38525622975912,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 19.229168034425975
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 10:28:27",
+      "end_timestamp": "2023-02-20 11:28:27",
+      "tdb_score": 76.52037988241996,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 10:51:47",
+      "end_timestamp": "2023-02-20 11:51:47",
+      "tdb_score": 71.23873688405732,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 11:48:27",
+      "end_timestamp": "2023-02-20 12:48:27",
+      "tdb_score": 73.40663234759349,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 17.336776198133702
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 12:31:47",
+      "end_timestamp": "2023-02-20 13:31:47",
+      "tdb_score": 81.00992019002103,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 15.853831994687893
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 12:48:27",
+      "end_timestamp": "2023-02-20 13:48:27",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 13:23:27",
+      "end_timestamp": "2023-02-20 14:23:27",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 13:43:31",
+      "end_timestamp": "2023-02-20 14:43:31",
+      "tdb_score": 85.15608819533314,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 20.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 14:21:47",
+      "end_timestamp": "2023-02-20 15:21:47",
+      "tdb_score": 80.32409362742256,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 15.168005432089416
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 14:43:42",
+      "end_timestamp": "2023-02-20 15:43:42",
+      "tdb_score": 79.28210393323653,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 15:23:49",
+      "end_timestamp": "2023-02-20 16:23:49",
+      "tdb_score": 68.37412487172817,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 15:41:48",
+      "end_timestamp": "2023-02-20 16:41:48",
+      "tdb_score": 70.61723287728617,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2023-02-20 15:53:55",
+      "end_timestamp": "2023-02-20 16:53:55",
+      "tdb_score": 76.10199809445531,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        },
+        {
+          "feature": "diversity",
+          "contribution": 15.0
+        },
+        {
+          "feature": "perseveration",
+          "contribution": 15.0
+        }
+      ]
+    }
+  ]
+}

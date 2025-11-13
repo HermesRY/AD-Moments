@@ -1,0 +1,81 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            25
+Known Diagnosis:       AD
+TDB Classification:    Cognitively Normal (CN)
+Analysis Period:       3 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    68.56 / 100
+Default Score:         37.65 / 100
+Score Difference:      +30.91
+
+Classification Threshold: 82.93
+Risk Level:            LOW
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Activity Pattern Consistency
+  3. Daytime Energy Distribution
+
+Temporal Trend:        WORSENING
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.025 (default: 0.150) ↓
+  Temporal                                : 0.500 (default: 0.200) ↑
+  Perseveration                           : 0.025 (default: 0.150) ↓
+  Activity                                : 0.200 (default: 0.200) →
+  Daytime                                 : 0.150 (default: 0.250) ↓
+  Social                                  : 0.100 (default: 0.050) ↑
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #25, diagnosed with AD, exhibits severe and stable impairment in Temporal Regularity, indicating profound disruption in daily routine predictability. Significant fluctuations in Activity Pattern Consistency suggest inconsistent self-regulation. A concerning trend of increasing social withdrawal is observed, despite recent improvements in Daytime Energy Distribution.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    10 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2000-01-12 14:26 - 15:26
+     TDB Score: 87.58
+     Top Features:
+       - Temporal: 50.00
+       - Activity: 20.00
+       - Daytime: 15.00
+
+  2. 2000-01-12 14:43 - 15:43
+     TDB Score: 87.58
+     Top Features:
+       - Temporal: 50.00
+       - Activity: 20.00
+       - Daytime: 15.00
+
+  3. 2000-01-20 08:47 - 09:47
+     TDB Score: 87.58
+     Top Features:
+       - Temporal: 50.00
+       - Activity: 20.00
+       - Daytime: 15.00
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Implement highly structured daily routines with clear visual schedules to support Temporal Regularity and reduce variability.
+  2. Develop flexible care plans that can adapt to fluctuations in Activity Pattern Consistency, providing support during periods of increased variability.
+  3. Actively encourage and facilitate structured social engagement opportunities to mitigate the observed social withdrawal and maintain social connections.
+  4. Monitor Daytime Energy Distribution for sustained improvement, and investigate potential interventions contributing to recent positive changes.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

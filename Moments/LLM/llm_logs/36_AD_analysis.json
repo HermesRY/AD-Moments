@@ -1,0 +1,44 @@
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Activity Pattern Consistency",
+    "Daytime Energy Distribution",
+    "Behavioral Diversity"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.15,
+    "temporal_impairment": 0.3,
+    "perseveration_impairment": 0.0,
+    "activity_impairment": 0.3,
+    "daytime_impairment": 0.25,
+    "social_impairment": 0.0
+  },
+  "clinical_summary": "Patient #36 exhibits severe and consistent disruptions in fundamental temporal organization, including maximal impairment in temporal regularity and activity pattern consistency. A concerning rapid deterioration in circadian rhythmicity, as reflected by the significant worsening in daytime energy distribution to maximal levels, indicates a progressive decline in behavioral orchestration.",
+  "recommendations": [
+    "Initiate a detailed sleep-wake cycle assessment and intervention, including light therapy or medication review, given the severe daytime energy distribution impairment.",
+    "Develop and strictly implement a highly structured daily routine, emphasizing consistent timing for activities, meals, and sleep, to support temporal regularity and activity pattern consistency.",
+    "Caregiver education on managing behavioral disruptions related to circadian dysregulation and guidance on optimizing the home environment for routine adherence."
+  ],
+  "anon_id": 36,
+  "status": "AD",
+  "weekly_features": [
+    {
+      "diversity_impairment": 66.47241791952645,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 100.0,
+      "daytime_impairment": 56.51937226159088,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 43.627692498213946,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 100.0,
+      "daytime_impairment": 100.0,
+      "social_impairment": 25.780440976665727
+    }
+  ],
+  "n_weeks_analyzed": 2
+}

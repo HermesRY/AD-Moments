@@ -1,0 +1,25 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Daytime Energy Distribution",
+    "Behavioral Diversity"
+  ],
+  "temporal_trend": "stable",
+  "adjusted_weights": {
+    "diversity_impairment": 0.20,
+    "temporal_impairment": 0.40,
+    "perseveration_impairment": 0.00,
+    "activity_impairment": 0.00,
+    "daytime_impairment": 0.40,
+    "social_impairment": 0.00
+  },
+  "clinical_summary": "Patient #55, despite a cognitively normal (CN) diagnosis, demonstrates striking and stable maximal impairment in Temporal Regularity and Daytime Energy Distribution, alongside consistent impairment in Behavioral Diversity. This pattern strongly suggests significant disruption in the organization of daily activities and circadian rhythms, which is highly atypical for a truly CN individual and warrants immediate investigation.",
+  "recommendations": [
+    "Verify the 'CN' diagnosis through comprehensive clinical and neuropsychological evaluation, considering the profound and consistent TDB abnormalities.",
+    "Initiate targeted interventions for sleep hygiene, light exposure, and activity scheduling to address the severe circadian rhythm disruption and improve temporal regularity.",
+    "Introduce structured daily routines and environmental cues to support broader behavioral diversity and reduce disorganization.",
+    "Conduct further medical workup to rule out other contributing factors (e.g., medical conditions, medications, primary sleep disorders) for the observed TDB patterns."
+  ]
+}
+```

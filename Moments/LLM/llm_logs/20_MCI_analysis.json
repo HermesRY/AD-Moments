@@ -1,0 +1,45 @@
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Activity Pattern Consistency",
+    "Daytime Energy Distribution",
+    "Social Engagement"
+  ],
+  "temporal_trend": "improving",
+  "adjusted_weights": {
+    "diversity_impairment": 0.0,
+    "temporal_impairment": 0.33,
+    "perseveration_impairment": 0.0,
+    "activity_impairment": 0.33,
+    "daytime_impairment": 0.34,
+    "social_impairment": 0.0
+  },
+  "clinical_summary": "Patient #20, diagnosed with MCI, exhibits severe and persistent impairments in temporal regularity, activity pattern consistency, and daytime energy distribution, indicating significant disorganization of daily routines and circadian rhythm. A consistent mild impairment in social engagement is also noted. Encouragingly, the severely impaired domains show a trend of slight improvement over the two-week period.",
+  "recommendations": [
+    "Implement highly structured daily routines and utilize environmental cues to enhance temporal regularity and activity consistency.",
+    "Conduct a thorough evaluation for underlying factors contributing to severe circadian rhythm disruption, such as sleep disorders, medication effects, or environmental factors.",
+    "Explore targeted interventions to encourage and facilitate increased social engagement, such as participation in structured group activities or regular family interactions.",
+    "Continue passive monitoring with TDBs to closely track trends in the most affected domains and assess the efficacy of interventions."
+  ],
+  "anon_id": 20,
+  "status": "MCI",
+  "weekly_features": [
+    {
+      "diversity_impairment": 0.0,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 100.0,
+      "daytime_impairment": 100.0,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 0.0,
+      "temporal_impairment": 78.37738097930618,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 94.45554418203184,
+      "daytime_impairment": 79.74149022539552,
+      "social_impairment": 25.780440976665727
+    }
+  ],
+  "n_weeks_analyzed": 2
+}

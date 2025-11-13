@@ -1,0 +1,14 @@
+{
+  "diversity_mean": 0.7757045582575847,
+  "diversity_std": 0.3259842726917073,
+  "temporal_mean": 1.3277145122986982,
+  "temporal_std": 0.4602201967553681,
+  "perseveration_mean": 0.19420351330450458,
+  "perseveration_std": 0.35822990267915744,
+  "activity_mean": 0.819854174722317,
+  "activity_std": 0.33862932811169694,
+  "daytime_mean": 0.7617342137579274,
+  "daytime_std": 0.328228395203518,
+  "social_mean": 0.0065566213429862534,
+  "social_std": 0.02543254137173337
+}

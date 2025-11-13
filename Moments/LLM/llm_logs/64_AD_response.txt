@@ -1,0 +1,23 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "stable",
+  "adjusted_weights": {
+    "diversity_impairment": 0.01,
+    "temporal_impairment": 0.48,
+    "perseveration_impairment": 0.01,
+    "activity_impairment": 0.01,
+    "daytime_impairment": 0.48,
+    "social_impairment": 0.01
+  },
+  "clinical_summary": "Patient #64 exhibits severe and stable impairment in temporal regularity and daytime energy distribution, indicating profound disruption in structured daily routines and circadian rhythms, which are hallmark features in AD progression. Despite an observed improvement in hour-to-hour activity pattern consistency in Week 2, the overall profile points to a rigid, predictable daily life and significant sleep-wake cycle dysregulation, with mild social withdrawal also present.",
+  "recommendations": [
+    "Implement a consistent daily schedule, including targeted light exposure and activity timing, to reinforce a stable circadian rhythm and reduce sleep-wake disturbances.",
+    "Introduce novel, structured activities within predictable time slots to gently promote behavioral flexibility while maintaining a sense of routine.",
+    "Monitor the patient's social engagement closely and explore opportunities for supported social interactions to maintain and potentially enhance connections."
+  ]
+}
+```

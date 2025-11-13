@@ -1,0 +1,82 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            1
+Known Diagnosis:       MCI
+TDB Classification:    Cognitively Normal (CN)
+Analysis Period:       1 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    48.71 / 100
+Default Score:         44.15 / 100
+Score Difference:      +4.55
+
+Classification Threshold: 82.93
+Risk Level:            LOW
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Social Engagement
+  3. Daytime Energy Distribution
+  4. Behavioral Diversity
+
+Temporal Trend:        STABLE
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.150 (default: 0.150) →
+  Temporal                                : 0.300 (default: 0.200) ↑
+  Perseveration                           : 0.025 (default: 0.150) ↓
+  Activity                                : 0.025 (default: 0.200) ↓
+  Daytime                                 : 0.200 (default: 0.250) ↓
+  Social                                  : 0.300 (default: 0.050) ↑
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #1, an individual with MCI, exhibits a critically concerning pattern of severe disruption in temporal regularity of daily activities and profound social disengagement. This profile is further characterized by moderate impairment in circadian rhythm and reduced behavioral diversity, indicating significant challenges in maintaining structured routines and engaging with the environment. These findings suggest potential apathy, social withdrawal, and a substantial impact on daily functioning.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    10 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2023-02-06 19:29 - 20:29
+     TDB Score: 73.54
+     Top Features:
+       - Temporal: 30.00
+       - Daytime: 15.95
+       - Diversity: 15.00
+
+  2. 2023-02-02 18:16 - 19:16
+     TDB Score: 60.23
+     Top Features:
+       - Temporal: 30.00
+       - Daytime: 20.00
+       - Social: 7.73
+
+  3. 2023-02-07 17:55 - 18:55
+     TDB Score: 60.23
+     Top Features:
+       - Temporal: 30.00
+       - Daytime: 20.00
+       - Social: 7.73
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Implement highly structured daily schedules and environmental cues to re-establish temporal regularity and improve sleep-wake cycles.
+  2. Develop tailored interventions to facilitate social engagement, starting with low-pressure, familiar contexts, and assess for underlying apathy or anxiety contributing to withdrawal.
+  3. Introduce novel, yet manageable, goal-oriented activities to enhance behavioral diversity and provide cognitive stimulation.
+  4. Consider a comprehensive neuropsychological evaluation to further characterize cognitive deficits and emotional factors contributing to these observed behavioral patterns.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

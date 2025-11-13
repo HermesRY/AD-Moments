@@ -1,0 +1,79 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            64
+Known Diagnosis:       AD
+TDB Classification:    Cognitively Impaired (CI)
+Analysis Period:       2 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    94.88 / 100
+Default Score:         46.69 / 100
+Score Difference:      +48.19
+
+Classification Threshold: 82.93
+Risk Level:            HIGH
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Daytime Energy Distribution
+
+Temporal Trend:        STABLE
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.010 (default: 0.150) ↓
+  Temporal                                : 0.480 (default: 0.200) ↑
+  Perseveration                           : 0.010 (default: 0.150) ↓
+  Activity                                : 0.010 (default: 0.200) ↓
+  Daytime                                 : 0.480 (default: 0.250) ↑
+  Social                                  : 0.010 (default: 0.050) ↓
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #64 exhibits severe and stable impairment in temporal regularity and daytime energy distribution, indicating profound disruption in structured daily routines and circadian rhythms, which are hallmark features in AD progression. Despite an observed improvement in hour-to-hour activity pattern consistency in Week 2, the overall profile points to a rigid, predictable daily life and significant sleep-wake cycle dysregulation, with mild social withdrawal also present.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    3 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2022-08-18 17:09 - 18:09
+     TDB Score: 87.53
+     Top Features:
+       - Temporal: 48.00
+       - Daytime: 38.28
+       - Activity: 1.00
+
+  2. 2022-08-03 16:42 - 17:42
+     TDB Score: 87.41
+     Top Features:
+       - Temporal: 48.00
+       - Daytime: 38.28
+       - Activity: 0.88
+
+  3. 2022-08-03 13:25 - 14:25
+     TDB Score: 74.83
+     Top Features:
+       - Daytime: 38.28
+       - Temporal: 35.42
+       - Activity: 0.88
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Implement a consistent daily schedule, including targeted light exposure and activity timing, to reinforce a stable circadian rhythm and reduce sleep-wake disturbances.
+  2. Introduce novel, structured activities within predictable time slots to gently promote behavioral flexibility while maintaining a sense of routine.
+  3. Monitor the patient's social engagement closely and explore opportunities for supported social interactions to maintain and potentially enhance connections.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

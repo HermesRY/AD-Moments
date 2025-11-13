@@ -1,0 +1,51 @@
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.05,
+    "temporal_impairment": 0.3,
+    "perseveration_impairment": 0.25,
+    "activity_impairment": 0.05,
+    "daytime_impairment": 0.3,
+    "social_impairment": 0.05
+  },
+  "clinical_summary": "Patient #9, despite a 'Cognitively Normal' diagnosis, displays persistent and maximal impairment in temporal regularity of activities and circadian rhythm disruption across all three weeks, which is highly atypical. A new, moderate level of perseverative behavior has also emerged and stabilized since week 1, indicating a concerning and unstable clinical profile.",
+  "recommendations": [
+    "Urgently initiate a comprehensive neurological evaluation, including sleep studies and actigraphy, to investigate the root cause of the persistent maximal disruption in temporal regularity and circadian rhythm.",
+    "Conduct a full neuropsychological re-evaluation, specifically focusing on executive functions (e.g., inhibition, cognitive flexibility) and memory, to understand the emerging perseverative behaviors and assess for subtle cognitive decline.",
+    "Perform a detailed collateral interview with family or caregivers to gather qualitative data on the patient's daily routines, sleep patterns, social engagement, and observed repetitive behaviors, providing crucial context to the TDB findings.",
+    "Continue intensive longitudinal monitoring of all TDBs, with a particular focus on the trajectory of perseveration and activity pattern consistency, to track any progression of these concerning behavioral patterns."
+  ],
+  "anon_id": 9,
+  "status": "CN",
+  "weekly_features": [
+    {
+      "diversity_impairment": 72.78016266949473,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 63.33960664449818,
+      "daytime_impairment": 100.0,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 54.91995047667403,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 51.34907660489127,
+      "activity_impairment": 100.0,
+      "daytime_impairment": 100.0,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 15.862058278936322,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 50.84004842422887,
+      "activity_impairment": 18.50589717471375,
+      "daytime_impairment": 100.0,
+      "social_impairment": 25.780440976665727
+    }
+  ],
+  "n_weeks_analyzed": 3
+}

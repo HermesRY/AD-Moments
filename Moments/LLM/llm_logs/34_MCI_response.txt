@@ -1,0 +1,23 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Activity Pattern Consistency"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.05,
+    "temporal_impairment": 0.40,
+    "perseveration_impairment": 0.08,
+    "activity_impairment": 0.35,
+    "daytime_impairment": 0.07,
+    "social_impairment": 0.05
+  },
+  "clinical_summary": "Patient #34, diagnosed with MCI, exhibits persistent and severe impairments in Temporal Regularity and Activity Pattern Consistency, indicating significant difficulties with predictable routines and consistent activity engagement. The emergence of perseverative behaviors in Week 3, coupled with fluctuating but concerning circadian rhythm disruptions, suggests a concerning overall worsening trajectory despite some improvement in behavioral diversity.",
+  "recommendations": [
+    "Conduct a comprehensive neuropsychological evaluation to further characterize the emerging perseveration and the functional impact of severe temporal dysregulation.",
+    "Implement structured daily schedules and environmental modifications to support routine predictability and reduce hour-to-hour variability in activity, potentially utilizing digital aids.",
+    "Monitor circadian rhythm patterns closely and investigate potential interventions for improved Daytime Energy Distribution, as disruptions can significantly impact cognitive function."
+  ]
+}
+```

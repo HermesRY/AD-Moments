@@ -1,0 +1,787 @@
+{
+  "subject_info": {
+    "anon_id": 55,
+    "diagnosis": "CN",
+    "predicted_label": "CI",
+    "personalized_tdb_score": 91.89254012025744,
+    "default_tdb_score": 58.28643538054186
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.2,
+      "temporal_impairment": 0.4,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 0.0,
+      "daytime_impairment": 0.4,
+      "social_impairment": 0.0
+    },
+    "most_impaired_domains": [
+      "Temporal Regularity",
+      "Daytime Energy Distribution",
+      "Behavioral Diversity"
+    ],
+    "temporal_trend": "stable"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2022-06-23 13:44:48",
+      "end_timestamp": "2022-06-23 14:44:48",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-24 16:48:15",
+      "end_timestamp": "2022-06-24 17:48:15",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 11:57:18",
+      "end_timestamp": "2022-06-26 12:57:18",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 12:47:19",
+      "end_timestamp": "2022-06-26 13:47:19",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 13:48:26",
+      "end_timestamp": "2022-06-26 14:48:26",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 14:45:07",
+      "end_timestamp": "2022-06-26 15:45:07",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 15:51:47",
+      "end_timestamp": "2022-06-26 16:51:47",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 16:55:07",
+      "end_timestamp": "2022-06-26 17:55:07",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 17:47:23",
+      "end_timestamp": "2022-06-26 18:47:23",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-26 18:48:27",
+      "end_timestamp": "2022-06-26 19:48:27",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-29 08:44:36",
+      "end_timestamp": "2022-06-29 09:44:36",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-29 11:54:37",
+      "end_timestamp": "2022-06-29 12:54:37",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-29 12:47:57",
+      "end_timestamp": "2022-06-29 13:47:57",
+      "tdb_score": 76.29995591043021,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 36.299955910430214
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-29 13:37:57",
+      "end_timestamp": "2022-06-29 14:37:57",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-30 07:48:06",
+      "end_timestamp": "2022-06-30 08:48:06",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-30 07:54:46",
+      "end_timestamp": "2022-06-30 08:54:46",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-30 08:44:46",
+      "end_timestamp": "2022-06-30 09:44:46",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-30 09:44:47",
+      "end_timestamp": "2022-06-30 10:44:47",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-30 09:51:28",
+      "end_timestamp": "2022-06-30 10:51:28",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-06-30 10:41:28",
+      "end_timestamp": "2022-06-30 11:41:28",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-01 08:38:25",
+      "end_timestamp": "2022-07-01 09:38:25",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-01 08:51:46",
+      "end_timestamp": "2022-07-01 09:51:46",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-03 13:46:07",
+      "end_timestamp": "2022-07-03 14:46:07",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-03 18:46:02",
+      "end_timestamp": "2022-07-03 19:46:02",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-04 15:50:18",
+      "end_timestamp": "2022-07-04 16:50:18",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-05 09:35:12",
+      "end_timestamp": "2022-07-05 10:35:12",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-12 09:37:49",
+      "end_timestamp": "2022-07-12 10:37:49",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-12 10:37:49",
+      "end_timestamp": "2022-07-12 11:37:49",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-13 15:54:36",
+      "end_timestamp": "2022-07-13 16:54:36",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-15 10:28:07",
+      "end_timestamp": "2022-07-15 11:28:07",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-15 11:24:47",
+      "end_timestamp": "2022-07-15 12:24:47",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-16 10:18:14",
+      "end_timestamp": "2022-07-16 11:18:14",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-16 10:51:34",
+      "end_timestamp": "2022-07-16 11:51:34",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-16 12:15:54",
+      "end_timestamp": "2022-07-16 13:15:54",
+      "tdb_score": 72.85692976298886,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 32.856929762988855
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-17 10:41:40",
+      "end_timestamp": "2022-07-17 11:41:40",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-17 14:36:19",
+      "end_timestamp": "2022-07-17 15:36:19",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-17 15:51:41",
+      "end_timestamp": "2022-07-17 16:51:41",
+      "tdb_score": 80.0,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 40.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-17 16:11:22",
+      "end_timestamp": "2022-07-17 17:11:22",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-18 10:55:06",
+      "end_timestamp": "2022-07-18 11:55:06",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-07-19 13:31:54",
+      "end_timestamp": "2022-07-19 14:31:54",
+      "tdb_score": 71.89659609015821,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 40.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.896596090158212
+        },
+        {
+          "feature": "diversity",
+          "contribution": 0.0
+        }
+      ]
+    }
+  ]
+}

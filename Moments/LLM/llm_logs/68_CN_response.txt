@@ -1,0 +1,21 @@
+```json
+{
+  "most_impaired_domains": ["Temporal Regularity", "Daytime Energy Distribution"],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.10,
+    "temporal_impairment": 0.30,
+    "perseveration_impairment": 0.02,
+    "activity_impairment": 0.25,
+    "daytime_impairment": 0.30,
+    "social_impairment": 0.03
+  },
+  "clinical_summary": "Despite a Cognitively Normal (CN) diagnosis, Patient #68 exhibits profound and sustained impairments in Temporal Regularity and Daytime Energy Distribution, indicating severe circadian rhythm disruption. Activity Pattern Consistency also showed significant fluctuation, ending at maximal impairment, while Behavioral Diversity showed a concerning increase then partial normalization. This profile is highly atypical for a CN individual and warrants urgent investigation.",
+  "recommendations": [
+    "Verify the accuracy and calibration of the TDB system and data collection, as the extreme scores for a CN individual are highly anomalous.",
+    "Conduct a comprehensive neuropsychological evaluation, including detailed sleep assessment (e.g., actigraphy, sleep diary), to investigate the severe circadian rhythm and activity pattern disruptions.",
+    "Rule out underlying medical conditions (e.g., primary sleep disorders, neurological conditions, medication side effects, or systemic illness) that could contribute to this atypical behavioral profile.",
+    "Consider targeted behavioral interventions focused on establishing consistent daily routines, optimizing sleep hygiene, and exploring light therapy, with careful monitoring of TDB metrics."
+  ]
+}
+```

@@ -1,0 +1,47 @@
+{
+  "most_impaired_domains": [
+    "Behavioral Diversity",
+    "Temporal Regularity",
+    "Perseveration",
+    "Daytime Energy Distribution",
+    "Activity Pattern Consistency"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.2,
+    "temporal_impairment": 0.2,
+    "perseveration_impairment": 0.2,
+    "activity_impairment": 0.15,
+    "daytime_impairment": 0.2,
+    "social_impairment": 0.05
+  },
+  "clinical_summary": "Patient #22 exhibits a concerning and rapidly worsening cognitive profile over two weeks, marked by maximal rigidity and repetitive behaviors (Perseveration, Temporal Regularity), a severe reduction in daily activity variety (Behavioral Diversity), and profound circadian rhythm disruption (Daytime Energy Distribution). This indicates a significant decline in executive function and behavioral regulation, escalating beyond typical MCI progression.",
+  "recommendations": [
+    "Expedite a comprehensive in-person neuropsychological evaluation to precisely characterize the extent and nature of cognitive deficits and confirm the severity of decline.",
+    "Engage with family or caregivers to provide education on managing extreme behavioral rigidity, perseveration, and sleep-wake cycle disturbances, exploring strategies for environmental structuring and routine modification.",
+    "Liaise with the patient's primary care physician to review current medication regimens and consider pharmacological interventions for severe sleep-wake dysregulation and behavioral symptom management.",
+    "Implement structured, therapist-guided activities (e.g., occupational therapy) focusing on reintroducing novelty and flexibility to daily routines to mitigate worsening behavioral diversity and perseveration.",
+    "Maintain intensive TDB monitoring, potentially increasing frequency, to closely track the efficacy of interventions and identify any further rapid changes in behavioral patterns."
+  ],
+  "anon_id": 22,
+  "status": "MCI",
+  "weekly_features": [
+    {
+      "diversity_impairment": 88.30235418298615,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 100.0,
+      "activity_impairment": 30.708298773370167,
+      "daytime_impairment": 39.871241507357475,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 100.0,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 100.0,
+      "activity_impairment": 42.91338181726206,
+      "daytime_impairment": 100.0,
+      "social_impairment": 25.780440976665727
+    }
+  ],
+  "n_weeks_analyzed": 2
+}

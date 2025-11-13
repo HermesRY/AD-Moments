@@ -1,0 +1,81 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            17
+Known Diagnosis:       MCI
+TDB Classification:    Cognitively Normal (CN)
+Analysis Period:       3 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    57.11 / 100
+Default Score:         60.44 / 100
+Score Difference:      -3.34
+
+Classification Threshold: 82.93
+Risk Level:            LOW
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Daytime Energy Distribution
+  3. Social Engagement
+
+Temporal Trend:        WORSENING
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.150 (default: 0.150) →
+  Temporal                                : 0.200 (default: 0.200) →
+  Perseveration                           : 0.150 (default: 0.150) →
+  Activity                                : 0.100 (default: 0.200) ↓
+  Daytime                                 : 0.200 (default: 0.250) ↓
+  Social                                  : 0.200 (default: 0.050) ↑
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #17, diagnosed with MCI, exhibits a concerning pattern of widespread and worsening behavioral impairments. Core deficits include persistent severe disruptions in temporal regularity and circadian rhythm, coupled with significantly reduced social engagement (impairment score 74.2/100). The emergence of perseverative behaviors and a sharp decline in behavioral diversity over three weeks suggest progressive cognitive decline, warranting close monitoring and intervention.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    84 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2023-01-18 07:08 - 08:08
+     TDB Score: 85.16
+     Top Features:
+       - Temporal: 20.00
+       - Daytime: 20.00
+       - Diversity: 15.00
+
+  2. 2023-01-20 18:11 - 19:11
+     TDB Score: 85.16
+     Top Features:
+       - Temporal: 20.00
+       - Daytime: 20.00
+       - Diversity: 15.00
+
+  3. 2023-01-21 07:10 - 08:10
+     TDB Score: 85.16
+     Top Features:
+       - Temporal: 20.00
+       - Daytime: 20.00
+       - Diversity: 15.00
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Conduct a comprehensive neuropsychological evaluation to further characterize cognitive deficits and rule out other contributing factors to the observed decline.
+  2. Implement structured daily routines and environmental cues to support temporal regularity and circadian rhythm, potentially involving light therapy or chronotherapy to mitigate disruption.
+  3. Develop an individualized social engagement plan, including facilitated group activities or structured interactions, to combat isolation and stimulate cognitive function.
+  4. Monitor closely for further progression of perseveration and behavioral diversity issues, considering behavioral strategies or pharmacological options if symptoms escalate.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

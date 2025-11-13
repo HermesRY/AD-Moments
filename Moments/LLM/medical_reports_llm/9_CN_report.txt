@@ -1,0 +1,80 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            9
+Known Diagnosis:       CN
+TDB Classification:    Cognitively Normal (CN)
+Analysis Period:       3 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    75.72 / 100
+Default Score:         60.00 / 100
+Score Difference:      +15.72
+
+Classification Threshold: 82.93
+Risk Level:            LOW
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Daytime Energy Distribution
+
+Temporal Trend:        WORSENING
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.050 (default: 0.150) ↓
+  Temporal                                : 0.300 (default: 0.200) ↑
+  Perseveration                           : 0.250 (default: 0.150) ↑
+  Activity                                : 0.050 (default: 0.200) ↓
+  Daytime                                 : 0.300 (default: 0.250) ↑
+  Social                                  : 0.050 (default: 0.050) →
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #9, despite a 'Cognitively Normal' diagnosis, displays persistent and maximal impairment in temporal regularity of activities and circadian rhythm disruption across all three weeks, which is highly atypical. A new, moderate level of perseverative behavior has also emerged and stabilized since week 1, indicating a concerning and unstable clinical profile.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    174 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2023-01-24 15:19 - 16:19
+     TDB Score: 96.29
+     Top Features:
+       - Temporal: 30.00
+       - Daytime: 30.00
+       - Perseveration: 25.00
+
+  2. 2023-01-26 07:07 - 08:07
+     TDB Score: 96.29
+     Top Features:
+       - Temporal: 30.00
+       - Daytime: 30.00
+       - Perseveration: 25.00
+
+  3. 2023-01-26 07:27 - 08:27
+     TDB Score: 96.29
+     Top Features:
+       - Temporal: 30.00
+       - Daytime: 30.00
+       - Perseveration: 25.00
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Urgently initiate a comprehensive neurological evaluation, including sleep studies and actigraphy, to investigate the root cause of the persistent maximal disruption in temporal regularity and circadian rhythm.
+  2. Conduct a full neuropsychological re-evaluation, specifically focusing on executive functions (e.g., inhibition, cognitive flexibility) and memory, to understand the emerging perseverative behaviors and assess for subtle cognitive decline.
+  3. Perform a detailed collateral interview with family or caregivers to gather qualitative data on the patient's daily routines, sleep patterns, social engagement, and observed repetitive behaviors, providing crucial context to the TDB findings.
+  4. Continue intensive longitudinal monitoring of all TDBs, with a particular focus on the trajectory of perseveration and activity pattern consistency, to track any progression of these concerning behavioral patterns.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

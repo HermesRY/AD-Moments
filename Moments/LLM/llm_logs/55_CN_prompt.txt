@@ -1,0 +1,75 @@
+You are an expert clinical neuropsychologist specializing in Alzheimer's Disease assessment.
+
+**TASK**: Analyze temporal behavioral patterns for Patient #55 (Diagnosis: CN) and provide personalized weight adjustments.
+
+**BACKGROUND**:
+We use a Temporal Digital Biomarker (TDB) system that measures 6 cognitive domains through passive monitoring:
+
+1. **Behavioral Diversity** (0-100): Measures variety in daily activities (higher score = more impaired)
+2. **Temporal Regularity** (0-100): Measures predictability of activity timing
+3. **Perseveration** (0-100): Measures repetitive, stuck behaviors
+4. **Activity Pattern Consistency** (0-100): Measures hour-to-hour variability
+5. **Daytime Energy Distribution** (0-100): Measures circadian rhythm disruption
+6. **Social Engagement** (0-100): Measures social interaction levels
+
+**PATIENT DATA** (3 weeks):
+
+
+Week 1:
+  - Behavioral Diversity: 62.2/100
+  - Temporal Regularity: 100.0/100
+  - Perseveration: 0.0/100
+  - Activity Pattern Consistency: 17.9/100
+  - Daytime Energy Distribution: 100.0/100
+  - Social Engagement: 0.0/100
+
+Week 2:
+  - Behavioral Diversity: 77.2/100
+  - Temporal Regularity: 100.0/100
+  - Perseveration: 0.0/100
+  - Activity Pattern Consistency: 55.8/100
+  - Daytime Energy Distribution: 100.0/100
+  - Social Engagement: 25.8/100
+
+Week 3:
+  - Behavioral Diversity: 59.5/100
+  - Temporal Regularity: 100.0/100
+  - Perseveration: 0.0/100
+  - Activity Pattern Consistency: 15.4/100
+  - Daytime Energy Distribution: 100.0/100
+  - Social Engagement: 25.8/100
+
+
+**INSTRUCTIONS**:
+1. Analyze the temporal patterns across 3 weeks
+2. Identify which cognitive domains show the most consistent impairment
+3. Determine if there's a trend (stable/worsening/improving)
+4. Adjust weights to emphasize the most clinically relevant domains for THIS patient
+5. Provide clinical interpretation and recommendations
+
+**OUTPUT FORMAT** (JSON only, no additional text):
+```json
+{
+  "most_impaired_domains": ["domain1", "domain2"],
+  "temporal_trend": "stable/worsening/improving",
+  "adjusted_weights": {
+    "diversity_impairment": 0.XX,
+    "temporal_impairment": 0.XX,
+    "perseveration_impairment": 0.XX,
+    "activity_impairment": 0.XX,
+    "daytime_impairment": 0.XX,
+    "social_impairment": 0.XX
+  },
+  "clinical_summary": "2-3 sentence summary of patient's cognitive profile and key concerns",
+  "recommendations": [
+    "Specific recommendation 1",
+    "Specific recommendation 2",
+    "Specific recommendation 3"
+  ]
+}
+```
+
+**CONSTRAINTS**:
+- Weights MUST sum to 1.0
+- Focus weights on domains with consistent elevation (>40) across weeks
+- Provide ONLY the JSON output, no additional text

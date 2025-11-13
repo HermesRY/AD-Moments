@@ -1,0 +1,83 @@
+{
+  "subject_info": {
+    "anon_id": 64,
+    "diagnosis": "AD",
+    "predicted_label": "CI",
+    "personalized_tdb_score": 94.87640709270701,
+    "default_tdb_score": 46.689162558727006
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.01,
+      "temporal_impairment": 0.48,
+      "perseveration_impairment": 0.01,
+      "activity_impairment": 0.01,
+      "daytime_impairment": 0.48,
+      "social_impairment": 0.01
+    },
+    "most_impaired_domains": [
+      "Temporal Regularity",
+      "Daytime Energy Distribution"
+    ],
+    "temporal_trend": "stable"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2022-08-03 13:25:27",
+      "end_timestamp": "2022-08-03 14:25:27",
+      "tdb_score": 74.83166993809566,
+      "top_contributing_features": [
+        {
+          "feature": "daytime",
+          "contribution": 38.27591530818985
+        },
+        {
+          "feature": "temporal",
+          "contribution": 35.417400931622794
+        },
+        {
+          "feature": "activity",
+          "contribution": 0.8805492885163457
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-08-03 16:42:14",
+      "end_timestamp": "2022-08-03 17:42:14",
+      "tdb_score": 87.41426900647286,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 48.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 38.27591530818985
+        },
+        {
+          "feature": "activity",
+          "contribution": 0.8805492885163457
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2022-08-18 17:09:15",
+      "end_timestamp": "2022-08-18 18:09:15",
+      "tdb_score": 87.53371971795652,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 48.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 38.27591530818985
+        },
+        {
+          "feature": "activity",
+          "contribution": 1.0
+        }
+      ]
+    }
+  ]
+}

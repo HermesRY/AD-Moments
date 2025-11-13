@@ -1,0 +1,23 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "stable",
+  "adjusted_weights": {
+    "diversity_impairment": 0.05,
+    "temporal_impairment": 0.41,
+    "perseveration_impairment": 0.05,
+    "activity_impairment": 0.05,
+    "daytime_impairment": 0.39,
+    "social_impairment": 0.05
+  },
+  "clinical_summary": "Patient #52, despite being classified as Cognitively Normal (CN), exhibits striking impairments in Temporal Regularity (100.0/100) and Daytime Energy Distribution (97.0/100). These highly elevated scores suggest significant rigidity in daily timing and severe circadian rhythm disruption, which are notable red flags even in the absence of other behavioral markers of impairment. Other cognitive domains appear well-preserved.",
+  "recommendations": [
+    "Initiate a comprehensive sleep-wake cycle evaluation, including actigraphy and potentially polysomnography, to thoroughly assess the severe circadian rhythm disruption.",
+    "Conduct a detailed clinical interview and specific neuropsychological testing focused on cognitive flexibility, executive functions, and initiation to understand if the extreme temporal regularity reflects rigidity or a highly structured lifestyle.",
+    "Establish a baseline and monitor these two key temporal digital biomarkers (Temporal Regularity and Daytime Energy Distribution) closely over the next 3-6 months, as sustained or worsening patterns could indicate prodromal neurodegenerative processes."
+  ]
+}
+```

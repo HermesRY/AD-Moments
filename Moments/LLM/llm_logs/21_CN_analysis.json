@@ -1,0 +1,51 @@
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Social Engagement",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.05,
+    "temporal_impairment": 0.25,
+    "perseveration_impairment": 0.05,
+    "activity_impairment": 0.15,
+    "daytime_impairment": 0.2,
+    "social_impairment": 0.3
+  },
+  "clinical_summary": "Despite a Cognitively Normal diagnosis, Patient #21 displays concerning temporal behavioral patterns, including profound rigidity in activity timing and significant circadian rhythm disruption. The most alarming trend is the progressive and severe decline in social engagement observed over three weeks, indicating an overall worsening clinical picture.",
+  "recommendations": [
+    "Conduct a thorough re-evaluation of the patient's cognitive status, including neuropsychological assessment focused on executive function flexibility, social cognition, and mood, given the emerging concerns.",
+    "Implement objective monitoring of sleep-wake cycles (e.g., actigraphy) to further characterize circadian rhythm disruption and explore potential interventions.",
+    "Develop a care plan to address social disengagement, including targeted strategies to promote interaction and regular monitoring for depressive symptoms or apathy."
+  ],
+  "anon_id": 21,
+  "status": "CN",
+  "weekly_features": [
+    {
+      "diversity_impairment": 0.0,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 94.45554418203184,
+      "daytime_impairment": 81.30804253223114,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 12.52381284608665,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 60.9711256427222,
+      "daytime_impairment": 62.21311157933586,
+      "social_impairment": 25.780440976665727
+    },
+    {
+      "diversity_impairment": 2.0060730619000298,
+      "temporal_impairment": 100.0,
+      "perseveration_impairment": 0.0,
+      "activity_impairment": 53.88686694294302,
+      "daytime_impairment": 81.69778112838074,
+      "social_impairment": 0.0
+    }
+  ],
+  "n_weeks_analyzed": 3
+}

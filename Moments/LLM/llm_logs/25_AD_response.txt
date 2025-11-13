@@ -1,0 +1,25 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Activity Pattern Consistency",
+    "Daytime Energy Distribution"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.025,
+    "temporal_impairment": 0.500,
+    "perseveration_impairment": 0.025,
+    "activity_impairment": 0.200,
+    "daytime_impairment": 0.150,
+    "social_impairment": 0.100
+  },
+  "clinical_summary": "Patient #25, diagnosed with AD, exhibits severe and stable impairment in Temporal Regularity, indicating profound disruption in daily routine predictability. Significant fluctuations in Activity Pattern Consistency suggest inconsistent self-regulation. A concerning trend of increasing social withdrawal is observed, despite recent improvements in Daytime Energy Distribution.",
+  "recommendations": [
+    "Implement highly structured daily routines with clear visual schedules to support Temporal Regularity and reduce variability.",
+    "Develop flexible care plans that can adapt to fluctuations in Activity Pattern Consistency, providing support during periods of increased variability.",
+    "Actively encourage and facilitate structured social engagement opportunities to mitigate the observed social withdrawal and maintain social connections.",
+    "Monitor Daytime Energy Distribution for sustained improvement, and investigate potential interventions contributing to recent positive changes."
+  ]
+}
+```

@@ -1,0 +1,25 @@
+```json
+{
+  "most_impaired_domains": [
+    "Temporal Regularity",
+    "Daytime Energy Distribution",
+    "Social Engagement"
+  ],
+  "temporal_trend": "worsening",
+  "adjusted_weights": {
+    "diversity_impairment": 0.15,
+    "temporal_impairment": 0.20,
+    "perseveration_impairment": 0.15,
+    "activity_impairment": 0.10,
+    "daytime_impairment": 0.20,
+    "social_impairment": 0.20
+  },
+  "clinical_summary": "Patient #17, diagnosed with MCI, exhibits a concerning pattern of widespread and worsening behavioral impairments. Core deficits include persistent severe disruptions in temporal regularity and circadian rhythm, coupled with significantly reduced social engagement (impairment score 74.2/100). The emergence of perseverative behaviors and a sharp decline in behavioral diversity over three weeks suggest progressive cognitive decline, warranting close monitoring and intervention.",
+  "recommendations": [
+    "Conduct a comprehensive neuropsychological evaluation to further characterize cognitive deficits and rule out other contributing factors to the observed decline.",
+    "Implement structured daily routines and environmental cues to support temporal regularity and circadian rhythm, potentially involving light therapy or chronotherapy to mitigate disruption.",
+    "Develop an individualized social engagement plan, including facilitated group activities or structured interactions, to combat isolation and stimulate cognitive function.",
+    "Monitor closely for further progression of perseveration and behavioral diversity issues, considering behavioral strategies or pharmacological options if symptoms escalate."
+  ]
+}
+```

@@ -1,0 +1,21 @@
+```json
+{
+  "most_impaired_domains": ["Temporal Regularity", "Daytime Energy Distribution"],
+  "temporal_trend": "improving",
+  "adjusted_weights": {
+    "diversity_impairment": 0.025,
+    "temporal_impairment": 0.45,
+    "perseveration_impairment": 0.025,
+    "activity_impairment": 0.025,
+    "daytime_impairment": 0.45,
+    "social_impairment": 0.025
+  },
+  "clinical_summary": "Patient #15 exhibits profound and stable impairments in temporal regularity of daily activities and circadian rhythm (daytime energy distribution), indicated by persistently maximal scores. While there has been significant improvement in behavioral diversity and reduction in perseverative behaviors, the core challenges related to maintaining structured routines and healthy sleep-wake cycles remain critically unaddressed.",
+  "recommendations": [
+    "Prioritize interventions aimed at establishing and maintaining consistent daily routines, especially for sleep and wake times, to support temporal regularity.",
+    "Conduct a thorough assessment for underlying sleep disorders and implement strategies to optimize sleep hygiene and circadian rhythm entrainment, such as light therapy.",
+    "Monitor the sustainability of the recent improvements in behavioral diversity and perseveration, reinforcing engagement in varied, purposeful activities.",
+    "Educate caregivers on behavioral management strategies for circadian rhythm disruptions, including proactive approaches to manage 'sundowning' and nighttime wandering."
+  ]
+}
+```

@@ -1,0 +1,82 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            20
+Known Diagnosis:       MCI
+TDB Classification:    Cognitively Impaired (CI)
+Analysis Period:       2 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    84.15 / 100
+Default Score:         55.79 / 100
+Score Difference:      +28.36
+
+Classification Threshold: 82.93
+Risk Level:            HIGH
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Temporal Regularity
+  2. Activity Pattern Consistency
+  3. Daytime Energy Distribution
+  4. Social Engagement
+
+Temporal Trend:        IMPROVING
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.000 (default: 0.150) ↓
+  Temporal                                : 0.330 (default: 0.200) ↑
+  Perseveration                           : 0.000 (default: 0.150) ↓
+  Activity                                : 0.330 (default: 0.200) ↑
+  Daytime                                 : 0.340 (default: 0.250) ↑
+  Social                                  : 0.000 (default: 0.050) ↓
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #20, diagnosed with MCI, exhibits severe and persistent impairments in temporal regularity, activity pattern consistency, and daytime energy distribution, indicating significant disorganization of daily routines and circadian rhythm. A consistent mild impairment in social engagement is also noted. Encouragingly, the severely impaired domains show a trend of slight improvement over the two-week period.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    10 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2023-07-12 09:48 - 10:48
+     TDB Score: 100.00
+     Top Features:
+       - Daytime: 34.00
+       - Temporal: 33.00
+       - Activity: 33.00
+
+  2. 2023-07-15 19:20 - 20:20
+     TDB Score: 100.00
+     Top Features:
+       - Daytime: 34.00
+       - Temporal: 33.00
+       - Activity: 33.00
+
+  3. 2023-08-09 07:06 - 08:06
+     TDB Score: 100.00
+     Top Features:
+       - Daytime: 34.00
+       - Temporal: 33.00
+       - Activity: 33.00
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Implement highly structured daily routines and utilize environmental cues to enhance temporal regularity and activity consistency.
+  2. Conduct a thorough evaluation for underlying factors contributing to severe circadian rhythm disruption, such as sleep disorders, medication effects, or environmental factors.
+  3. Explore targeted interventions to encourage and facilitate increased social engagement, such as participation in structured group activities or regular family interactions.
+  4. Continue passive monitoring with TDBs to closely track trends in the most affected domains and assess the efficacy of interventions.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,45 @@
+{
+  "subject_info": {
+    "anon_id": 52,
+    "diagnosis": "CN",
+    "predicted_label": "CN",
+    "personalized_tdb_score": 80.94815079391478,
+    "default_tdb_score": 48.85246684465905
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.05,
+      "temporal_impairment": 0.41,
+      "perseveration_impairment": 0.05,
+      "activity_impairment": 0.05,
+      "daytime_impairment": 0.39,
+      "social_impairment": 0.05
+    },
+    "most_impaired_domains": [
+      "Temporal Regularity",
+      "Daytime Energy Distribution"
+    ],
+    "temporal_trend": "stable"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2022-11-11 17:53:35",
+      "end_timestamp": "2022-11-11 18:53:35",
+      "tdb_score": 78.11098044583913,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 41.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 31.099181187904254
+        },
+        {
+          "feature": "activity",
+          "contribution": 4.722777209101593
+        }
+      ]
+    }
+  ]
+}

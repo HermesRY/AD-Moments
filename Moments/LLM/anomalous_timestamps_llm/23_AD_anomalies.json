@@ -1,0 +1,731 @@
+{
+  "subject_info": {
+    "anon_id": 23,
+    "diagnosis": "AD",
+    "predicted_label": "CN",
+    "personalized_tdb_score": 70.34566444975178,
+    "default_tdb_score": 61.92891827790761
+  },
+  "personalization": {
+    "adjusted_weights": {
+      "diversity_impairment": 0.2,
+      "temporal_impairment": 0.25,
+      "perseveration_impairment": 0.05,
+      "activity_impairment": 0.25,
+      "daytime_impairment": 0.2,
+      "social_impairment": 0.05
+    },
+    "most_impaired_domains": [
+      "Behavioral Diversity",
+      "Temporal Regularity",
+      "Activity Pattern Consistency",
+      "Daytime Energy Distribution"
+    ],
+    "temporal_trend": "worsening"
+  },
+  "anomalous_periods": [
+    {
+      "start_timestamp": "2000-01-04 10:38:09",
+      "end_timestamp": "2000-01-04 11:38:09",
+      "tdb_score": 64.25105230682104,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 22.013732212908643
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 07:00:26",
+      "end_timestamp": "2000-01-08 08:00:26",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 07:17:06",
+      "end_timestamp": "2000-01-08 08:17:06",
+      "tdb_score": 89.25105230682104,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 22.013732212908643
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 07:33:46",
+      "end_timestamp": "2000-01-08 08:33:46",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 11:00:27",
+      "end_timestamp": "2000-01-08 12:00:27",
+      "tdb_score": 71.36992661110637,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 13:00:27",
+      "end_timestamp": "2000-01-08 14:00:27",
+      "tdb_score": 64.09107172733142,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 17.80204967849814
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 13:47:07",
+      "end_timestamp": "2000-01-08 14:47:07",
+      "tdb_score": 66.34824944892122,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 17.627583112781238
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 14:13:47",
+      "end_timestamp": "2000-01-08 15:13:47",
+      "tdb_score": 76.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 15:17:08",
+      "end_timestamp": "2000-01-08 16:17:08",
+      "tdb_score": 69.4081298072265,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 20.40178329616924
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 15:33:48",
+      "end_timestamp": "2000-01-08 16:33:48",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 16:07:08",
+      "end_timestamp": "2000-01-08 17:07:08",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 16:30:28",
+      "end_timestamp": "2000-01-08 17:30:28",
+      "tdb_score": 78.58034645902327,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 17:03:48",
+      "end_timestamp": "2000-01-08 18:03:48",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 17:27:08",
+      "end_timestamp": "2000-01-08 18:27:08",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 18:00:29",
+      "end_timestamp": "2000-01-08 19:00:29",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 18:23:49",
+      "end_timestamp": "2000-01-08 19:23:49",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 18:47:09",
+      "end_timestamp": "2000-01-08 19:47:09",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 19:20:29",
+      "end_timestamp": "2000-01-08 20:20:29",
+      "tdb_score": 92.23732009391239,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 19:33:49",
+      "end_timestamp": "2000-01-08 20:33:49",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-08 19:40:29",
+      "end_timestamp": "2000-01-08 20:40:29",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-09 09:10:33",
+      "end_timestamp": "2000-01-09 10:10:33",
+      "tdb_score": 96.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-09 09:27:13",
+      "end_timestamp": "2000-01-09 10:27:13",
+      "tdb_score": 89.25105230682104,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 22.013732212908643
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-09 09:37:13",
+      "end_timestamp": "2000-01-09 10:37:13",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-09 18:03:55",
+      "end_timestamp": "2000-01-09 19:03:55",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-11 07:34:05",
+      "end_timestamp": "2000-01-11 08:34:05",
+      "tdb_score": 66.46522171545831,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 23.6721087314466
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-11 08:04:05",
+      "end_timestamp": "2000-01-11 09:04:05",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-19 07:54:11",
+      "end_timestamp": "2000-01-19 08:54:11",
+      "tdb_score": 71.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-19 08:24:11",
+      "end_timestamp": "2000-01-19 09:24:11",
+      "tdb_score": 71.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-20 13:14:19",
+      "end_timestamp": "2000-01-20 14:14:19",
+      "tdb_score": 64.25105230682104,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 22.013732212908643
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-22 10:11:11",
+      "end_timestamp": "2000-01-22 11:11:11",
+      "tdb_score": 64.25105230682104,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 22.013732212908643
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-25 10:41:32",
+      "end_timestamp": "2000-01-25 11:41:32",
+      "tdb_score": 67.23732009391239,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-27 09:08:24",
+      "end_timestamp": "2000-01-27 10:08:24",
+      "tdb_score": 71.28902204883329,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-01-27 09:18:24",
+      "end_timestamp": "2000-01-27 10:18:24",
+      "tdb_score": 64.55939891133389,
+      "top_contributing_features": [
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 20.0
+        },
+        {
+          "feature": "temporal",
+          "contribution": 18.2703768625006
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-02-02 10:52:23",
+      "end_timestamp": "2000-02-02 11:52:23",
+      "tdb_score": 67.23732009391239,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 25.0
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-02-04 09:29:16",
+      "end_timestamp": "2000-02-04 10:29:16",
+      "tdb_score": 65.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-02-04 11:49:17",
+      "end_timestamp": "2000-02-04 12:49:17",
+      "tdb_score": 90.85120613942036,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 23.61388604550796
+        },
+        {
+          "feature": "diversity",
+          "contribution": 20.0
+        }
+      ]
+    },
+    {
+      "start_timestamp": "2000-02-05 08:36:02",
+      "end_timestamp": "2000-02-05 09:36:02",
+      "tdb_score": 64.25105230682104,
+      "top_contributing_features": [
+        {
+          "feature": "temporal",
+          "contribution": 25.0
+        },
+        {
+          "feature": "activity",
+          "contribution": 22.013732212908643
+        },
+        {
+          "feature": "daytime",
+          "contribution": 15.948298045079106
+        }
+      ]
+    }
+  ]
+}

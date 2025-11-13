@@ -1,0 +1,82 @@
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                     TEMPORAL DIGITAL BIOMARKER REPORT                      ║
+║                   LLM-Enhanced Personalized Assessment                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+PATIENT INFORMATION
+─────────────────────────────────────────────────────────────────────────────
+Patient ID:            23
+Known Diagnosis:       AD
+TDB Classification:    Cognitively Normal (CN)
+Analysis Period:       3 weeks
+
+TDB SCORES
+─────────────────────────────────────────────────────────────────────────────
+Personalized Score:    70.35 / 100
+Default Score:         61.93 / 100
+Score Difference:      +8.42
+
+Classification Threshold: 82.93
+Risk Level:            LOW
+
+COGNITIVE DOMAIN ANALYSIS
+─────────────────────────────────────────────────────────────────────────────
+Most Impaired Domains:
+  1. Behavioral Diversity
+  2. Temporal Regularity
+  3. Activity Pattern Consistency
+  4. Daytime Energy Distribution
+
+Temporal Trend:        WORSENING
+
+PERSONALIZED FEATURE WEIGHTS (vs Default):
+  Diversity                               : 0.200 (default: 0.150) ↑
+  Temporal                                : 0.250 (default: 0.200) ↑
+  Perseveration                           : 0.050 (default: 0.150) ↓
+  Activity                                : 0.250 (default: 0.200) ↑
+  Daytime                                 : 0.200 (default: 0.250) ↓
+  Social                                  : 0.050 (default: 0.050) →
+
+CLINICAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+Patient #23 exhibits significant and persistent disruptions in temporal organization, activity consistency, and circadian rhythm, with an emerging decline in behavioral diversity. The overall pattern suggests an unstable and worsening trajectory, with high and sustained impairment in fundamental daily routine maintenance and energy distribution.
+
+ANOMALOUS TIME PERIODS
+─────────────────────────────────────────────────────────────────────────────
+Detected Anomalies:    37 periods
+
+Top 3 Most Severe Anomalies:
+
+  1. 2000-01-08 07:00 - 08:00
+     TDB Score: 96.29
+     Top Features:
+       - Temporal: 25.00
+       - Activity: 25.00
+       - Diversity: 20.00
+
+  2. 2000-01-08 15:33 - 16:33
+     TDB Score: 96.29
+     Top Features:
+       - Temporal: 25.00
+       - Activity: 25.00
+       - Diversity: 20.00
+
+  3. 2000-01-08 16:07 - 17:07
+     TDB Score: 96.29
+     Top Features:
+       - Temporal: 25.00
+       - Activity: 25.00
+       - Diversity: 20.00
+
+CLINICAL RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────────────
+  1. Implement highly structured daily routines and environmental cues to mitigate severe temporal disorganization and improve activity pattern consistency.
+  2. Conduct a thorough assessment of sleep-wake cycles and explore interventions for profound circadian rhythm disruption (Daytime Energy Distribution), considering both behavioral and pharmacological strategies.
+  3. Introduce a variety of simple, enjoyable, and cognitively accessible activities into the daily schedule to counteract the observed decline in behavioral diversity and maintain engagement.
+  4. Closely monitor for further deterioration in these key domains and adjust care plans to provide increasing levels of support for daily living and safety as cognitive decline progresses.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ This report was generated using LLM-enhanced temporal digital biomarkers. ║
+║ For clinical decision-making, please consult with a healthcare provider.  ║
+╚═══════════════════════════════════════════════════════════════════════════╝
