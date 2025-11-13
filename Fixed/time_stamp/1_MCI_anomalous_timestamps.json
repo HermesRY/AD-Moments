@@ -1,0 +1,55 @@
+{
+  "subject_info": {
+    "anon_id": 1,
+    "true_diagnosis": "MCI",
+    "tdb_prediction": "CI",
+    "tdb_score": 48.975701880158255,
+    "correctly_classified": true,
+    "observation_start": "2023-02-06 19:59:41"
+  },
+  "summary": {
+    "total_anomalous_segments": 1,
+    "total_duration_hours": 1.0,
+    "anomaly_rate": 0.0434782608695652,
+    "peak_tdb_score": 90.67420783563304
+  },
+  "anomalous_timestamps": [
+    {
+      "segment_id": 0,
+      "start_timestamp": "2023-02-06 19:59:41",
+      "end_timestamp": "2023-02-06 19:59:41",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 90.67420783563304,
+      "peak_time": "2023-02-06 19:59:41",
+      "day_of_observation": 0.0,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 20.5
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "activity",
+          "contribution": 18.9
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 90.7 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (20.5), temporal (20.0)"
+        },
+        {
+          "category": "Early Observation Period",
+          "description": "Anomaly detected on day 0.0 (first week of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "dataset": {
     "total_subjects": 68,
     "train_subjects": 47,
-    "test_subjects": 21
+    "test_subjects": 19
   },
   "model": {
     "name": "Temporal Digital Biomarker (TDB) System",
@@ -26,16 +26,16 @@
   },
   "performance": {
     "train_accuracy": 0.6382978723404256,
-    "test_accuracy": 0.7619047619047619,
-    "auc": 0.576923076923077,
+    "test_accuracy": 0.8421052631578947,
+    "auc": 0.7564102564102566,
     "sensitivity": 0.9230769230769231,
-    "specificity": 0.5,
-    "ppv": 0.75,
+    "specificity": 0.6666666666666666,
+    "ppv": 0.8571428571428571,
     "npv": 0.8
   },
   "confusion_matrix": {
     "tn": 4,
-    "fp": 4,
+    "fp": 2,
     "fn": 1,
     "tp": 12
   }

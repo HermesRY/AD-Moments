@@ -1,0 +1,610 @@
+{
+  "subject_info": {
+    "anon_id": 17,
+    "true_diagnosis": "MCI",
+    "tdb_prediction": "CI",
+    "tdb_score": 58.70896429477351,
+    "correctly_classified": true,
+    "observation_start": "2023-01-18 07:38:00"
+  },
+  "summary": {
+    "total_anomalous_segments": 16,
+    "total_duration_hours": 40.0,
+    "anomaly_rate": 0.2312138728323699,
+    "peak_tdb_score": 96.28902204883327
+  },
+  "anomalous_timestamps": [
+    {
+      "segment_id": 52,
+      "start_timestamp": "2023-01-18 07:38:00",
+      "end_timestamp": "2023-01-18 07:38:00",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 96.28902204883327,
+      "peak_time": "2023-01-18 07:38:00",
+      "day_of_observation": 0.0,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "activity",
+          "contribution": 20.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 96.3 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Early Observation Period",
+          "description": "Anomaly detected on day 0.0 (first week of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 53,
+      "start_timestamp": "2023-01-20 15:08:15",
+      "end_timestamp": "2023-01-21 08:40:08",
+      "duration_hours": 5.0,
+      "num_segments": 5,
+      "peak_tdb_score": 93.5474118934366,
+      "peak_time": "2023-01-20 15:08:15",
+      "day_of_observation": 2.3126736111111112,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "activity",
+          "contribution": 17.3
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 93.5 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 5.0 hours (5 consecutive segments)",
+          "severity": "Notable"
+        },
+        {
+          "category": "Early Observation Period",
+          "description": "Anomaly detected on day 2.3 (first week of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 54,
+      "start_timestamp": "2023-01-25 12:09:54",
+      "end_timestamp": "2023-01-25 14:22:44",
+      "duration_hours": 3.0,
+      "num_segments": 3,
+      "peak_tdb_score": 96.28902204883327,
+      "peak_time": "2023-01-25 13:12:33",
+      "day_of_observation": 7.188819444444444,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "activity",
+          "contribution": 20.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 96.3 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 3.0 hours (3 consecutive segments)",
+          "severity": "Notable"
+        }
+      ]
+    },
+    {
+      "segment_id": 55,
+      "start_timestamp": "2023-01-26 13:41:45",
+      "end_timestamp": "2023-01-26 14:41:52",
+      "duration_hours": 2.0,
+      "num_segments": 2,
+      "peak_tdb_score": 91.0528642497894,
+      "peak_time": "2023-01-26 13:41:45",
+      "day_of_observation": 8.252604166666666,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 91.1 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        }
+      ]
+    },
+    {
+      "segment_id": 56,
+      "start_timestamp": "2023-01-30 17:51:13",
+      "end_timestamp": "2023-01-30 17:51:13",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 81.56898915861962,
+      "peak_time": "2023-01-30 17:51:13",
+      "day_of_observation": 12.425844907407408,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 22.1
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 81.6 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (22.1), temporal (20.0)"
+        }
+      ]
+    },
+    {
+      "segment_id": 57,
+      "start_timestamp": "2023-02-01 13:23:37",
+      "end_timestamp": "2023-02-01 17:39:06",
+      "duration_hours": 5.0,
+      "num_segments": 5,
+      "peak_tdb_score": 80.27873279502657,
+      "peak_time": "2023-02-01 13:23:37",
+      "day_of_observation": 14.240011574074074,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "activity",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 80.3 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: temporal (20.0), activity (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 5.0 hours (5 consecutive segments)",
+          "severity": "Notable"
+        }
+      ]
+    },
+    {
+      "segment_id": 58,
+      "start_timestamp": "2023-02-06 08:54:13",
+      "end_timestamp": "2023-02-06 11:51:12",
+      "duration_hours": 3.0,
+      "num_segments": 3,
+      "peak_tdb_score": 90.61169792651674,
+      "peak_time": "2023-02-06 11:51:12",
+      "day_of_observation": 19.05292824074074,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 90.6 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 3.0 hours (3 consecutive segments)",
+          "severity": "Notable"
+        }
+      ]
+    },
+    {
+      "segment_id": 59,
+      "start_timestamp": "2023-02-09 09:57:35",
+      "end_timestamp": "2023-02-09 12:20:56",
+      "duration_hours": 3.0,
+      "num_segments": 3,
+      "peak_tdb_score": 75.03584337287518,
+      "peak_time": "2023-02-09 12:20:56",
+      "day_of_observation": 22.09693287037037,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "diversity",
+          "contribution": 15.0
+        },
+        "feature_3": {
+          "name": "perseveration",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "Moderate Impairment Score",
+          "description": "Peak TDB score 75.0 suggests moderate behavioral anomaly",
+          "severity": "Moderate",
+          "evidence": "Top features: temporal (20.0), diversity (15.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 3.0 hours (3 consecutive segments)",
+          "severity": "Notable"
+        }
+      ]
+    },
+    {
+      "segment_id": 60,
+      "start_timestamp": "2023-02-11 07:37:47",
+      "end_timestamp": "2023-02-11 07:37:47",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 77.18231921581796,
+      "peak_time": "2023-02-11 07:37:47",
+      "day_of_observation": 23.999849537037036,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "Moderate Impairment Score",
+          "description": "Peak TDB score 77.2 suggests moderate behavioral anomaly",
+          "severity": "Moderate",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        }
+      ]
+    },
+    {
+      "segment_id": 61,
+      "start_timestamp": "2023-02-11 10:37:47",
+      "end_timestamp": "2023-02-11 10:37:47",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 87.67044756729918,
+      "peak_time": "2023-02-11 10:37:47",
+      "day_of_observation": 24.124849537037036,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 87.7 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        }
+      ]
+    },
+    {
+      "segment_id": 62,
+      "start_timestamp": "2023-02-14 10:58:00",
+      "end_timestamp": "2023-02-14 13:01:21",
+      "duration_hours": 3.0,
+      "num_segments": 3,
+      "peak_tdb_score": 94.55697878901228,
+      "peak_time": "2023-02-14 11:58:01",
+      "day_of_observation": 27.13888888888889,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "activity",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "temporal",
+          "contribution": 18.3
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 94.6 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), activity (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 3.0 hours (3 consecutive segments)",
+          "severity": "Notable"
+        },
+        {
+          "category": "Late Observation Period",
+          "description": "Anomaly detected on day 27.1 (final days of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 63,
+      "start_timestamp": "2023-02-14 16:06:10",
+      "end_timestamp": "2023-02-14 16:06:10",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 82.48403519352728,
+      "peak_time": "2023-02-14 16:06:10",
+      "day_of_observation": 27.352893518518517,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 82.5 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Late Observation Period",
+          "description": "Anomaly detected on day 27.4 (final days of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 64,
+      "start_timestamp": "2023-02-18 07:41:37",
+      "end_timestamp": "2023-02-18 07:41:37",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 86.53641323244898,
+      "peak_time": "2023-02-18 07:41:37",
+      "day_of_observation": 31.002511574074074,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 86.5 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Late Observation Period",
+          "description": "Anomaly detected on day 31.0 (final days of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 65,
+      "start_timestamp": "2023-02-18 19:21:40",
+      "end_timestamp": "2023-02-19 07:47:37",
+      "duration_hours": 3.0,
+      "num_segments": 3,
+      "peak_tdb_score": 82.82545107123053,
+      "peak_time": "2023-02-18 20:21:40",
+      "day_of_observation": 31.48865740740741,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "daytime",
+          "contribution": 25.0
+        },
+        "feature_2": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 82.8 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: daytime (25.0), temporal (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 3.0 hours (3 consecutive segments)",
+          "severity": "Notable"
+        },
+        {
+          "category": "Late Observation Period",
+          "description": "Anomaly detected on day 31.5 (final days of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 66,
+      "start_timestamp": "2023-02-19 11:09:31",
+      "end_timestamp": "2023-02-19 11:09:31",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 79.97752247617227,
+      "peak_time": "2023-02-19 11:09:31",
+      "day_of_observation": 32.146886574074074,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "activity",
+          "contribution": 18.4
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "Moderate Impairment Score",
+          "description": "Peak TDB score 80.0 suggests moderate behavioral anomaly",
+          "severity": "Moderate",
+          "evidence": "Top features: temporal (20.0), activity (18.4)"
+        },
+        {
+          "category": "Late Observation Period",
+          "description": "Anomaly detected on day 32.1 (final days of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 67,
+      "start_timestamp": "2023-02-20 10:27:00",
+      "end_timestamp": "2023-02-20 15:53:49",
+      "duration_hours": 6.0,
+      "num_segments": 6,
+      "peak_tdb_score": 86.80352791774756,
+      "peak_time": "2023-02-20 12:42:15",
+      "day_of_observation": 33.11736111111111,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "activity",
+          "contribution": 20.0
+        },
+        "feature_3": {
+          "name": "daytime",
+          "contribution": 15.5
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "High Impairment Score",
+          "description": "Peak TDB score 86.8 indicates severe behavioral disruption",
+          "severity": "High",
+          "evidence": "Top features: temporal (20.0), activity (20.0)"
+        },
+        {
+          "category": "Extended Duration",
+          "description": "Prolonged anomalous period of 6.0 hours (6 consecutive segments)",
+          "severity": "Notable"
+        },
+        {
+          "category": "Late Observation Period",
+          "description": "Anomaly detected on day 33.1 (final days of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    }
+  ]
+}

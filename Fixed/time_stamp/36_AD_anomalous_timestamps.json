@@ -1,0 +1,124 @@
+{
+  "subject_info": {
+    "anon_id": 36,
+    "true_diagnosis": "AD",
+    "tdb_prediction": "CI",
+    "tdb_score": 38.83000778190022,
+    "correctly_classified": true,
+    "observation_start": "2023-07-24 14:52:39"
+  },
+  "summary": {
+    "total_anomalous_segments": 3,
+    "total_duration_hours": 4.0,
+    "anomaly_rate": 0.0533333333333333,
+    "peak_tdb_score": 78.66379579105337
+  },
+  "anomalous_timestamps": [
+    {
+      "segment_id": 99,
+      "start_timestamp": "2023-07-24 14:52:39",
+      "end_timestamp": "2023-07-24 14:52:39",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 72.3062737820984,
+      "peak_time": "2023-07-24 14:52:39",
+      "day_of_observation": 0.0,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "activity",
+          "contribution": 15.5
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "Moderate Impairment Score",
+          "description": "Peak TDB score 72.3 suggests moderate behavioral anomaly",
+          "severity": "Moderate",
+          "evidence": "Top features: temporal (20.0), activity (15.5)"
+        },
+        {
+          "category": "Early Observation Period",
+          "description": "Anomaly detected on day 0.0 (first week of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 100,
+      "start_timestamp": "2023-07-26 13:54:11",
+      "end_timestamp": "2023-07-26 15:57:27",
+      "duration_hours": 2.0,
+      "num_segments": 2,
+      "peak_tdb_score": 78.66379579105337,
+      "peak_time": "2023-07-26 13:54:11",
+      "day_of_observation": 1.9593981481481482,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "activity",
+          "contribution": 15.3
+        },
+        "feature_3": {
+          "name": "diversity",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "Moderate Impairment Score",
+          "description": "Peak TDB score 78.7 suggests moderate behavioral anomaly",
+          "severity": "Moderate",
+          "evidence": "Top features: temporal (20.0), activity (15.3)"
+        },
+        {
+          "category": "Early Observation Period",
+          "description": "Anomaly detected on day 2.0 (first week of monitoring)",
+          "severity": "Contextual"
+        }
+      ]
+    },
+    {
+      "segment_id": 101,
+      "start_timestamp": "2023-07-29 14:54:06",
+      "end_timestamp": "2023-07-29 14:54:06",
+      "duration_hours": 1.0,
+      "num_segments": 1,
+      "peak_tdb_score": 70.74389690730686,
+      "peak_time": "2023-07-29 14:54:06",
+      "day_of_observation": 5.001006944444445,
+      "top_contributing_features": {
+        "feature_1": {
+          "name": "temporal",
+          "contribution": 20.0
+        },
+        "feature_2": {
+          "name": "diversity",
+          "contribution": 15.0
+        },
+        "feature_3": {
+          "name": "perseveration",
+          "contribution": 15.0
+        }
+      },
+      "potential_reasons": [
+        {
+          "category": "Moderate Impairment Score",
+          "description": "Peak TDB score 70.7 suggests moderate behavioral anomaly",
+          "severity": "Moderate",
+          "evidence": "Top features: temporal (20.0), diversity (15.0)"
+        }
+      ]
+    }
+  ]
+}

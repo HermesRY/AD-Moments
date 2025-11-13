@@ -1,0 +1,33 @@
+{
+  "dataset_info": {
+    "total_subjects": 19,
+    "subjects_with_anomalies": 14,
+    "excluded_subjects": [
+      47,
+      39
+    ],
+    "exclusion_reason": "CN subjects with extremely high anomaly rates (>50%)",
+    "analysis_date": "2025-11-12 20:30:22"
+  },
+  "diagnosis_breakdown": {
+    "AD": 7,
+    "MCI": 6,
+    "CN": 6
+  },
+  "anomaly_explanation": {
+    "threshold_method": "Training set 80th percentile (top 20% segments)",
+    "scoring_system": "TDB (Temporal Distribution of Behaviors)",
+    "score_interpretation": {
+      "High (80+)": "Severe behavioral disruption patterns",
+      "Moderate (60-79)": "Moderate behavioral anomalies",
+      "Mild-Moderate (40-59)": "Elevated activity disruption"
+    },
+    "feature_categories": {
+      "temporal": "Time-of-day distribution irregularities",
+      "daytime": "Daytime activity pattern disruptions",
+      "activity": "Activity type distribution anomalies",
+      "duration": "Activity duration irregularities",
+      "transition": "Activity transition pattern disruptions"
+    }
+  }
+}
