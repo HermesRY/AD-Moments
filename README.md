@@ -37,12 +37,12 @@ This repository contains a novel **Temporal Digital Biomarker (TDB) system** for
 - **Transparent, Interpretable Scoring System**
 - **Rigorous Train/Test Validation** (70/30 stratified split)
 
-## 📊 Performance
+## 📊 Performance (Default)
 
-- **Test Accuracy:** 76.19%
+- **Test Accuracy:** 84.21%
 - **Sensitivity:** 92.31% (CI detection)
-- **Specificity:** 50.00% (CN detection)
-- **AUC-ROC:** 0.577
+- **Specificity:** 66.67% (CN detection)
+- **AUC-ROC:** 0.756
 
 ## 🚀 Getting Started
 
@@ -52,7 +52,8 @@ This repository contains a novel **Temporal Digital Biomarker (TDB) system** for
 
 ## 📄 Dataset
 
-- **Population:** 68 subjects (25 CN, 20 MCI, 23 AD)
+- **Population:** 66 subjects (23 CN, 20 MCI, 23 AD)
+- **Train/Test Split:** 47 Train, 19 Test (6 CN + 6 MCI + 7 AD or 6 CN + 13 CI)
 - **Data Type:** Timestamped action sequences (21 categories)
 - **Source:** Passive depth-camera monitoring
 
